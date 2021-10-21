@@ -42,7 +42,23 @@ heading:
   Empty.
 
 * Conference papers
-  Empty.
+
+** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration :flynn2013:
+*** Authors
+    - E. B. Flynn
+    - G. S. Jarmer
+*** Keywords                                    :ldv:wavenumber:steady_state:
+*** Links
+    - [[https://www.dpi-proceedings.com/index.php/shm2013/article/view/22912][Conference website]]
+    - [[https://www.researchgate.net/publication/259102704_High-Speed_Non-Contact_Baseline-Free_Imaging_of_Hiddden_Defects_Using_Scanning_Laser_Measurements_of_Steady-State_Ultrasonic_Vibration][ResearchGate]]
+    - [[./flynn2013.pdf]]
+*** Summary
+    The most basic text for understanding LDV scanning.  It sets the
+    foundation for the techniques used at ASDL in a very simple way.
+    It lacks, however, a deeper explanation on how the /wavenumber
+    filter bank/ and the /monogenic signal/ work, and assumes that
+    this is common knowledge for anyone reading the paper (which, in
+    fact, should be).
 
 * Journal papers
   Empty.
