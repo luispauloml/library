@@ -1,0 +1,51 @@
+#+TITLE: My personal library of scientific works
+#+AUTHOR: Luis Paulo M. Lima
+
+* Introduction
+This file contains entries for almost all of the papers I have
+gathered for my research at CNU.  Each entry should be like this:
+
+#+begin_src
+  ,** Title of the paper
+   This heading should be empty but should be tagged with the
+   corresponding citation key found in library.bib.
+
+  ,*** Authors
+   The ``Authors'' should contain only a simple list with the name of
+   the authors.
+
+  ,*** Keywords
+   The ``Keywords'' heading should be blank and have tags that match the
+   keywords given in the paper, if any. Personal tags can be added too.
+
+  ,*** Links
+   At least one link should be given: to either a file or a internet
+   reference where the paper can be found.  If the reference is online,
+   a DOI is prefered.
+
+  ,*** Summary
+   A summary written by myself, sumarizing the contents of the paper.
+   It should not be a copy of the abstract, by my own understanding of
+   the what it contains.  It could also be simply a list with the main
+   topics contained in it.  Also, a list of personal tags can be added
+   to this heading.
+#+end_src
+
+Each entry should also be placed under an appropriate top level
+heading:
+ - Books and theses
+ - Conference papers
+ - Journal papers
+ - Others references
+
+* Books and theses
+  Empty.
+
+* Conference papers
+  Empty.
+
+* Journal papers
+  Empty.
+
+* Other references
+  Empty.

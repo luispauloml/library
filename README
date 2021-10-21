@@ -1,0 +1,13 @@
+This is my personal library.
+
+This repository contains a list of references that I have collected
+over the years, and that I find useful for my research.  It is mainly
+composed of two files:
+
+  - `library.org`: a file created using Org-mode in Emacs, but that
+    can be read as a plain text in any text editor.
+
+  - `library.bib`: the same colection of references but presented in
+    BibTeX format, which can be readly used in any TeX file.
+
+Luis Paulo M. Lima, 2021-10-21.
