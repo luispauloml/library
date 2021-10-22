@@ -27,8 +27,8 @@ gathered for my research at CNU.  Each entry should be like this:
    A summary written by myself, sumarizing the contents of the paper.
    It should not be a copy of the abstract, by my own understanding of
    the what it contains.  It could also be simply a list with the main
-   topics contained in it.  Also, a list of personal tags can be added
-   to this heading.
+   topics contained in it.  Also, a list of personal tags and a time
+   stamp can be added too, e.g, ``Added: <YYYY-MM-DD>''.
 #+end_src
 
 Each entry should also be placed under an appropriate top level
@@ -60,6 +60,8 @@ heading:
     this is common knowledge for anyone reading the paper (which, in
     fact, should be).
 
+    Added: <2021-10-21 Thu>
+
 * Journal papers
 
 ** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning :junyoung2020:
@@ -69,6 +71,8 @@ heading:
     - [[./junyoung2020.pdf]]
 *** TODO Summary
     TBD.
+
+    Added: <2021-10-22 Fri>
 
 * Other references
   Empty.
