@@ -61,7 +61,14 @@ heading:
     fact, should be).
 
 * Journal papers
-  Empty.
+
+** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning :junyoung2020:
+*** Keywords :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
+*** Links
+    - [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
+    - [[./junyoung2020.pdf]]
+*** TODO Summary
+    TBD.
 
 * Other references
   Empty.
