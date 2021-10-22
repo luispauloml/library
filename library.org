@@ -51,7 +51,7 @@ heading:
 *** Links
     - [[https://www.dpi-proceedings.com/index.php/shm2013/article/view/22912][Conference website]]
     - [[https://www.researchgate.net/publication/259102704_High-Speed_Non-Contact_Baseline-Free_Imaging_of_Hiddden_Defects_Using_Scanning_Laser_Measurements_of_Steady-State_Ultrasonic_Vibration][ResearchGate]]
-    - [[./flynn2013.pdf]]
+    - [[./resources/flynn2013.pdf]]
 *** Summary
     The most basic text for understanding LDV scanning.  It sets the
     foundation for the techniques used at ASDL in a very simple way.
@@ -68,7 +68,7 @@ heading:
 *** Keywords :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
 *** Links
     - [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
-    - [[./junyoung2020.pdf]]
+    - [[./resources/junyoung2020.pdf]]
 *** TODO Summary
     TBD.
 
