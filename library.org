@@ -40,7 +40,22 @@ heading:
  - Others references
 
 * Books and theses
-  Empty.
+
+** Wave motion in elastic solids
+<<graff1975>>
+*** Author
+    - Karl F. Graff
+*** Keywordws                             :wave_propagation:basic_literature:
+*** Summary
+    This was my entry point to the theory of wave propagation.  It
+    starts from 1D case for a string, then a rod, then beam, and give
+    exhaustive examples and explanations from every aspect and
+    question in each chapter.  It is an incredible resource for
+    learning but, at the same time, the math used here is very heavy.
+    However, by overlooking the hard points, it should help anyone
+    understand this topic.  I highly recommend it, and I also
+    recommend not to rush through it.  Take your time, it is not easy,
+    but it is very rewarding.
 
 * Conference papers
 
