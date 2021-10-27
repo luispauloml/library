@@ -6,30 +6,25 @@ This file contains entries for almost all of the papers I have
 gathered for my research at CNU.  Each entry should be like this:
 
 #+begin_src org
-  ,** Title of the paper
-   This heading should be empty but should have a label with the
-   corresponding citation key found in library.bib, i.e.,
-   `<<luispauloml2020>>`.
-
-  ,*** Authors
-   The ``Authors'' should contain only a simple list with the name of
-   the authors.
+  ,** Title
+   This heading should contains a label with with the corresponding
+   citation key found in the .bib file, i.e., `<<luispauloml2020>>`, the
+   year the work as published and the list of authors.
 
   ,*** Keywords
-   The ``Keywords'' heading should be blank and have tags that match the
-   keywords given in the paper, if any. Personal tags can be added too.
-
-  ,*** Links
-   At least one link should be given: to either a file or a internet
-   reference where the paper can be found.  If the reference is online,
-   a DOI is prefered.
+   The ``Keywords'' heading is empty and have tags that match the
+   keywords given in the paper, if any. Personal tags may be added too.
 
   ,*** Summary
    A summary written by myself, sumarizing the contents of the paper.
    It should not be a copy of the abstract, by my own understanding of
    the what it contains.  It could also be simply a list with the main
-   topics contained in it.  Also, a list of personal tags and a time
-   stamp can be added too, e.g, ``Added: <YYYY-MM-DD>''.
+   topics contained in it.  The links to this material shoube given
+   after the summary, timestamps can be added after the links too, e.g.,
+   ``Added: <YYYY-MM-DD>''.  At least one link should be given: to
+   either a file or a internet reference where the paper can be found.
+   If the reference is online, a DOI is prefered.
+
 #+end_src
 
 Each entry should also be placed under an appropriate top level
@@ -41,10 +36,9 @@ heading:
 
 * Books and theses
 
-** Wave motion in elastic solids
-<<graff1975>>
-*** Author
-    - Karl F. Graff
+** Wave motion in elastic solids <<graff1975>>
+  - Year: 1975
+  - Author: Karl F. Graff
 *** Keywordws                             :wave_propagation:basic_literature:
 *** Summary
     This was my entry point to the theory of wave propagation.  It
@@ -57,18 +51,19 @@ heading:
     recommend not to rush through it.  Take your time, it is not easy,
     but it is very rewarding.
 
+    Resources:
+    - [[./resources/graff1975.pdf]]
+
+    Added: <2021-10-27 Wed>
+
 * Conference papers
 
-** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration
-<<flynn2013>>
-*** Authors
+** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration <<flynn2013>>
+   - Year: 2013
+   - Authors:
     - E. B. Flynn
     - G. S. Jarmer
 *** Keywords                                    :ldv:wavenumber:steady_state:
-*** Links
-    - [[https://www.dpi-proceedings.com/index.php/shm2013/article/view/22912][Conference website]]
-    - [[https://www.researchgate.net/publication/259102704_High-Speed_Non-Contact_Baseline-Free_Imaging_of_Hiddden_Defects_Using_Scanning_Laser_Measurements_of_Steady-State_Ultrasonic_Vibration][ResearchGate]]
-    - [[./resources/flynn2013.pdf]]
 *** Summary
     The most basic text for understanding LDV scanning.  It sets the
     foundation for the techniques used at ASDL in a very simple way.
@@ -77,32 +72,45 @@ heading:
     this is common knowledge for anyone reading the paper (which, in
     fact, should be).
 
+    Resources:
+    - [[https://www.dpi-proceedings.com/index.php/shm2013/article/view/22912][Conference website]]
+    - [[https://www.researchgate.net/publication/259102704_High-Speed_Non-Contact_Baseline-Free_Imaging_of_Hiddden_Defects_Using_Scanning_Laser_Measurements_of_Steady-State_Ultrasonic_Vibration][ResearchGate]]
+    - [[./resources/flynn2013.pdf]]
+
     Added: <2021-10-21 Thu>
 
 * Journal papers
 
-** Frequency-wavenumber domain filtering for improved damage visualization
-<<ruzzene2007>>
-*** Authors
- - M Ruzzene
+** Frequency-wavenumber domain filtering for improved damage visualization <<ruzzene2007>>
+   - Year:  2007
+   - Author: M Ruzzene
 *** Keywords                                    :wavefield:wavenumber:filter:
-*** Links
-    - [[https://doi.org/10.1063/1.2718150][Journal]]
-    - [[./resources/ruzzene2007.pdf]]
 *** TODO Summary
     TBD.
+
+    Resources:
+    - [[https://doi.org/10.1063/1.2718150][Journal]]
+    - [[./resources/ruzzene2007.pdf]]
 
     Added: <2021-10-27 Wed>
 
 
-** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning
-<<junyoung2020>>
+** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning <<junyoung2020>>
+   - Year: 2020
+   - Authors:
+     - Jun Young Jeon
+     - Duhwan Kim
+     - Gyuhae Park
+     - Eric Flynn
+     - To Kang
+     - Soonwoo Han
 *** Keywords :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
-*** Links
-    - [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
-    - [[./resources/junyoung2020.pdf]]
 *** TODO Summary
     TBD.
+
+    Resources:
+    - [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
+    - [[./resources/junyoung2020.pdf]]
 
     Added: <2021-10-22 Fri>
 
