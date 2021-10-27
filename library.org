@@ -5,10 +5,11 @@
 This file contains entries for almost all of the papers I have
 gathered for my research at CNU.  Each entry should be like this:
 
-#+begin_src
+#+begin_src org
   ,** Title of the paper
-   This heading should be empty but should be tagged with the
-   corresponding citation key found in library.bib.
+   This heading should be empty but should have a label with the
+   corresponding citation key found in library.bib, i.e.,
+   `<<luispauloml2020>>`.
 
   ,*** Authors
    The ``Authors'' should contain only a simple list with the name of
@@ -43,7 +44,8 @@ heading:
 
 * Conference papers
 
-** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration :flynn2013:
+** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration
+<<flynn2013>>
 *** Authors
     - E. B. Flynn
     - G. S. Jarmer
@@ -64,7 +66,8 @@ heading:
 
 * Journal papers
 
-** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning :junyoung2020:
+** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning
+<<junyoung2020>>
 *** Keywords :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
 *** Links
     - [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
