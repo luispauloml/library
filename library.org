@@ -66,6 +66,20 @@ heading:
 
 * Journal papers
 
+** Frequency-wavenumber domain filtering for improved damage visualization
+<<ruzzene2007>>
+*** Authors
+ - M Ruzzene
+*** Keywords                                    :wavefield:wavenumber:filter:
+*** Links
+    - [[https://doi.org/10.1063/1.2718150][Journal]]
+    - [[./resources/ruzzene2007.pdf]]
+*** TODO Summary
+    TBD.
+
+    Added: <2021-10-27 Wed>
+
+
 ** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning
 <<junyoung2020>>
 *** Keywords :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
