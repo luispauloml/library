@@ -84,15 +84,20 @@ heading:
 ** Frequency-wavenumber domain filtering for improved damage visualization <<ruzzene2007>>
    - Year:  2007
    - Author: M Ruzzene
-*** Keywords                                    :wavefield:wavenumber:filter:
-*** TODO Summary
-    TBD.
+*** Keywords                   :wavefield:wavenumber:filter:basic_literature:
+*** Summary
+    Very short but very insightful paper presenting the concept of
+    filtering in the wavenumber-frequency domain. Although it leaves
+    out how to generate and how to apply the windows for filtering,
+    this paper should be considered basic literature for the work done
+    in ADSL.
 
     Resources:
     - [[https://doi.org/10.1063/1.2718150][Journal]]
     - [[./resources/ruzzene2007.pdf]]
 
     Added: <2021-10-27 Wed>
+    Updated: <2021-11-03 Wed>
 
 
 ** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning <<junyoung2020>>
