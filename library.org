@@ -36,6 +36,18 @@ heading:
 
 * Books and theses
 
+** Two-dimensional signal and image processing <<jaeslim1990>>
+   - Year: 1990
+   - Author: Jae S. Lim
+*** Keyworkds                                             :signal_processing:
+*** TODO Summary
+    TBD.
+
+    Resources:
+    - [[./resources/jaeslim1990.djvu]]
+
+    Added: <2021-11-05 Fri>
+
 ** Wave motion in elastic solids <<graff1975>>
   - Year: 1975
   - Author: Karl F. Graff
