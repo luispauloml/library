@@ -44,7 +44,7 @@ heading:
     TBD.
 
     Resources:
-    - [[./resources/jaeslim1990.djvu]]
+    - [[file:./resources/jaeslim1990.djvu]]
 
     Added: <2021-11-05 Fri>
 
@@ -64,7 +64,7 @@ heading:
     but it is very rewarding.
 
     Resources:
-    - [[./resources/graff1975.pdf]]
+    - [[file:./resources/graff1975.pdf]]
 
     Added: <2021-10-27 Wed>
 
@@ -87,7 +87,7 @@ heading:
     Resources:
     - [[https://www.dpi-proceedings.com/index.php/shm2013/article/view/22912][Conference website]]
     - [[https://www.researchgate.net/publication/259102704_High-Speed_Non-Contact_Baseline-Free_Imaging_of_Hiddden_Defects_Using_Scanning_Laser_Measurements_of_Steady-State_Ultrasonic_Vibration][ResearchGate]]
-    - [[./resources/flynn2013.pdf]]
+    - [[file:./resources/flynn2013.pdf]]
 
     Added: <2021-10-21 Thu>
 
@@ -106,7 +106,7 @@ heading:
 
     Resources:
     - [[https://doi.org/10.1063/1.2718150][Journal]]
-    - [[./resources/ruzzene2007.pdf]]
+    - [[file:./resources/ruzzene2007.pdf]]
 
     Added: <2021-10-27 Wed>
     Updated: <2021-11-03 Wed>
@@ -127,7 +127,7 @@ heading:
 
     Resources:
     - [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
-    - [[./resources/junyoung2020.pdf]]
+    - [[file:./resources/junyoung2020.pdf]]
 
     Added: <2021-10-22 Fri>
 
