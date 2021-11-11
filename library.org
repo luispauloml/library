@@ -7,129 +7,128 @@ gathered for my research at CNU.  Each entry should be like this:
 
 #+begin_src org
   ,** Title
-   This heading should contains a label with with the corresponding
-   citation key found in the .bib file, i.e., `<<luispauloml2020>>`, the
-   year the work as published and the list of authors.
+  This heading should contains a label with with the corresponding
+  citation key found in the .bib file, i.e., `<<luispauloml2020>>`, the
+  year the work as published and the list of authors.
 
   ,*** Keywords
-   The ``Keywords'' heading is empty and have tags that match the
-   keywords given in the paper, if any. Personal tags may be added too.
+  The ``Keywords'' heading is empty and have tags that match the
+  keywords given in the paper, if any. Personal tags may be added too.
 
   ,*** Summary
-   A summary written by myself, sumarizing the contents of the paper.
-   It should not be a copy of the abstract, by my own understanding of
-   the what it contains.  It could also be simply a list with the main
-   topics contained in it.  The links to this material shoube given
-   after the summary, timestamps can be added after the links too, e.g.,
-   ``Added: <YYYY-MM-DD>''.  At least one link should be given: to
-   either a file or a internet reference where the paper can be found.
-   If the reference is online, a DOI is prefered.
-
+  A summary written by myself, sumarizing the contents of the paper.
+  It should not be a copy of the abstract, by my own understanding of
+  the what it contains.  It could also be simply a list with the main
+  topics contained in it.  The links to this material shoube given
+  after the summary, timestamps can be added after the links too, e.g.,
+  ``Added: <YYYY-MM-DD>''.  At least one link should be given: to
+  either a file or a internet reference where the paper can be found.
+  If the reference is online, a DOI is prefered.
 #+end_src
 
 Each entry should also be placed under an appropriate top level
 heading:
- - Books and theses
- - Conference papers
- - Journal papers
- - Others references
+- Books and theses
+- Conference papers
+- Journal papers
+- Others references
 
 * Books and theses
 
 ** Two-dimensional signal and image processing <<jaeslim1990>>
-   - Year: 1990
-   - Author: Jae S. Lim
+- Year: 1990
+- Author: Jae S. Lim
 *** Keyworkds                                             :signal_processing:
 *** TODO Summary
-    TBD.
+TBD.
 
-    Resources:
-    - [[file:./resources/jaeslim1990.djvu]]
+Resources:
+- [[file:./resources/jaeslim1990.djvu]]
 
-    Added: <2021-11-05 Fri>
+Added: <2021-11-05 Fri>
 
 ** Wave motion in elastic solids <<graff1975>>
-  - Year: 1975
-  - Author: Karl F. Graff
+- Year: 1975
+- Author: Karl F. Graff
 *** Keywordws                             :wave_propagation:basic_literature:
 *** Summary
-    This was my entry point to the theory of wave propagation.  It
-    starts from 1D case for a string, then a rod, then beam, and give
-    exhaustive examples and explanations from every aspect and
-    question in each chapter.  It is an incredible resource for
-    learning but, at the same time, the math used here is very heavy.
-    However, by overlooking the hard points, it should help anyone
-    understand this topic.  I highly recommend it, and I also
-    recommend not to rush through it.  Take your time, it is not easy,
-    but it is very rewarding.
+This was my entry point to the theory of wave propagation.  It
+starts from 1D case for a string, then a rod, then beam, and give
+exhaustive examples and explanations from every aspect and
+question in each chapter.  It is an incredible resource for
+learning but, at the same time, the math used here is very heavy.
+However, by overlooking the hard points, it should help anyone
+understand this topic.  I highly recommend it, and I also
+recommend not to rush through it.  Take your time, it is not easy,
+but it is very rewarding.
 
-    Resources:
-    - [[file:./resources/graff1975.pdf]]
+Resources:
+- [[file:./resources/graff1975.pdf]]
 
-    Added: <2021-10-27 Wed>
+Added: <2021-10-27 Wed>
 
 * Conference papers
 
 ** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration <<flynn2013>>
-   - Year: 2013
-   - Authors:
-    - E. B. Flynn
-    - G. S. Jarmer
+- Year: 2013
+- Authors:
+  - E. B. Flynn
+  - G. S. Jarmer
 *** Keywords                                    :ldv:wavenumber:steady_state:
 *** Summary
-    The most basic text for understanding LDV scanning.  It sets the
-    foundation for the techniques used at ASDL in a very simple way.
-    It lacks, however, a deeper explanation on how the /wavenumber
-    filter bank/ and the /monogenic signal/ work, and assumes that
-    this is common knowledge for anyone reading the paper (which, in
-    fact, should be).
+The most basic text for understanding LDV scanning.  It sets the
+foundation for the techniques used at ASDL in a very simple way.
+It lacks, however, a deeper explanation on how the /wavenumber
+filter bank/ and the /monogenic signal/ work, and assumes that
+this is common knowledge for anyone reading the paper (which, in
+fact, should be).
 
-    Resources:
-    - [[https://www.dpi-proceedings.com/index.php/shm2013/article/view/22912][Conference website]]
-    - [[https://www.researchgate.net/publication/259102704_High-Speed_Non-Contact_Baseline-Free_Imaging_of_Hiddden_Defects_Using_Scanning_Laser_Measurements_of_Steady-State_Ultrasonic_Vibration][ResearchGate]]
-    - [[file:./resources/flynn2013.pdf]]
+Resources:
+- [[https://www.dpi-proceedings.com/index.php/shm2013/article/view/22912][Conference website]]
+- [[https://www.researchgate.net/publication/259102704_High-Speed_Non-Contact_Baseline-Free_Imaging_of_Hiddden_Defects_Using_Scanning_Laser_Measurements_of_Steady-State_Ultrasonic_Vibration][ResearchGate]]
+- [[file:./resources/flynn2013.pdf]]
 
-    Added: <2021-10-21 Thu>
+Added: <2021-10-21 Thu>
 
 * Journal papers
 
 ** Frequency-wavenumber domain filtering for improved damage visualization <<ruzzene2007>>
-   - Year:  2007
-   - Author: M Ruzzene
-*** Keywords                   :wavefield:wavenumber:filter:basic_literature:
+- Year:  2007
+- Author: M Ruzzene
+*** Keywords   :wavefield:wavenumber:filter:basic_literature:
 *** Summary
-    Very short but very insightful paper presenting the concept of
-    filtering in the wavenumber-frequency domain. Although it leaves
-    out how to generate and how to apply the windows for filtering,
-    this paper should be considered basic literature for the work done
-    in ADSL.
+Very short but very insightful paper presenting the concept of
+filtering in the wavenumber-frequency domain. Although it leaves
+out how to generate and how to apply the windows for filtering,
+this paper should be considered basic literature for the work done
+in ADSL.
 
-    Resources:
-    - [[https://doi.org/10.1063/1.2718150][Journal]]
-    - [[file:./resources/ruzzene2007.pdf]]
+Resources:
+- [[https://doi.org/10.1063/1.2718150][Journal]]
+- [[file:./resources/ruzzene2007.pdf]]
 
-    Added: <2021-10-27 Wed>
-    Updated: <2021-11-03 Wed>
+Added: <2021-10-27 Wed>
+Updated: <2021-11-03 Wed>
 
 
 ** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning <<junyoung2020>>
-   - Year: 2020
-   - Authors:
-     - Jun Young Jeon
-     - Duhwan Kim
-     - Gyuhae Park
-     - Eric Flynn
-     - To Kang
-     - Soonwoo Han
+- Year: 2020
+- Authors:
+  - Jun Young Jeon
+  - Duhwan Kim
+  - Gyuhae Park
+  - Eric Flynn
+  - To Kang
+  - Soonwoo Han
 *** Keywords :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
 *** TODO Summary
-    TBD.
+TBD.
 
-    Resources:
-    - [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
-    - [[file:./resources/junyoung2020.pdf]]
+Resources:
+- [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
+- [[file:./resources/junyoung2020.pdf]]
 
-    Added: <2021-10-22 Fri>
+Added: <2021-10-22 Fri>
 
 * Other references
   Empty.
