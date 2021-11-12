@@ -92,6 +92,25 @@ Added: <2021-10-21 Thu>
 
 * Journal papers
 
+** Finite element prediction of wave motion in structural waveguides <<mace2005>>
+*** Authors
+- Year: 2005
+- Authors:
+  - Brian R. Mace
+  - Denis Duhamel
+  - Michael J. Brennan
+  - Lars Hinke
+*** Keywords                               :FEM:basic_literature:waveguide:
+*** Summary
+One of the most basic works on Finite Elements Method applied to
+waveguides.  In contrast with other works, this one presents a simple
+method that does not involve new types of elements, and depend only on
+the regular stiffness, mass and damping matrices of the matrices used
+in common FEM experiments.  Basic knowledge of FEM theory is the only
+requirement to understand this paper.
+
+Added: <2021-11-12 Fri>
+
 ** Frequency-wavenumber domain filtering for improved damage visualization <<ruzzene2007>>
 - Year:  2007
 - Author: M Ruzzene
