@@ -125,6 +125,10 @@ the regular stiffness, mass and damping matrices of the matrices used
 in common FEM experiments.  Basic knowledge of FEM theory is the only
 requirement to understand this paper.
 
+Resources:
+- [[https://doi.org/10.1121/1.1887126][Journal]]
+- [[file:./resources/mace2005.pdf]]
+
 Added: <2021-11-12 Fri>
 
 ** Frequency-wavenumber domain filtering for improved damage visualization <<ruzzene2007>>
