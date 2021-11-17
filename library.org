@@ -69,6 +69,22 @@ Added: <2021-10-27 Wed>
 
 * Conference papers
 
+** Three-dimensional acoustic wavenumber spectroscopy for structural health monitoring <<fickenwirth2019>>
+- Year: 2019
+- Authors:
+  - Peter H. Fickenwirth
+  - Matthew J. Adams
+  - Eric B. Flynn
+*** Keywords                                                          :aws:
+*** TODO Summary
+TBD.
+
+Resources:
+- [[http://doi.org/10.12783/shm2019/32196][Conference website]]
+- [[file:./resources/fickenwirth2019.pdf]]
+
+Added: <2021-11-17 Wed>
+
 ** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration <<flynn2013>>
 - Year: 2013
 - Authors:
