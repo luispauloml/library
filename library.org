@@ -69,6 +69,23 @@ Added: <2021-10-27 Wed>
 
 * Conference papers
 
+** Exploring the performance limits of full-field acoustic wavenumber spectroscopy techniques for damage detection through numerical simulation <<odowd2016>>
+- Year: 2016
+- Authros:
+  - Niall M. O'Dowd
+  - Dae-Hyun Han
+  - Lae-Hyong Kang
+  - Eric B. Flynn
+*** Keyworks                                                      :fem:aws:
+*** TODO Summary
+TBD.
+
+Resources:
+- [[https://www.ndt.net/search/docs.php3?id=20089][Conference website]]
+- [[file:./resources/flynn2016.pdf]]
+
+Added: <2021-11-22 Mon>
+
 ** Three-dimensional acoustic wavenumber spectroscopy for structural health monitoring <<fickenwirth2019>>
 - Year: 2019
 - Authors:
