@@ -125,6 +125,23 @@ Added: <2021-10-21 Thu>
 
 * Journal papers
 
+** Structural imaging through local wavenumber estimation of guided waves <<flynn2013-2>>
+- Year: 2013
+- Authors:
+  - Eric B. Flynn
+  - See Yenn Chong
+  - Gregory J. Jarmer
+  - Jung-Ryul Lee
+*** Keywords               :ndt:ldv:image_processing:ultrasonic:wavenumber:
+*** TODO Summary
+TBD.
+
+Resources:
+- [[https://doi.org/10.1016/j.ndteint.2013.04.003][Journal]]
+- [[file:./resources/flynn2013-2.pdf]]
+
+Added: <2021-11-23 Tue>
+
 ** Finite element prediction of wave motion in structural waveguides <<mace2005>>
 *** Authors
 - Year: 2005
@@ -165,7 +182,6 @@ Resources:
 
 Added: <2021-10-27 Wed>
 Updated: <2021-11-03 Wed>
-
 
 ** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning <<junyoung2020>>
 - Year: 2020
