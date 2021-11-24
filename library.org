@@ -82,7 +82,7 @@ TBD.
 
 Resources:
 - [[https://www.ndt.net/search/docs.php3?id=20089][Conference website]]
-- [[file:./resources/flynn2016.pdf]]
+- [[file:./resources/odowd2016.pdf]]
 
 Added: <2021-11-22 Mon>
 
