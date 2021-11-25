@@ -9,7 +9,7 @@ gathered for my research at CNU.  Each entry should be like this:
 #+begin_src org :tangle no
   ,** Title
   This heading should contains a label with with the corresponding
-  citation key found in the .bib file, i.e., `<<luispauloml2020>>`, the
+  citation key for this entry, i.e., `<<luispauloml2020>>`, the
   year the work as published and the list of authors.
 
   ,*** Keywords
@@ -25,6 +25,11 @@ gathered for my research at CNU.  Each entry should be like this:
   ``Added: <YYYY-MM-DD>''.  At least one link should be given: to
   either a file or a internet reference where the paper can be found.
   If the reference is online, a DOI is prefered.
+
+  ,*** Citation
+  This heading contains the BibTeX entry for this work. For ease of
+  use, the citation key is equal to the label of the `Title' heading.
+  The code blocks can be tangle into a separate .bib file.
 #+end_src
 
 Each entry should also be placed under an appropriate top level
