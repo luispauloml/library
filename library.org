@@ -44,7 +44,9 @@ heading:
 ** Two-dimensional signal and image processing <<jaeslim1990>>
 - Year: 1990
 - Author: Jae S. Lim
+
 *** Keyworkds                                             :signal_processing:
+
 *** TODO Summary
 TBD.
 
@@ -52,6 +54,7 @@ Resources:
 - [[file:./resources/jaeslim1990.djvu]]
 
 Added: <2021-11-05 Fri>
+
 *** Citation
 #+begin_src bibtex
   @book{jaeslim1990,
@@ -65,7 +68,9 @@ Added: <2021-11-05 Fri>
 ** Wave motion in elastic solids <<graff1975>>
 - Year: 1975
 - Author: Karl F. Graff
+
 *** Keywordws                             :wave_propagation:basic_literature:
+
 *** Summary
 This was my entry point to the theory of wave propagation.  It
 starts from 1D case for a string, then a rod, then beam, and give
@@ -81,6 +86,7 @@ Resources:
 - [[file:./resources/graff1975.pdf]]
 
 Added: <2021-10-27 Wed>
+
 *** Citation
 #+begin_src bibtex
   @book{graff1975,
@@ -100,7 +106,9 @@ Added: <2021-10-27 Wed>
   - Dae-Hyun Han
   - Lae-Hyong Kang
   - Eric B. Flynn
+
 *** Keyworks                                                      :fem:aws:
+
 *** TODO Summary
 TBD.
 
@@ -109,6 +117,7 @@ Resources:
 - [[file:./resources/odowd2016.pdf]]
 
 Added: <2021-11-22 Mon>
+
 *** Citation
 #+begin_src bibtex
   @inproceedings{odowd2016,
@@ -125,7 +134,9 @@ Added: <2021-11-22 Mon>
   - Peter H. Fickenwirth
   - Matthew J. Adams
   - Eric B. Flynn
+
 *** Keywords                                                          :aws:
+
 *** TODO Summary
 TBD.
 
@@ -134,6 +145,7 @@ Resources:
 - [[file:./resources/fickenwirth2019.pdf]]
 
 Added: <2021-11-17 Wed>
+
 *** Citation
 #+begin_src bibtex
   @inproceedings{fickenwirth2019,
@@ -149,7 +161,9 @@ Added: <2021-11-17 Wed>
 - Authors:
   - E. B. Flynn
   - G. S. Jarmer
-*** Keywords                                    :ldv:wavenumber:steady_state:
+
+*** Keywords                                  :ldv:wavenumber:steady_state:
+
 *** Summary
 The most basic text for understanding LDV scanning.  It sets the
 foundation for the techniques used at ASDL in a very simple way.
@@ -164,6 +178,7 @@ Resources:
 - [[file:./resources/flynn2013.pdf]]
 
 Added: <2021-10-21 Thu>
+
 *** Citation
 #+begin_src bibtex
   @inproceedings{flynn2013,
@@ -186,7 +201,9 @@ Added: <2021-10-21 Thu>
   - See Yenn Chong
   - Gregory J. Jarmer
   - Jung-Ryul Lee
+
 *** Keywords               :ndt:ldv:image_processing:ultrasonic:wavenumber:
+
 *** TODO Summary
 TBD.
 
@@ -195,6 +212,7 @@ Resources:
 - [[file:./resources/flynn2013-2.pdf]]
 
 Added: <2021-11-23 Tue>
+
 *** Citation
 #+begin_src bibtex
   @article{flynn2013-2,
@@ -211,14 +229,15 @@ Added: <2021-11-23 Tue>
 #+end_src
 
 ** Finite element prediction of wave motion in structural waveguides <<mace2005>>
-*** Authors
 - Year: 2005
 - Authors:
   - Brian R. Mace
   - Denis Duhamel
   - Michael J. Brennan
   - Lars Hinke
+
 *** Keywords                               :FEM:basic_literature:waveguide:
+
 *** Summary
 One of the most basic works on Finite Elements Method applied to
 waveguides.  In contrast with other works, this one presents a simple
@@ -232,6 +251,7 @@ Resources:
 - [[file:./resources/mace2005.pdf]]
 
 Added: <2021-11-12 Fri>
+
 *** Citation
 #+begin_src bibtex
   @article{mace2005,
@@ -250,7 +270,9 @@ Added: <2021-11-12 Fri>
 ** Frequency-wavenumber domain filtering for improved damage visualization <<ruzzene2007>>
 - Year:  2007
 - Author: M Ruzzene
+
 *** Keywords   :wavefield:wavenumber:filter:basic_literature:
+
 *** Summary
 Very short but very insightful paper presenting the concept of
 filtering in the wavenumber-frequency domain. Although it leaves
@@ -264,6 +286,7 @@ Resources:
 
 Added: <2021-10-27 Wed>
 Updated: <2021-11-03 Wed>
+
 *** Citation
 #+begin_src bibtex
   @article{ruzzene2007,
@@ -288,7 +311,9 @@ Updated: <2021-11-03 Wed>
   - Eric Flynn
   - To Kang
   - Soonwoo Han
+
 *** Keywords :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
+
 *** TODO Summary
 TBD.
 
@@ -297,6 +322,7 @@ Resources:
 - [[file:./resources/junyoung2020.pdf]]
 
 Added: <2021-10-22 Fri>
+
 *** Citation
 #+begin_src bibtex
   @article{junyoung2020,
