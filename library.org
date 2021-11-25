@@ -1,11 +1,12 @@
 #+TITLE: My personal library of scientific works
 #+AUTHOR: Luis Paulo M. Lima
+#+PROPERTY: header-args :tangle yes
 
 * Introduction
 This file contains entries for almost all of the papers I have
 gathered for my research at CNU.  Each entry should be like this:
 
-#+begin_src org
+#+begin_src org :tangle no
   ,** Title
   This heading should contains a label with with the corresponding
   citation key found in the .bib file, i.e., `<<luispauloml2020>>`, the
@@ -46,6 +47,15 @@ Resources:
 - [[file:./resources/jaeslim1990.djvu]]
 
 Added: <2021-11-05 Fri>
+*** Citation
+#+begin_src bibtex
+  @book{jaeslim1990,
+      author = 	 {Jae S Lim},
+      title = 	 {Two-dimensional signal and image processing},
+      publisher =  {Prentice Hall},
+      year = 	 1990,
+      address = 	 {New Jersey}}
+#+end_src
 
 ** Wave motion in elastic solids <<graff1975>>
 - Year: 1975
@@ -66,6 +76,15 @@ Resources:
 - [[file:./resources/graff1975.pdf]]
 
 Added: <2021-10-27 Wed>
+*** Citation
+#+begin_src bibtex
+  @book{graff1975,
+    author = 	 {Karl F. Graff},
+    title = 	 {Wave motion in elastic solids},
+    publisher = 	 {Dover Publications},
+    year = 	 1975,
+    address = 	 {New York}}
+#+end_src
 
 * Conference papers
 
@@ -85,6 +104,15 @@ Resources:
 - [[file:./resources/odowd2016.pdf]]
 
 Added: <2021-11-22 Mon>
+*** Citation
+#+begin_src bibtex
+  @inproceedings{odowd2016,
+    author = 	 {Niall M. O'Dowd and Dae-Hyun Han and Lae-Hyong Kang and Eric B. Flynn},
+    title = 	 {Exploring the performance limits of full-field acoustic wavenumber spectroscopy techniques for damage detection through numerical simulation},
+    year = 	 2016,
+    volume = 	 1,
+    booktitle =    {8th European Workshop on Structural Health Monitoring}}
+#+end_src
 
 ** Three-dimensional acoustic wavenumber spectroscopy for structural health monitoring <<fickenwirth2019>>
 - Year: 2019
@@ -101,6 +129,15 @@ Resources:
 - [[file:./resources/fickenwirth2019.pdf]]
 
 Added: <2021-11-17 Wed>
+*** Citation
+#+begin_src bibtex
+  @inproceedings{fickenwirth2019,
+    author = 	 {Peter H. Fickenwirth and Matthew J. Adams and Eric B. Flynn},
+    title = 	 {Three-dimensional acoustic wavenumber spectroscopy for structural health monitoring },
+    booktitle = {12th International Workshop on Structural Health Monitoring},
+    year = 	 2019,
+    volume = 	 1}
+#+end_src
 
 ** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration <<flynn2013>>
 - Year: 2013
@@ -122,6 +159,18 @@ Resources:
 - [[file:./resources/flynn2013.pdf]]
 
 Added: <2021-10-21 Thu>
+*** Citation
+#+begin_src bibtex
+  @inproceedings{flynn2013,
+    author = 	 {E. B. Flynn and G. S. Jarmer},
+    title = 	 {High-Speed, Non-Contact, Baseline-Free Imaging of
+                    Hiddden Defects Using Scanning Laser Measurements of
+                    Steady-State Ultrasonic Vibration},
+    booktitle =	 {9th International Workshop on Structural Health
+                    Monitoring},
+    year =	 {2013},
+    volume =	 {1}}
+#+end_src
 
 * Journal papers
 
@@ -141,6 +190,20 @@ Resources:
 - [[file:./resources/flynn2013-2.pdf]]
 
 Added: <2021-11-23 Tue>
+*** Citation
+#+begin_src bibtex
+  @article{flynn2013-2,
+    title = {Structural imaging through local wavenumber estimation of guided waves},
+    journal = {NDT \& E International},
+    volume = {59},
+    pages = {1-10},
+    year = {2013},
+    issn = {0963-8695},
+    doi = {https://doi.org/10.1016/j.ndteint.2013.04.003},
+    url = {https://www.sciencedirect.com/science/article/pii/S0963869513000595},
+    author = {Eric B. Flynn and See Yenn Chong and Gregory J. Jarmer and Jung-Ryul Lee},
+    keywords = {Nondestructive testing, Ultrasonic guided waves, Laser-generated ultrasound, Image processing}}
+#+end_src
 
 ** Finite element prediction of wave motion in structural waveguides <<mace2005>>
 *** Authors
@@ -164,6 +227,20 @@ Resources:
 - [[file:./resources/mace2005.pdf]]
 
 Added: <2021-11-12 Fri>
+*** Citation
+#+begin_src bibtex
+  @article{mace2005,
+    author = {Brian R. Mace and Denis Duhamel and Michael J. Brennan and Lars Hinke},
+    title = {Finite element prediction of wave motion in structural waveguides},
+    journal = {The Journal of the Acoustical Society of America},
+    volume = {117},
+    number = {5},
+    pages = {2835-2843},
+    year = {2005},
+    doi = {10.1121/1.1887126},
+    URL = {https://doi.org/10.1121/1.1887126},
+    eprint = {https://doi.org/10.1121/1.1887126}}
+#+end_src
 
 ** Frequency-wavenumber domain filtering for improved damage visualization <<ruzzene2007>>
 - Year:  2007
@@ -182,6 +259,20 @@ Resources:
 
 Added: <2021-10-27 Wed>
 Updated: <2021-11-03 Wed>
+*** Citation
+#+begin_src bibtex
+  @article{ruzzene2007,
+    author = {M. Ruzzene},
+    title = {Frequency‐Wavenumber Domain Filtering for Improved Damage Visualization},
+    journal = {AIP Conference Proceedings},
+    volume = {894},
+    number = {1},
+    pages = {1556-1563},
+    year = {2007},
+    doi = {10.1063/1.2718150},
+    URL = {https://aip.scitation.org/doi/abs/10.1063/1.2718150},
+    eprint = {https://aip.scitation.org/doi/pdf/10.1063/1.2718150}}
+#+end_src
 
 ** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning <<junyoung2020>>
 - Year: 2020
@@ -201,6 +292,20 @@ Resources:
 - [[file:./resources/junyoung2020.pdf]]
 
 Added: <2021-10-22 Fri>
+*** Citation
+#+begin_src bibtex
+  @article{junyoung2020,
+    title = {2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning},
+    journal = {NDT & E International},
+    volume = {116},
+    pages = {102343},
+    year = {2020},
+    issn = {0963-8695},
+    doi = {https://doi.org/10.1016/j.ndteint.2020.102343},
+    url = {https://www.sciencedirect.com/science/article/pii/S0963869520300384},
+    author = {Jun Young Jeon and Duhwan Kim and Gyuhae Park and Eric Flynn and To Kang and Soonwoo Han},
+    keywords = {Steady-state wavefield, Structural health monitoring, Nondestructive evaluation, Damage detection, 2D-wavelet filter, Laser scanning}}
+#+end_src
 
 * Other references
   Empty.
