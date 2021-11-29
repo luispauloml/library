@@ -109,14 +109,18 @@ Added: <2021-10-27 Wed>
 
 *** Keyworks                                                      :fem:aws:
 
-*** TODO Summary
-TBD.
+*** Summary
+Presents a comprehensive study on the robustness of AWS technique
+using FEM.  It is not hard to read this paper, but it presents a great
+amount of results.  It is also a valuable source of ideas to run tests
+on future techniques based or similar to AWS.
 
 Resources:
 - [[https://www.ndt.net/search/docs.php3?id=20089][Conference website]]
 - [[file:./resources/odowd2016.pdf]]
 
 Added: <2021-11-22 Mon>
+Updated: <2021-11-29 Mon>
 
 *** Citation
 #+begin_src bibtex
