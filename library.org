@@ -252,6 +252,40 @@ Added: <2021-10-21 Thu>
 
 * Journal papers
 
+** Identification of cracks in thin-walled structures by means of wavenumber filtering <<kudela2015>>
+- Year: 2015
+- Authors:
+  - Paweł Kudela
+  - Maciej Radzieński
+  - Wiesław Ostachowicz
+
+*** Keywords                                  :lamb_waves:wavenumber:laser:
+
+*** TODO Summary
+TBD.
+
+Resources:
+- [[https://doi.org/10.1016/j.ymssp.2014.05.041][Journal]]
+- [[file:./resources/kudela2015.pdf]]
+
+Added: <2022-02-21 Mon>
+
+*** Citation
+#+begin_src bibtex
+  @article{kudela2015,
+    title = {Identification of cracks in thin-walled structures by means of wavenumber filtering},
+    journal = {Mechanical Systems and Signal Processing},
+    volume = {50-51},
+    pages = {456-466},
+    year = {2015},
+    issn = {0888-3270},
+    doi = {https://doi.org/10.1016/j.ymssp.2014.05.041},
+    url = {https://www.sciencedirect.com/science/article/pii/S0888327014002179},
+    author = {Paweł Kudela and Maciej Radzieński and Wiesław Ostachowicz},
+    keywords = {Lamb waves, Wavefield, Crack identification, Wavenumber filtering, Laser vibrometry}
+    }
+#+end_src
+
 ** Structural imaging through local wavenumber estimation of guided waves <<flynn2013-2>>
 - Year: 2013
 - Authors:
