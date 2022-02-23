@@ -122,6 +122,37 @@ Added: <2022-01-29 Sat>
 
 * Conference papers
 
+** Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects <<flynn2014>>
+- Year: 2014
+- Author: Eric B. Flynn
+
+*** Keywords                                            :laser:guided_wave:
+
+*** TODO Summary
+TBD.
+
+Resources:
+- [[https://hal.inria.fr/hal-01021054/][Conference website]]
+- [[file:./resources/flynn2014.pdf]]
+
+Added: <2022-02-21 Mon>
+
+*** Citation
+#+begin_src bibtex
+  @inproceedings{flynn2014,
+    title = {Embedded Multi-Tone Ultrasonic Excitation and Continuous-Scanning Laser Doppler Vibrometry for Rapid and Remote Imaging of Structural Defects},
+    author = {Eric B. Flynn},
+    url = {https://hal.inria.fr/hal-01021054},
+    booktitle = {{EWSHM - 7th European Workshop on Structural Health Monitoring}},
+    address = {Nantes, France},
+    organization = {{IFFSTTAR, Inria, Universit{\'e} de Nantes}},
+    editor = {Le Cam and Vincent and Mevel and Laurent and Schoefs and Franck},
+    year = {2014},
+    month = Jul,
+    pdf = {https://hal.inria.fr/hal-01021054/file/0376.pdf},
+  }
+#+end_src
+
 ** Exploring the performance limits of full-field acoustic wavenumber spectroscopy techniques for damage detection through numerical simulation <<odowd2016>>
 - Year: 2016
 - Authros:
