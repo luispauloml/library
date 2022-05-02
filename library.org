@@ -41,6 +41,36 @@ heading:
 
 * Books and theses
 
+** A wavelet tour of signal processing: the sparse way <<mallat2009>>
+- Year: 2009
+- Author: Stéphane Mallat
+
+*** Keywords                                     :wavelet:basic_literature:
+
+*** Summary
+The first four chapters of this book are really impressive.  It
+reviews the basic theory of signal processing up to a point where the
+reader, if they are experienced enough with Fourier Analysis, will
+turn out to have a very good understanding of the of the concept of
+the wavelet transformation.
+
+Resources:
+- [[file:./resources/mallat2009.pdf]]
+
+Added: <2022-05-02 Mon>
+
+*** Citation
+#+begin_src bibtex
+  @book{mallet2008,
+      author = 	 {Stéphane Mallat},
+      title = 	 {A wavelet tour of signal processing},
+      publisher = 	 {Academic Press},
+      year = 	 2009,
+      address = 	 {Burlington},
+      edition = 	 {3rd}
+  }
+#+end_src
+
 ** Two-dimensional signal and image processing <<jaeslim1990>>
 - Year: 1990
 - Author: Jae S. Lim
