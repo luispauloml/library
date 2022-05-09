@@ -461,4 +461,30 @@ Added: <2021-10-22 Fri>
 #+end_src
 
 * Other references
-  Empty.
+
+** The calculus of variations <<olver2021>>
+- Year: 2021
+- Author: Peter J. Olver
+
+*** Keywords            :calculus:of:variations:basic:literature:mechanics:
+
+*** Summary
+A very gentle and basic introduction to Calculus of Variations.
+I found that after reading this, I could understand very well the developments that appear in Lagrangian and Hamiltonian Mechanics.
+It seems like it is actually aimed at engineers, because the Mathematics found in it is not heavy, and the content is presented in a form of tutorial, in a very simple and understandable way.
+
+Resources:
+- [[https://www-users.cse.umn.edu/~olver/ln_/cv.pdf]]
+- [[file:./resources/olver2021.pdf]]
+
+Added: <2022-05-09 Mon>
+
+*** Citation
+#+begin_src bibtex
+@booklet{olver2021,
+  title =        {The calculus of variations},
+  author =    {Peter J. Olver},
+  address =   {Minneapolis, MN},
+  year =      2021}
+#+end_src
+
