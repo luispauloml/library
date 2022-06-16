@@ -1,63 +1,97 @@
+:PROPERTIES:
+:ID: library
+:END:
 #+TITLE: My personal library of scientific works
 #+AUTHOR: Luis Paulo M. Lima
 #+PROPERTY: header-args :tangle yes
 
 * Introduction
-This file contains entries for almost all of the papers I have
-gathered for my research at CNU.  Each entry should be like this:
-
-#+begin_src org :tangle no
-  ,** Title
-  This heading should contains a label with with the corresponding
-  citation key for this entry, i.e., `<<luispauloml2020>>`, the
-  year the work as published and the list of authors.
-
-  ,*** Keywords
-  The ``Keywords'' heading is empty and have tags that match the
-  keywords given in the paper, if any. Personal tags may be added too.
-
-  ,*** Summary
-  A summary written by myself, sumarizing the contents of the paper.
-  It should not be a copy of the abstract, by my own understanding of
-  the what it contains.  It could also be simply a list with the main
-  topics contained in it.  The links to this material shoube given
-  after the summary, timestamps can be added after the links too, e.g.,
-  ``Added: <YYYY-MM-DD>''.  At least one link should be given: to
-  either a file or a internet reference where the paper can be found.
-  If the reference is online, a DOI is prefered.
-
-  ,*** Citation
-  This heading contains the BibTeX entry for this work. For ease of
-  use, the citation key is equal to the label of the `Title' heading.
-  The code blocks can be tangle into a separate .bib file.
-#+end_src
-
-Each entry should also be placed under an appropriate top level
+This file contains entries for almost all of the papers I have gathered for my research at CNU, and each entry should also be placed under an appropriate top level
 heading:
 - Books and theses
 - Conference papers
 - Journal papers
 - Others references
+The entries should be a level-2 heading placed under the top level heading listed above and should also be a node for Org-Roam, therefore they need a Org mode property drawer with an =ID= field.
+
+Each entry should have the following format:
+#+begin_src org :tangle no
+  ,** <title> <keywords>
+  :PROPERTIES:
+  :ID: <entry id>
+  :CATEGORY: <entry category>
+  :END:
+  - Added: <timestamp>
+  - Year: <year>
+  - Author: <author|list of authors>
+
+  ,*** Resources:
+  - <local file|remote resource>
+
+  ,*** Citation
+  ,#+begin_src bibtex
+    @<type>{<entry id>,
+        <bib-entry>}
+  ,#+end_src
+
+  [<rest>]
+#+end_src
+
+The =title= should match the actual title of the work, and =keywords= are Org tags corresponding to list of keywords listed in the work.
+Additional tags not originally contained in the work could be added to improve classification and in-file search.
+In the properties drawer of the entry, there should be =ID= field whose value is =entry id=.
+The =entry id= should be of the format =<name><year>[-<N>]=, where =name= is the last name of the first author, and =year= is the four digit year of publication.
+If there is more than one work for the same author in the same year, an additional digit =N= preceded by a dash should be added to the =id=.
+The =CATEGORY= field is redundant given that each entry is already under a top-level heading describing the type of entry and won't be present in an HTML view of this library.
+However, it is useful for searching this file in Emacs, since =org-agenda= which is on what =library-search= is based, uses these properties for grouping and displaying results.
+The value for =entry category= can be anything that helps describe the type of work, like "Book", "Journal" or "Conference".
+Next, the actual content of the entries are described.
+
+Under the top-most heading for the entry there should be a list of the authors, the year of publication, and date the entry was added:
+- the =timestamp= should be added using =org-time-stamp= in the date the entry was added to the library.
+- the year should have the same format as =entry id=, i.e. four digits.
+- if there is a single author, they should be named in a single line.
+- if there are more than one author, they should be named in a list under ``Author''.
+
+The following subheadings should also be contained in the entry:
+
+- Resources:
+
+  Hyper-links to the references should be added here, preferably two, but at least one:
+  - a =local file= is a external file in current machine.
+  - a =remote resource= is a URL on the Internet, preferably a Document Object Identifier (DOI).
+
+- Citation
+
+  A BibTeX entry placed inside a Org =src-block= whose language should be =bibtex=.
+  These blocks will be tangled by Org-Babel into a single [[file:./library.bib][.bib file]].
+
+  The entry's key should be =id=, the same value used in the =ID= field in the properties drawer for Org-Roam, and =bib-entry= are the field-value pairs composing the entry.
+  The =type= value is the type of the entry and should correspond to the top level heading in which the entry is placed:
+  - =book=, =phdthesis= or =masterthesis= for ``Books and theses'',
+  - =inproceedings= for ``Conference papers'',
+  - =article= for ``Journal papers'',
+  - any other appropriate type for ``Other references''.
+
+After the Resources and Citation sub-headings, any type of notes can be added in the optional =rest=, which should be in level-3 sub-headings.
+Ideally I will add a summary my impressions of the work, which is useful to state the reason why I added the work to the library.
+It is also common that I add a =TODO= state the to summary when I think that I should write it but have not done it yet.
+
+This is the end of the Introduction and the actual library follows from here.
 
 * Books and theses
 
-** A wavelet tour of signal processing: the sparse way <<mallat2009>>
+** A wavelet tour of signal processing: the sparse way :wavelet:basic_literature:
+:PROPERTIES:
+:ID: mallat2009
+:CATEGORY: Book
+:END:
+- Added: <2022-05-02 Mon>
 - Year: 2009
 - Author: Stéphane Mallat
 
-*** Keywords                                     :wavelet:basic_literature:
-
-*** Summary
-The first four chapters of this book are really impressive.  It
-reviews the basic theory of signal processing up to a point where the
-reader, if they are experienced enough with Fourier Analysis, will
-turn out to have a very good understanding of the of the concept of
-the wavelet transformation.
-
-Resources:
-- [[file:./resources/mallat2009.pdf]]
-
-Added: <2022-05-02 Mon>
+*** Resources:
+- [[file:./resources/mallat2009.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -71,19 +105,24 @@ Added: <2022-05-02 Mon>
   }
 #+end_src
 
-** Two-dimensional signal and image processing <<jaeslim1990>>
+*** Summary
+The first four chapters of this book are really impressive.  It
+reviews the basic theory of signal processing up to a point where the
+reader, if they are experienced enough with Fourier Analysis, will
+turn out to have a very good understanding of the of the concept of
+the wavelet transformation.
+
+** Two-dimensional signal and image processing           :signal_processing:
+:PROPERTIES:
+:ID: jaeslim1990
+:CATEGORY: Book
+:END:
+- Added: <2021-11-05 Fri>
 - Year: 1990
 - Author: Jae S. Lim
 
-*** Keyworkds                                             :signal_processing:
-
-*** TODO Summary
-TBD.
-
-Resources:
-- [[file:./resources/jaeslim1990.djvu]]
-
-Added: <2021-11-05 Fri>
+*** Resources:
+- [[file:./resources/jaeslim1990.djvu][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -95,11 +134,30 @@ Added: <2021-11-05 Fri>
       address = 	 {New Jersey}}
 #+end_src
 
-** Wave motion in elastic solids <<graff1975>>
+*** TODO Summary
+TBD.
+
+** Wave motion in elastic solids         :wave_propagation:basic_literature:
+:PROPERTIES:
+:ID: graff1975
+:CATEGORY: Book
+:END:
+- Added: <2021-10-27 Wed>
 - Year: 1975
 - Author: Karl F. Graff
 
-*** Keywords                            :wave_propagation:basic_literature:
+*** Resources:
+- [[file:./resources/graff1975.pdf][File]]
+
+*** Citation
+#+begin_src bibtex
+  @book{graff1975,
+    author = 	 {Karl F. Graff},
+    title = 	 {Wave motion in elastic solids},
+    publisher = 	 {Dover Publications},
+    year = 	 1975,
+    address = 	 {New York}}
+#+end_src
 
 *** Summary
 This was my entry point to the theory of wave propagation.  It
@@ -112,33 +170,17 @@ understand this topic.  I highly recommend it, and I also
 recommend not to rush through it.  Take your time, it is not easy,
 but it is very rewarding.
 
-Resources:
-- [[file:./resources/graff1975.pdf]]
-
-Added: <2021-10-27 Wed>
-
-*** Citation
-#+begin_src bibtex
-  @book{graff1975,
-    author = 	 {Karl F. Graff},
-    title = 	 {Wave motion in elastic solids},
-    publisher = 	 {Dover Publications},
-    year = 	 1975,
-    address = 	 {New York}}
-#+end_src
-
-** Ten Lectures of Wavelets <<daubechies1992>>
+** Ten Lectures of Wavelets                      :wavelet:signal_processing:
+:PROPERTIES:
+:ID: daubechies1992
+:CATEGORY: Book
+:END:
+- Added: <2022-01-29 Sat>
 - Year: 1992
 - Author: Ingrid Daubechies
 
-*** Keywords                                    :wavelet:signal_processing:
-*** Summary:
-TBD.
-
-Resources:
-- [[file:./resources/daubechies1992.pdf]]
-
-Added: <2022-01-29 Sat>
+*** Resources:
+- [[file:./resources/daubechies1992.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -150,22 +192,23 @@ Added: <2022-01-29 Sat>
   address = 	 {Pennsylvania}}
 #+end_src
 
+*** Summary
+TBD.
+
 * Conference papers
 
-** Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects <<flynn2014>>
+** Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
+:PROPERTIES:
+:CATEGORY: Conference
+:ID: flynn2014
+:END:
+- Added: <2022-02-21 Mon>
 - Year: 2014
 - Author: Eric B. Flynn
 
-*** Keywords                                            :laser:guided_wave:
-
-*** TODO Summary
-TBD.
-
-Resources:
+*** Resources:
 - [[https://hal.inria.fr/hal-01021054/][Conference website]]
-- [[file:./resources/flynn2014.pdf]]
-
-Added: <2022-02-21 Mon>
+- [[file:./resources/flynn2014.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -183,7 +226,15 @@ Added: <2022-02-21 Mon>
   }
 #+end_src
 
-** Exploring the performance limits of full-field acoustic wavenumber spectroscopy techniques for damage detection through numerical simulation <<odowd2016>>
+*** TODO Summary
+TBD.
+
+** Exploring the performance limits of full-field acoustic wavenumber spectroscopy techniques for damage detection through numerical simulation :fem:aws:
+:PROPERTIES:
+:ID: odowd2016
+:CATEGORY: Conference
+:END:
+- Added: <2021-11-22 Mon>
 - Year: 2016
 - Authros:
   - Niall M. O'Dowd
@@ -191,20 +242,9 @@ Added: <2022-02-21 Mon>
   - Lae-Hyong Kang
   - Eric B. Flynn
 
-*** Keyworks                                                      :fem:aws:
-
-*** Summary
-Presents a comprehensive study on the robustness of AWS technique
-using FEM.  It is not hard to read this paper, but it presents a great
-amount of results.  It is also a valuable source of ideas to run tests
-on future techniques based or similar to AWS.
-
-Resources:
+*** Resources
 - [[https://www.ndt.net/search/docs.php3?id=20089][Conference website]]
-- [[file:./resources/odowd2016.pdf]]
-
-Added: <2021-11-22 Mon>
-Updated: <2021-11-29 Mon>
+- [[file:./resources/odowd2016.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -216,23 +256,27 @@ Updated: <2021-11-29 Mon>
     booktitle =    {8th European Workshop on Structural Health Monitoring}}
 #+end_src
 
-** Three-dimensional acoustic wavenumber spectroscopy for structural health monitoring <<fickenwirth2019>>
+*** Summary
+Presents a comprehensive study on the robustness of AWS technique
+using FEM.  It is not hard to read this paper, but it presents a great
+amount of results.  It is also a valuable source of ideas to run tests
+on future techniques based or similar to AWS.
+
+** Three-dimensional acoustic wavenumber spectroscopy for structural health monitoring :aws:
+:PROPERTIES:
+:ID: fickenwirth2019
+:CATEGORY: Conference
+:END:
+- Added: <2021-11-17 Wed>
 - Year: 2019
 - Authors:
   - Peter H. Fickenwirth
   - Matthew J. Adams
   - Eric B. Flynn
 
-*** Keywords                                                          :aws:
-
-*** TODO Summary
-TBD.
-
-Resources:
+*** Resources
 - [[http://doi.org/10.12783/shm2019/32196][Conference website]]
-- [[file:./resources/fickenwirth2019.pdf]]
-
-Added: <2021-11-17 Wed>
+- [[file:./resources/fickenwirth2019.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -244,28 +288,24 @@ Added: <2021-11-17 Wed>
     volume = 	 1}
 #+end_src
 
-** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration <<flynn2013>>
+*** TODO Summary
+TBD.
+
+** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration :ldv:wavenumber:steady_state:
+:PROPERTIES:
+:ID: flynn2013
+:CATEGORY: Conference
+:END:
+- Added: <2021-10-21 Thu>
 - Year: 2013
 - Authors:
   - E. B. Flynn
   - G. S. Jarmer
 
-*** Keywords                                  :ldv:wavenumber:steady_state:
-
-*** Summary
-The most basic text for understanding LDV scanning.  It sets the
-foundation for the techniques used at ASDL in a very simple way.
-It lacks, however, a deeper explanation on how the /wavenumber
-filter bank/ and the /monogenic signal/ work, and assumes that
-this is common knowledge for anyone reading the paper (which, in
-fact, should be).
-
-Resources:
+*** Resources
 - [[https://www.dpi-proceedings.com/index.php/shm2013/article/view/22912][Conference website]]
 - [[https://www.researchgate.net/publication/259102704_High-Speed_Non-Contact_Baseline-Free_Imaging_of_Hiddden_Defects_Using_Scanning_Laser_Measurements_of_Steady-State_Ultrasonic_Vibration][ResearchGate]]
-- [[file:./resources/flynn2013.pdf]]
-
-Added: <2021-10-21 Thu>
+- [[file:./resources/flynn2013.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -280,25 +320,31 @@ Added: <2021-10-21 Thu>
     volume =	 {1}}
 #+end_src
 
+*** Summary
+The most basic text for understanding LDV scanning.  It sets the
+foundation for the techniques used at ASDL in a very simple way.
+It lacks, however, a deeper explanation on how the /wavenumber
+filter bank/ and the /monogenic signal/ work, and assumes that
+this is common knowledge for anyone reading the paper (which, in
+fact, should be).
+
 * Journal papers
 
-** Identification of cracks in thin-walled structures by means of wavenumber filtering <<kudela2015>>
+** Identification of cracks in thin-walled structures by means of wavenumber filtering :lamb_waves:wavenumber:laser:
+:PROPERTIES:
+:ID: kudela2015
+:CATEGORY: Journal
+:END:
+- Added: <2022-02-21 Mon>
 - Year: 2015
 - Authors:
   - Paweł Kudela
   - Maciej Radzieński
   - Wiesław Ostachowicz
 
-*** Keywords                                  :lamb_waves:wavenumber:laser:
-
-*** TODO Summary
-TBD.
-
-Resources:
+*** Resources
 - [[https://doi.org/10.1016/j.ymssp.2014.05.041][Journal]]
-- [[file:./resources/kudela2015.pdf]]
-
-Added: <2022-02-21 Mon>
+- [[file:./resources/kudela2015.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -316,7 +362,15 @@ Added: <2022-02-21 Mon>
     }
 #+end_src
 
-** Structural imaging through local wavenumber estimation of guided waves <<flynn2013-2>>
+*** TODO Summary
+TBD.
+
+** Structural imaging through local wavenumber estimation of guided waves :ndt:ldv:image_processing:ultrasonic:wavenumber:
+:PROPERTIES:
+:CATEGORY: Journal
+:ID: flynn2013-2
+:END:
+- Added: <2021-11-23 Tue>
 - Year: 2013
 - Authors:
   - Eric B. Flynn
@@ -324,16 +378,9 @@ Added: <2022-02-21 Mon>
   - Gregory J. Jarmer
   - Jung-Ryul Lee
 
-*** Keywords               :ndt:ldv:image_processing:ultrasonic:wavenumber:
-
-*** TODO Summary
-TBD.
-
-Resources:
+*** Resources
 - [[https://doi.org/10.1016/j.ndteint.2013.04.003][Journal]]
-- [[file:./resources/flynn2013-2.pdf]]
-
-Added: <2021-11-23 Tue>
+- [[file:./resources/flynn2013-2.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -350,7 +397,15 @@ Added: <2021-11-23 Tue>
     keywords = {Nondestructive testing, Ultrasonic guided waves, Laser-generated ultrasound, Image processing}}
 #+end_src
 
-** Finite element prediction of wave motion in structural waveguides <<mace2005>>
+*** TODO Summary
+TBD.
+
+** Finite element prediction of wave motion in structural waveguides :FEM:basic_literature:waveguide:
+:PROPERTIES:
+:CATEGORY: Journal
+:ID: mace2005
+:END:
+- Added: <2021-11-12 Fri>
 - Year: 2005
 - Authors:
   - Brian R. Mace
@@ -358,21 +413,9 @@ Added: <2021-11-23 Tue>
   - Michael J. Brennan
   - Lars Hinke
 
-*** Keywords                               :FEM:basic_literature:waveguide:
-
-*** Summary
-One of the most basic works on Finite Elements Method applied to
-waveguides.  In contrast with other works, this one presents a simple
-method that does not involve new types of elements, and depend only on
-the regular stiffness, mass and damping matrices of the matrices used
-in common FEM experiments.  Basic knowledge of FEM theory is the only
-requirement to understand this paper.
-
-Resources:
+*** Resources
 - [[https://doi.org/10.1121/1.1887126][Journal]]
-- [[file:./resources/mace2005.pdf]]
-
-Added: <2021-11-12 Fri>
+- [[file:./resources/mace2005.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -389,25 +432,26 @@ Added: <2021-11-12 Fri>
     eprint = {https://doi.org/10.1121/1.1887126}}
 #+end_src
 
-** Frequency-wavenumber domain filtering for improved damage visualization <<ruzzene2007>>
+*** Summary
+One of the most basic works on Finite Elements Method applied to
+waveguides.  In contrast with other works, this one presents a simple
+method that does not involve new types of elements, and depend only on
+the regular stiffness, mass and damping matrices of the matrices used
+in common FEM experiments.  Basic knowledge of FEM theory is the only
+requirement to understand this paper.
+
+** Frequency-wavenumber domain filtering for improved damage visualization :wavefield:wavenumber:filter:basic_literature:
+:PROPERTIES:
+:CATEGORY: Journal
+:ID: ruzzene2007
+:END:
+- Added: <2021-10-27 Wed>
 - Year:  2007
 - Author: M Ruzzene
 
-*** Keywords   :wavefield:wavenumber:filter:basic_literature:
-
-*** Summary
-Very short but very insightful paper presenting the concept of
-filtering in the wavenumber-frequency domain. Although it leaves
-out how to generate and how to apply the windows for filtering,
-this paper should be considered basic literature for the work done
-in ADSL.
-
-Resources:
+*** Resources
 - [[https://doi.org/10.1063/1.2718150][Journal]]
-- [[file:./resources/ruzzene2007.pdf]]
-
-Added: <2021-10-27 Wed>
-Updated: <2021-11-03 Wed>
+- [[file:./resources/ruzzene2007.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -424,7 +468,19 @@ Updated: <2021-11-03 Wed>
     eprint = {https://aip.scitation.org/doi/pdf/10.1063/1.2718150}}
 #+end_src
 
-** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning <<junyoung2020>>
+*** Summary
+Very short but very insightful paper presenting the concept of
+filtering in the wavenumber-frequency domain. Although it leaves
+out how to generate and how to apply the windows for filtering,
+this paper should be considered basic literature for the work done
+in ADSL.
+
+** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
+:PROPERTIES:
+:ID: junyoung2020
+:CATEGORY: Journal
+:END:
+- Added: <2021-10-22 Fri>
 - Year: 2020
 - Authors:
   - Jun Young Jeon
@@ -434,16 +490,9 @@ Updated: <2021-11-03 Wed>
   - To Kang
   - Soonwoo Han
 
-*** Keywords :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
-
-*** TODO Summary
-TBD.
-
-Resources:
+*** Resources
 - [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
-- [[file:./resources/junyoung2020.pdf]]
-
-Added: <2021-10-22 Fri>
+- [[file:./resources/junyoung2020.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
@@ -460,24 +509,23 @@ Added: <2021-10-22 Fri>
     keywords = {Steady-state wavefield, Structural health monitoring, Nondestructive evaluation, Damage detection, 2D-wavelet filter, Laser scanning}}
 #+end_src
 
+*** TODO Summary
+TBD.
+
 * Other references
 
-** The calculus of variations <<olver2021>>
+** The calculus of variations :calculus:of:variations:basic:literature:mechanics:
+:PROPERTIES:
+:ID: olver2021
+:CATEGORY: Booklet
+:END:
+- Added: <2022-05-09 Mon>
 - Year: 2021
 - Author: Peter J. Olver
 
-*** Keywords            :calculus:of:variations:basic:literature:mechanics:
-
-*** Summary
-A very gentle and basic introduction to Calculus of Variations.
-I found that after reading this, I could understand very well the developments that appear in Lagrangian and Hamiltonian Mechanics.
-It seems like it is actually aimed at engineers, because the Mathematics found in it is not heavy, and the content is presented in a form of tutorial, in a very simple and understandable way.
-
-Resources:
-- [[https://www-users.cse.umn.edu/~olver/ln_/cv.pdf]]
-- [[file:./resources/olver2021.pdf]]
-
-Added: <2022-05-09 Mon>
+*** Resources
+- [[https://www-users.cse.umn.edu/~olver/ln_/cv.pdf][Remote file]]
+- [[file:./resources/olver2021.pdf][Local file]]
 
 *** Citation
 #+begin_src bibtex
@@ -487,4 +535,9 @@ Added: <2022-05-09 Mon>
   address =   {Minneapolis, MN},
   year =      2021}
 #+end_src
+
+*** Summary
+A very gentle and basic introduction to Calculus of Variations.
+I found that after reading this, I could understand very well the developments that appear in Lagrangian and Hamiltonian Mechanics.
+It seems like it is actually aimed at engineers, because the Mathematics found in it is not heavy, and the content is presented in a form of tutorial, in a very simple and understandable way.
 

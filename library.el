@@ -71,7 +71,7 @@ and each field name will be accordingly passed to
 `library-make-single-bibtex-field' to generate each line of the
 entry."
   (let ((field-list (bibtex-field-list entry-type))
-	(entry (concat "@" entry-type "{bibtex-entry,\n")))
+	(entry (concat "@" entry-type "{<entry id>,\n")))
     (concat
      (substring
       (apply
@@ -85,29 +85,34 @@ entry."
       0 -2)
      "\n}\n")))
 
-(defun library-capture-template (entry-type)
-  "Generate a capture template based on ENTRY-TYPE.  See
+(defun library-capture-template (entry-type &optional category)
+  "Generate a capture template based on ENTRY-TYPE.
+CATEGORY is the category to be placed in the `:CATEGORY:' field
+in the properties drawer of the entry.  See
 `library-bibtex-entry' for information on ENTRY-TYPE."
   (concat
-   "* Title%? <<bibtex-key>>
+   "* Title%? :keywords:
+:PROPERTIES:
+:ID: <entry id>"
+   (when category
+     (format "%s%s" "\n:CATEGORY: " category))
+   "\n:END:
+- Added: %t
 - Year: 
 - Author: 
 
-** Keywords :keyword1:keyword1:
-
-** TODO Summary
-TBD.
-
-Resources:
+** Resources
 - [[https://]]
 - [[file:]]
 
-Added: %t
 
 ** Citation
 #+begin_src bibtex\n"
    (library-bibtex-entry entry-type)
-   "#+end_src"))
+   "#+end_src
+
+** TODO Summary
+TBD."))
 
 (defun library-generate-capture-template (key entry-type description headline)
   "Generate a template for a library entry to be used in `org-capture'.
@@ -115,14 +120,17 @@ KEY is the key to select the type of entry in the selection
 buffer; ENTRY-KEY is the corresponding BibTeX key for the entry;
 DESCRIPTION is the description to that key in that frame;
 HEADLINE is the heading under which it will appear in the
-library's org file."
+library's org file.  The first word in DESCRIPTION will be passed
+as the CATEGORY argument to `library-capture-template'."
   `(,key
     ,description
     entry
     (file+headline
      ,(concat current-user-directory "library/library.org")
      ,headline)
-    ,(library-capture-template entry-type)
+    ,(library-capture-template
+      entry-type
+      (car (split-string description)))
     :jump-to-captured t
     ))
 
