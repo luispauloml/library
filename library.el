@@ -26,11 +26,11 @@
   (dired library-resources-directory))
 
 (defun library-search ()
-  "Find `library-org-file' in Read-Only mode and start incremental
-search forward."
+  "Run `org-agenda' in `library-org-file'."
   (interactive)
-  (library-find-org-file)
-  (isearch-forward))
+  (let ((org-agenda-files (list library-org-file))
+	(org-tags-match-list-sublevels nil))
+    (org-agenda)))
 
 (defun library-find-bib-file ()
   "Find `library-bib-file' in Read-Only mode."
