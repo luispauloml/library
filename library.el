@@ -25,12 +25,49 @@
   (interactive)
   (dired library-resources-directory))
 
+(defvar library-search-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "SPC") 'library-search-show-narrowed)
+    map)
+  "Keymap used Library Search mode.")
+
+(define-minor-mode library-search-mode
+  "Library Search mode is a minor mode Org-Agenda buffer.
+
+Its main purpose is overwrite the binding of
+`org-agenda-show-and-scroll-up' in Org-Agenda buffers and use
+`library-search-show-narrowed' instead."
+  :keymap library-search-mode-map
+  :lighter " Lbr")
+
+(defun library-search-show-narrowed (&optional un-narrow)
+  "Display the entry at point in `library-org-file' with the
+buffer narrowed to the entry only.
+
+If UN-NARROW is given as \\[universal-argument], the buffer is
+not narrowed."
+  (interactive "P")
+  (let ((win (selected-window)))
+    (org-agenda-goto t)
+    (unless un-narrow
+      (org-narrow-to-element))
+    (select-window win)))
+
 (defun library-search ()
-  "Find `library-org-file' in Read-Only mode and start incremental
-search forward."
+  "Run `org-agenda' in `library-org-file'."
   (interactive)
-  (library-find-org-file)
-  (isearch-forward))
+  (let ((org-agenda-files (list library-org-file))
+	(list-matching-lines-default-context-lines 3)
+	org-tags-match-list-sublevels
+	org-agenda-include-diary
+	org-agenda-include-deadlines
+	org-agenda-use-time-grid
+	org-habit-show-habits)
+    (org-agenda)
+    (let ((occur-buffer (get-buffer "*Occur*")))
+      (if occur-buffer
+	  (select-window (get-buffer-window occur-buffer))
+	(library-search-mode)))))
 
 (defun library-find-bib-file ()
   "Find `library-bib-file' in Read-Only mode."
