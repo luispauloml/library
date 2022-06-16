@@ -57,9 +57,17 @@ not narrowed."
   "Run `org-agenda' in `library-org-file'."
   (interactive)
   (let ((org-agenda-files (list library-org-file))
-	(org-tags-match-list-sublevels nil))
+	(list-matching-lines-default-context-lines 3)
+	org-tags-match-list-sublevels
+	org-agenda-include-diary
+	org-agenda-include-deadlines
+	org-agenda-use-time-grid
+	org-habit-show-habits)
     (org-agenda)
-    (library-search-mode)))
+    (let ((occur-buffer (get-buffer "*Occur*")))
+      (if occur-buffer
+	  (select-window (get-buffer-window occur-buffer))
+	(library-search-mode)))))
 
 (defun library-find-bib-file ()
   "Find `library-bib-file' in Read-Only mode."
