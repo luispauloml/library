@@ -195,6 +195,34 @@ but it is very rewarding.
 *** Summary
 TBD.
 
+** Fundamentals of Signal Processing for Sound and Vibration Engineers :signal_processing:
+:PROPERTIES:
+:ID: shin2008
+:CATEGORY: Book
+:END:
+- Added: <2022-08-18 Thu>
+- Year: 2008
+- Author:
+  - Kihong Shin
+  - Joseph Hammond
+
+*** Resources
+- [[file:./resources/shin2008.pdf][File]]
+
+
+*** Citation
+#+begin_src bibtex
+  @book{shin2008,
+    author =    {Kihong Shin and Joseph Hammond},
+    title =        {Fundamentals of Signal Processing for Sound and Vibration Engineers},
+    publisher =    {Wiley},
+    year =         2008,
+    address =   {Sussex}}
+#+end_src
+
+*** Summary
+So far, one of the best books for needs of understanding Signal Processing, specifically because of the second part on Random Processes, which introduces Correlation.
+
 * Conference papers
 
 ** Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
