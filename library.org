@@ -223,6 +223,33 @@ TBD.
 *** Summary
 So far, one of the best books for needs of understanding Signal Processing, specifically because of the second part on Random Processes, which introduces Correlation.
 
+** Piezoelectric-based in-situ damage detection of composite materials for Structural Health Monitoring Systems :lamb_waves:basic_literature:
+:PROPERTIES:
+:ID: kessler2002
+:CATEGORY: Thesis
+:END:
+- Added: <2022-09-28 Wed>
+- Year: 2002
+- Author: Seth Stovack Kessler
+
+*** Resources
+- [[http://dspace.mit.edu/handle/1721.1/7582][MIT Online Library]]
+- [[file:./resources/kessler2002.pdf][File]]
+
+
+*** Citation
+#+begin_src bibtex
+@phdthesis{kessler2002,
+  author =       {Seth Stovack Kessler},
+  title =        {Piezoelectric-based in-situ damage detection of composite materials for Structural Health Monitoring Systems},
+  school =       {Massachusetts Institute of Technology},
+  year =         2002}
+#+end_src
+
+*** Summary
+Its chapter on Lamb wave gives a very extensive and deep review on the literature which is very useful for finding old and original papers on the subject.
+On the other hand, the results of the thesis themselves do not show anything new, and are (probably) obsolete.
+
 * Conference papers
 
 ** Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
