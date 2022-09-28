@@ -540,6 +540,35 @@ in ADSL.
 *** TODO Summary
 TBD.
 
+** Experimental Confirmation of Lamb Waves at Megacycle Frequencies :wave_propagation:basic_literature:
+:PROPERTIES:
+:ID: worlton1961
+:CATEGORY: Journal
+:END:
+- Added: <2022-09-28 Wed>
+- Year: 1961
+- Author: D. C. Worlton
+
+*** Resources
+- [[http://dx.doi.org/10.1063/1.1736196][DOI]]
+- [[file:./resources/worlton1961.pdf][File]]
+
+
+*** Citation
+#+begin_src bibtex
+@article{worlton1961,
+  author =       {D. C. Worlton},
+  title =        {Experimental Confirmation of Lamb Waves at Megacycle Frequencies},
+  journal =      {J. Appl. Phys},
+  year =         1961,
+  volume =    32}
+#+end_src
+
+*** Summary
+It gives a very gentle and simple introduction to the nature of Lamb waves.
+It is not the original paper on Lamb waves (the one written by Lamb), but it one of the first ones to assess Lamb waves theoretically.
+I have seen the original paper, and it has very heavy math, and because of that I was really impressed by the simplicity and depth of this paper.
+
 * Other references
 
 ** The calculus of variations :calculus:of:variations:basic:literature:mechanics:
