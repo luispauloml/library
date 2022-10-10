@@ -233,7 +233,7 @@ So far, one of the best books for needs of understanding Signal Processing, spec
 - Author: Seth Stovack Kessler
 
 *** Resources
-- [[http://dspace.mit.edu/handle/1721.1/7582][MIT Online Library]]
+- [[http://dspace.mit.edu/handle/1721.1/16836][MIT Online Library]]
 - [[file:./resources/kessler2002.pdf][File]]
 
 
