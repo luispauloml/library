@@ -596,6 +596,41 @@ It gives a very gentle and simple introduction to the nature of Lamb waves.
 It is not the original paper on Lamb waves (the one written by Lamb), but it one of the first ones to assess Lamb waves theoretically.
 I have seen the original paper, and it has very heavy math, and because of that I was really impressed by the simplicity and depth of this paper.
 
+** Review of Guided-wave Structural Health Monitoring :basic_literature:guided_waves:literature_review:
+:PROPERTIES:
+:ID: raghavan2007
+:CATEGORY: Journal
+:END:
+- Added: <2022-10-12 Wed>
+- Year: 2007
+- Author:
+  - Ajay Raghavan
+  - Carlos E. S. Cesnik
+
+*** Resources
+- [[https://svd.sagepub.com/cgi/content/abstract/39/2/91]] [official but dead link]
+- [[file:./resources/raghavan2007.pdf]]
+
+
+*** Citation
+#+begin_src bibtex
+@article{raghavan2007,
+  author =       {Ajay Raghavan and Carlos E. S. Cesnik},
+  title =        {Review of Guided-wave Structural Health Monitoring},
+  journal =      {The Shock and Vibration Digest},
+  year =         2007}
+#+end_src
+
+*** Summary
+The famous "Cesnik paper in the Shock and Vibration Digest".
+It should have been my first reading since arriving at ASDL.
+It is another fine example of good literature review.
+It is extensive, has plenty of references and goes in depth in various subjects:
+- analytical fundamentals,
+- transducers and signal processing,
+- modeling,
+- SHM system's development, application and integration.
+
 * Other references
 
 ** The calculus of variations :calculus:of:variations:basic:literature:mechanics:
