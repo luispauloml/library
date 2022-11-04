@@ -631,6 +631,40 @@ It is extensive, has plenty of references and goes in depth in various subjects:
 - modeling,
 - SHM system's development, application and integration.
 
+** Coherenceogram for leak detection in water pipes :leak_detection:signal_processing:
+:PROPERTIES:
+:ID: zeng2022
+:CATEGORY: Journal
+:END:
+- Added: <2022-11-04 Fri>
+- Year: 2022
+- Author:
+  - Wei Zeng
+  - Benjamin Cazzolato
+  - Martin Lambert
+  - Mark Stephens
+  - Jinzhe Gong
+
+*** Resources
+- [[https://doi.org/10.1016/j.jsv.2022.116979]]
+- [[file:./resources/zeng2022.pdf]]
+
+
+*** Citation
+#+begin_src bibtex
+@article{zeng2022,
+  author =       {Wei Zeng and Benjamin Cazzolato and Martin Lambert and Mark Stephens and Jinzhe Gong},
+  title =        {Coherenceogram for leak detection in water pipes},
+  journal =      {Journal of Sound and Vibration},
+  year =         2022,
+  volume =       530
+}
+#+end_src
+
+*** Summary
+The one paper I think will be useful for my SPIE presentation.
+I don't have many comments on this one yet, but it looks promissing.
+
 * Other references
 
 ** The calculus of variations :calculus:of:variations:basic:literature:mechanics:
