@@ -667,7 +667,7 @@ I don't have many comments on this one yet, but it looks promissing.
 
 * Other references
 
-** The calculus of variations :calculus:of:variations:basic:literature:mechanics:
+** The calculus of variations :calculus_of_variations:basic:literature:mechanics:
 :PROPERTIES:
 :ID: olver2021
 :CATEGORY: Booklet
