@@ -665,6 +665,42 @@ It is extensive, has plenty of references and goes in depth in various subjects:
 The one paper I think will be useful for my SPIE presentation.
 I don't have many comments on this one yet, but it looks promissing.
 
+** A simple scheme for self-focusing of an array :beam_forming:active_sensing:
+:PROPERTIES:
+:ID: beardsley1995
+:CATEGORY: Journal
+:END:
+- Added: <2022-11-16 Wed>
+- Year: 1995
+- Author:
+  - B. Beardsley
+  - M. Peterson
+  - J. D. Achenbach
+
+*** Resources
+- [[https://doi.org/10.1007/BF00730887]]
+- [[file:./resources/beardsley1995.pdf]]
+
+
+*** Citation
+#+begin_src bibtex
+@article{beardsley1995,
+  author =       {B. Beardsly and M. Peterson and J. D. Achenbach},
+  title =        {A simple scheme for self-focusing of an array},
+  journal =      {Journal of Nondestructive Evaluation},
+  year =         1995,
+  volume =    14,
+  number =    4,
+  pages =     {169-179}}
+#+end_src
+
+*** Summary
+This paper presents a very interesting algorithm for focusing the beam of an array of transducers.
+By an iterative processes, the system is capable of focusing on a desired source of signal.
+It mainly focus on the signal with highest energy by using cross-correlation.
+However, I believe that this approach could be used in many more ways with proper adaptation.
+Also, considering that this is from 1995, it is very likely that there are better approaches to this, or that this paper faded into oblivion: Google Scholar says it was cited only 60 times.
+
 * Other references
 
 ** The calculus of variations :calculus_of_variations:basic:literature:mechanics:
