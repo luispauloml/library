@@ -74,20 +74,22 @@ not narrowed."
   (interactive)
   (find-file-read-only library-bib-file))
 
-(defun library-make-single-bibtex-field (field &optional opt)
+(defun library-make-single-bibtex-field (field &optional opt value)
   "Outputs the string for on single BibTeX FIELD including equal
 sign, braces, comma and line break.  FIELD must be an element
-obtained via `bibtex-field-list'.  If OPT is passed, `APT' will
-be pre-appended to the field name."
-  (let ((field-string "  "))
-    (unless (consp field)
-      (setq field (list field)))
+obtained via `bibtex-field-list'.
+
+If OPT is passed, \"OPT\" will be pre-appended to the field name.
+If VALUE is passed, it will placed as the value of this field."
+  (let (field-string)
     ;; Initial string
     (cond
      ((nth 3 field)
       (setq field-string "  ALT"))
      (opt
-      (setq field-string "  OPT")))
+      (setq field-string "  OPT"))
+     (t
+      (setq field-string "  ")))
     ;; Up to equal sign
     (setq field-string
 	  (concat field-string
@@ -99,57 +101,135 @@ be pre-appended to the field name."
       (setq field-string
 	    (concat field-string " ")))
     ;; Delimiters
-    (concat field-string "{},\n")))
+    (concat
+     field-string
+     (if value
+	 (format "{%s},\n" value)
+       "{},\n"))))
 
-(defun library-bibtex-entry (entry-type)
+(defun library-bibtex-entry (entry-type &optional values-alist)
   "Outputs the string for BibTeX entry ENTRY-TYPE.  ENTRY-TYPE
 will be passed to `bibtex-field-list' to recover the field names
 and each field name will be accordingly passed to
 `library-make-single-bibtex-field' to generate each line of the
-entry."
+entry.
+
+Elements of VALUES-ALIST should be of the form (FIELD . VALUE),
+where FIELD is one of the fields of ENTRY-TYPE and VALUE will be
+properly added to the resulting BibTeX entry.  If a FIELD
+\"entry-id\" is present, it's value will be the entry's id.
+"
   (let ((field-list (bibtex-field-list entry-type))
-	(entry (concat "@" entry-type "{<entry id>,\n")))
+	(entry
+	 (concat
+	  "@" entry-type
+	  (format
+	   "{%s,\n"
+	   (or (alist-get "entry-id" values-alist nil nil #'string=)
+	       "<entry-id>"))))
+	(make-field
+	 #'(lambda
+	     (field opt)
+	     (let ((value
+		    (alist-get
+		     (car field)
+		     values-alist
+		     nil nil #'string=)))
+	       (library-make-single-bibtex-field field opt value)))))
     (concat
      (substring
       (apply
        'concat
        (append (list entry)
-	       (mapcar 'library-make-single-bibtex-field
-		       (car field-list))
-	       (mapcar #'(lambda (field)
-			   (library-make-single-bibtex-field field 'optional))
-		       (cdr field-list))))
+	       (mapcar
+		#'(lambda (field) (funcall make-field field nil))
+		(car field-list))
+	       (mapcar
+		#'(lambda (field) (funcall make-field field 'optional))
+		(cdr field-list))))
       0 -2)
      "\n}\n")))
 
-(defun library-capture-template (entry-type &optional category)
+(defun library-capture-template (entry-type category)
   "Generate a capture template based on ENTRY-TYPE.
+
 CATEGORY is the category to be placed in the `:CATEGORY:' field
 in the properties drawer of the entry.  See
-`library-bibtex-entry' for information on ENTRY-TYPE."
-  (concat
-   "* Title%? :keywords:
-:PROPERTIES:
-:ID: <entry id>"
-   (when category
-     (format "%s%s" "\n:CATEGORY: " category))
-   "\n:END:
-- Added: %t
-- Year: 
-- Author: 
+`library-bibtex-entry' for information on ENTRY-TYPE.
 
-** Resources
+This function is interactive and requires input of values for
+authors, title, and year of publication."
+  (let (first-author
+	last-read-author other-authors
+	year title entry-id)
+    (setq
+     first-author
+     (read-from-minibuffer "First author: ")
+     other-authors
+     (or (while (not (string-empty-p last-read-author))
+	   (setq last-read-author
+		 (read-from-minibuffer "Next author (leave blank to finish): "))
+	   (setq other-authors (cons last-read-author other-authors)))
+	 (reverse (cdr other-authors)))
+     year
+     (read-from-minibuffer "Year of publication: ")
+     title
+     (read-from-minibuffer "Title: ")
+     entry-id
+     (if (and (not (string-empty-p first-author))
+	      (not (string-empty-p year)))
+	 (concat
+	  (downcase (car (last (split-string first-author))))
+	  year)))
+    (eval
+     `(concat
+       "* %?"
+       (if (string-empty-p title) "Title" title)
+       " :keywords:
+:PROPERTIES:
+:ID: "
+       (or entry-id "<entry id>")
+       (format "%s%s" "\n:CATEGORY: " category)
+       "\n:END:
+- Added: %t
+- Year: "
+       (if (not (string-empty-p year)) year)
+       "\n- Author"
+       ,@(if (not other-authors)
+	     (list (format ": %s" first-author))
+	   (cons (format "s:\n  - %s" first-author)
+		 (mapcar
+		  #'(lambda (author)
+		      (format "\n  - %s" author))
+		  other-authors)))
+       "\n\n** Resources
 - [[https://]]
 - [[file:]]
 
-
 ** Citation
 #+begin_src bibtex\n"
-   (library-bibtex-entry entry-type)
-   "#+end_src
+       (library-bibtex-entry
+	entry-type
+	(list
+	 (when entry-id
+	   (cons "entry-id" entry-id))
+	 (if (not (string-empty-p year))
+	     (cons "year" year))
+	 (if (not (string-empty-p title))
+	     (cons "title" title))
+	 (cons "author"
+	       (if (not other-authors)
+		   first-author
+		 (concat
+		  first-author
+		  ,@(mapcar
+		     #'(lambda (author)
+			 (format " and %s" author))
+		     other-authors))))))
+       "#+end_src
 
 ** TODO Summary
-TBD."))
+TBD."))))
 
 (defun library-generate-capture-template (key entry-type description headline)
   "Generate a template for a library entry to be used in `org-capture'.
@@ -165,49 +245,28 @@ as the CATEGORY argument to `library-capture-template'."
     (file+headline
      ,(concat current-user-directory "library/library.org")
      ,headline)
-    ,(library-capture-template
-      entry-type
-      (car (split-string description)))
+    #'(lambda ()
+	(library-capture-template
+	 ,entry-type
+	 ,(car (split-string description))))
     :jump-to-captured t
     ))
-
-;; Set custom capture templates to org-capture
-(with-eval-after-load 'org-capture
-  (bibtex-set-dialect)
-  (mapc (lambda (elem) (add-to-list 'org-capture-templates elem))
-	;; List in inverse alphabetical order
-	`(,(library-generate-capture-template
-	    "lo" "booklet"
-	    "Other" "Other references")
-	  ,(library-generate-capture-template
-	    "lt" "phdthesis"
-	    "Thesis" "Books and theses")
-	  ,(library-generate-capture-template
-	    "lj" "article"
-	    "Journal paper" "Journal papers")
-	  ,(library-generate-capture-template
-	    "lc" "inproceedings"
-	    "Conference paper" "Conference papers")
-	  ,(library-generate-capture-template
-	    "lb" "book"
-	    "Book" "Books and theses")
-	  ("l" "Library")
-	  )))
 
 (defun library-bibtex-clean-entry ()
   "Find a `bibtex' source block and run `bibtex-clean-entry'."
   (interactive)
-  (let* ((file-name
-	  (buffer-file-name
-	   (plist-get org-capture-plist :buffer))))
-    (when (string=
-	   (upcase file-name)
-	   (upcase library-org-file))
-      (save-excursion
-	(goto-char (point-min))
-	(when (search-forward "begin_src bibtex" nil t)
-	  (next-line)
-	  (ignore-error nil (bibtex-clean-entry)))))))
+  (unless org-note-abort
+    (let* ((file-name
+	    (buffer-file-name
+	     (plist-get org-capture-plist :buffer))))
+      (when (string=
+	     (upcase file-name)
+	     (upcase library-org-file))
+	(save-excursion
+	  (goto-char (point-min))
+	  (when (search-forward "begin_src bibtex" nil t)
+	    (next-line)
+	    (ignore-error nil (bibtex-clean-entry))))))))
 
 (add-hook 'org-capture-prepare-finalize-hook
 	  'library-bibtex-clean-entry)
@@ -219,9 +278,31 @@ as the CATEGORY argument to `library-capture-template'."
   (require 'ob-tangle)
   (org-babel-tangle-file library-org-file library-bib-file))
 
-(defalias 'library-add-entry 'org-capture
-  "Set an alias to avoid confusion with possible future usages of
-org-capture.")
+(defun library-add-entry (&optional goto keys)
+  "Add new entry to the library.
+
+GOTO and KEYS are passed to `org-capture'.  See its help for more
+information."
+  (interactive "P")
+  (require 'org-capture)
+  (bibtex-set-dialect)
+  (let ((org-capture-templates
+	 `(,(library-generate-capture-template
+	     "b" "book"
+	     "Book" "Books and theses")
+	   ,(library-generate-capture-template
+	     "c" "inproceedings"
+	     "Conference paper" "Conference papers")
+	   ,(library-generate-capture-template
+	     "j" "article"
+	     "Journal paper" "Journal papers")
+	   ,(library-generate-capture-template
+	     "t" "phdthesis"
+	     "Thesis" "Books and theses")
+	   ,(library-generate-capture-template
+	     "o" "booklet"
+	     "Other" "Other references"))))
+    (org-capture goto keys)))
 
 ;; Set up global key bindings for the library
 (global-set-key (kbd "C-c l o") 'library-find-org-file)
