@@ -171,29 +171,6 @@ as the CATEGORY argument to `library-capture-template'."
     :jump-to-captured t
     ))
 
-;; Set custom capture templates to org-capture
-(with-eval-after-load 'org-capture
-  (bibtex-set-dialect)
-  (mapc (lambda (elem) (add-to-list 'org-capture-templates elem))
-	;; List in inverse alphabetical order
-	`(,(library-generate-capture-template
-	    "lo" "booklet"
-	    "Other" "Other references")
-	  ,(library-generate-capture-template
-	    "lt" "phdthesis"
-	    "Thesis" "Books and theses")
-	  ,(library-generate-capture-template
-	    "lj" "article"
-	    "Journal paper" "Journal papers")
-	  ,(library-generate-capture-template
-	    "lc" "inproceedings"
-	    "Conference paper" "Conference papers")
-	  ,(library-generate-capture-template
-	    "lb" "book"
-	    "Book" "Books and theses")
-	  ("l" "Library")
-	  )))
-
 (defun library-bibtex-clean-entry ()
   "Find a `bibtex' source block and run `bibtex-clean-entry'."
   (interactive)
@@ -220,9 +197,31 @@ as the CATEGORY argument to `library-capture-template'."
   (require 'ob-tangle)
   (org-babel-tangle-file library-org-file library-bib-file))
 
-(defalias 'library-add-entry 'org-capture
-  "Set an alias to avoid confusion with possible future usages of
-org-capture.")
+(defun library-add-entry (&optional goto keys)
+  "Add new entry to the library.
+
+GOTO and KEYS are passed to `org-capture'.  See its help for more
+information."
+  (interactive "P")
+  (require 'org-capture)
+  (bibtex-set-dialect)
+  (let ((org-capture-templates
+	 `(,(library-generate-capture-template
+	     "b" "book"
+	     "Book" "Books and theses")
+	   ,(library-generate-capture-template
+	     "c" "inproceedings"
+	     "Conference paper" "Conference papers")
+	   ,(library-generate-capture-template
+	     "j" "article"
+	     "Journal paper" "Journal papers")
+	   ,(library-generate-capture-template
+	     "t" "phdthesis"
+	     "Thesis" "Books and theses")
+	   ,(library-generate-capture-template
+	     "o" "booklet"
+	     "Other" "Other references"))))
+    (org-capture goto keys)))
 
 ;; Set up global key bindings for the library
 (global-set-key (kbd "C-c l o") 'library-find-org-file)
