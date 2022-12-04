@@ -74,20 +74,22 @@ not narrowed."
   (interactive)
   (find-file-read-only library-bib-file))
 
-(defun library-make-single-bibtex-field (field &optional opt)
+(defun library-make-single-bibtex-field (field &optional opt value)
   "Outputs the string for on single BibTeX FIELD including equal
 sign, braces, comma and line break.  FIELD must be an element
-obtained via `bibtex-field-list'.  If OPT is passed, `APT' will
-be pre-appended to the field name."
-  (let ((field-string "  "))
-    (unless (consp field)
-      (setq field (list field)))
+obtained via `bibtex-field-list'.
+
+If OPT is passed, \"OPT\" will be pre-appended to the field name.
+If VALUE is passed, it will placed as the value of this field."
+  (let (field-string)
     ;; Initial string
     (cond
      ((nth 3 field)
       (setq field-string "  ALT"))
      (opt
-      (setq field-string "  OPT")))
+      (setq field-string "  OPT"))
+     (t
+      (setq field-string "  ")))
     ;; Up to equal sign
     (setq field-string
 	  (concat field-string
@@ -99,7 +101,11 @@ be pre-appended to the field name."
       (setq field-string
 	    (concat field-string " ")))
     ;; Delimiters
-    (concat field-string "{},\n")))
+    (concat
+     field-string
+     (if value
+	 (format "{%s},\n" value)
+       "{},\n"))))
 
 (defun library-bibtex-entry (entry-type)
   "Outputs the string for BibTeX entry ENTRY-TYPE.  ENTRY-TYPE
