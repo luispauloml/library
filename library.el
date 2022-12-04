@@ -152,31 +152,84 @@ properly added to the resulting BibTeX entry.  If a FIELD
 
 (defun library-capture-template (entry-type category)
   "Generate a capture template based on ENTRY-TYPE.
+
 CATEGORY is the category to be placed in the `:CATEGORY:' field
 in the properties drawer of the entry.  See
-`library-bibtex-entry' for information on ENTRY-TYPE."
-  (concat
-   "* Title%? :keywords:
-:PROPERTIES:
-:ID: <entry id>"
-   (format "%s%s" "\n:CATEGORY: " category)
-   "\n:END:
-- Added: %t
-- Year: 
-- Author: 
+`library-bibtex-entry' for information on ENTRY-TYPE.
 
-** Resources
+This function is interactive and requires input of values for
+authors, title, and year of publication."
+  (let (first-author
+	last-read-author other-authors
+	year title entry-id)
+    (setq
+     first-author
+     (read-from-minibuffer "First author: ")
+     other-authors
+     (or (while (not (string-empty-p last-read-author))
+	   (setq last-read-author
+		 (read-from-minibuffer "Next author (leave blank to finish): "))
+	   (setq other-authors (cons last-read-author other-authors)))
+	 (reverse (cdr other-authors)))
+     year
+     (read-from-minibuffer "Year of publication: ")
+     title
+     (read-from-minibuffer "Title: ")
+     entry-id
+     (if (and (not (string-empty-p first-author))
+	      (not (string-empty-p year)))
+	 (concat
+	  (downcase (car (last (split-string first-author))))
+	  year)))
+    (eval
+     `(concat
+       "* %?"
+       (if (string-empty-p title) "Title" title)
+       " :keywords:
+:PROPERTIES:
+:ID: "
+       (or entry-id "<entry id>")
+       (format "%s%s" "\n:CATEGORY: " category)
+       "\n:END:
+- Added: %t
+- Year: "
+       (if (not (string-empty-p year)) year)
+       "\n- Author"
+       ,@(if (not other-authors)
+	     (list (format ": %s" first-author))
+	   (cons (format "s:\n  - %s" first-author)
+		 (mapcar
+		  #'(lambda (author)
+		      (format "\n  - %s" author))
+		  other-authors)))
+       "\n\n** Resources
 - [[https://]]
 - [[file:]]
 
-
 ** Citation
 #+begin_src bibtex\n"
-   (library-bibtex-entry entry-type)
-   "#+end_src
+       (library-bibtex-entry
+	entry-type
+	(list
+	 (when entry-id
+	   (cons "entry-id" entry-id))
+	 (if (not (string-empty-p year))
+	     (cons "year" year))
+	 (if (not (string-empty-p title))
+	     (cons "title" title))
+	 (cons "author"
+	       (if (not other-authors)
+		   first-author
+		 (concat
+		  first-author
+		  ,@(mapcar
+		     #'(lambda (author)
+			 (format " and %s" author))
+		     other-authors))))))
+       "#+end_src
 
 ** TODO Summary
-TBD."))
+TBD."))))
 
 (defun library-generate-capture-template (key entry-type description headline)
   "Generate a template for a library entry to be used in `org-capture'.
@@ -192,9 +245,10 @@ as the CATEGORY argument to `library-capture-template'."
     (file+headline
      ,(concat current-user-directory "library/library.org")
      ,headline)
-    ,(library-capture-template
-      entry-type
-      (car (split-string description)))
+    #'(lambda ()
+	(library-capture-template
+	 ,entry-type
+	 ,(car (split-string description))))
     :jump-to-captured t
     ))
 
