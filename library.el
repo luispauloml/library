@@ -107,24 +107,46 @@ If VALUE is passed, it will placed as the value of this field."
 	 (format "{%s},\n" value)
        "{},\n"))))
 
-(defun library-bibtex-entry (entry-type)
+(defun library-bibtex-entry (entry-type &optional values-alist)
   "Outputs the string for BibTeX entry ENTRY-TYPE.  ENTRY-TYPE
 will be passed to `bibtex-field-list' to recover the field names
 and each field name will be accordingly passed to
 `library-make-single-bibtex-field' to generate each line of the
-entry."
+entry.
+
+Elements of VALUES-ALIST should be of the form (FIELD . VALUE),
+where FIELD is one of the fields of ENTRY-TYPE and VALUE will be
+properly added to the resulting BibTeX entry.  If a FIELD
+\"entry-id\" is present, it's value will be the entry's id.
+"
   (let ((field-list (bibtex-field-list entry-type))
-	(entry (concat "@" entry-type "{<entry id>,\n")))
+	(entry
+	 (concat
+	  "@" entry-type
+	  (format
+	   "{%s,\n"
+	   (or (alist-get "entry-id" values-alist nil nil #'string=)
+	       "<entry-id>"))))
+	(make-field
+	 #'(lambda
+	     (field opt)
+	     (let ((value
+		    (alist-get
+		     (car field)
+		     values-alist
+		     nil nil #'string=)))
+	       (library-make-single-bibtex-field field opt value)))))
     (concat
      (substring
       (apply
        'concat
        (append (list entry)
-	       (mapcar 'library-make-single-bibtex-field
-		       (car field-list))
-	       (mapcar #'(lambda (field)
-			   (library-make-single-bibtex-field field 'optional))
-		       (cdr field-list))))
+	       (mapcar
+		#'(lambda (field) (funcall make-field field nil))
+		(car field-list))
+	       (mapcar
+		#'(lambda (field) (funcall make-field field 'optional))
+		(cdr field-list))))
       0 -2)
      "\n}\n")))
 
