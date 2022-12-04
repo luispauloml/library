@@ -150,7 +150,7 @@ properly added to the resulting BibTeX entry.  If a FIELD
       0 -2)
      "\n}\n")))
 
-(defun library-capture-template (entry-type &optional category)
+(defun library-capture-template (entry-type category)
   "Generate a capture template based on ENTRY-TYPE.
 CATEGORY is the category to be placed in the `:CATEGORY:' field
 in the properties drawer of the entry.  See
@@ -159,8 +159,7 @@ in the properties drawer of the entry.  See
    "* Title%? :keywords:
 :PROPERTIES:
 :ID: <entry id>"
-   (when category
-     (format "%s%s" "\n:CATEGORY: " category))
+   (format "%s%s" "\n:CATEGORY: " category)
    "\n:END:
 - Added: %t
 - Year: 
