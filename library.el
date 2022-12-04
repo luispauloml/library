@@ -197,17 +197,18 @@ as the CATEGORY argument to `library-capture-template'."
 (defun library-bibtex-clean-entry ()
   "Find a `bibtex' source block and run `bibtex-clean-entry'."
   (interactive)
-  (let* ((file-name
-	  (buffer-file-name
-	   (plist-get org-capture-plist :buffer))))
-    (when (string=
-	   (upcase file-name)
-	   (upcase library-org-file))
-      (save-excursion
-	(goto-char (point-min))
-	(when (search-forward "begin_src bibtex" nil t)
-	  (next-line)
-	  (ignore-error nil (bibtex-clean-entry)))))))
+  (unless org-note-abort
+    (let* ((file-name
+	    (buffer-file-name
+	     (plist-get org-capture-plist :buffer))))
+      (when (string=
+	     (upcase file-name)
+	     (upcase library-org-file))
+	(save-excursion
+	  (goto-char (point-min))
+	  (when (search-forward "begin_src bibtex" nil t)
+	    (next-line)
+	    (ignore-error nil (bibtex-clean-entry))))))))
 
 (add-hook 'org-capture-prepare-finalize-hook
 	  'library-bibtex-clean-entry)
