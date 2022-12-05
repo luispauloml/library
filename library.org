@@ -704,6 +704,39 @@ Also, considering that this is from 1995, it is very likely that there are bette
 See also:
 - Shi-Chang, W. and Yijun, S. (1999). Optimum beam steering of linear phased arrays. Wave Motion, 29, 245–265.
 
+** Biologically inspired structural diagnostics through beamforming with phased transducer arrays :basic_literature:beam_forming:
+:PROPERTIES:
+:ID: sundararaman2005
+:CATEGORY: Journal
+:END:
+- Added: <2022-11-16 Wed>
+- Year: 2005
+- Author:
+  - Shankar Sundararaman
+  - Douglas E. Adams
+  - Elias J. Rigas
+
+*** Resources
+- [[https://doi.org/10.1016/j.ijengsci.2004.12.008]]
+- [[file:./resources/sundararaman2005.pdf]]
+
+
+*** Citation
+#+begin_src bibtex
+@article{sundararaman2005,
+  author =       {Shankar Sundararaman and Douglas E. Adamss and Elias J. Rigas},
+  title =        {Biologically inspired structural diagnostics through beamforming with phased transducer arrays},
+  journal =      {International Journal of Engineering Science},
+  year =         2005,
+  volume =    43,
+  pages =     {756-778}}
+#+end_src
+
+*** Summary
+The most important part Section 3: "Beamforming using phased sensor array", which presents the theory that is lacking in many other papers, and that so for I have not found in books.
+Also, although the title sounds very interesting, the approach used is not very new, it is very much similar with many other works that came before it.
+Yet, it deserves the merit of correlating this search with spiders.
+
 * Other references
 
 ** The calculus of variations :calculus_of_variations:basic:literature:mechanics:
