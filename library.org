@@ -701,6 +701,9 @@ It mainly focus on the signal with highest energy by using cross-correlation.
 However, I believe that this approach could be used in many more ways with proper adaptation.
 Also, considering that this is from 1995, it is very likely that there are better approaches to this, or that this paper faded into oblivion: Google Scholar says it was cited only 60 times.
 
+See also:
+- Shi-Chang, W. and Yijun, S. (1999). Optimum beam steering of linear phased arrays. Wave Motion, 29, 245–265.
+
 * Other references
 
 ** The calculus of variations :calculus_of_variations:basic:literature:mechanics:
