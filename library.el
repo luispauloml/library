@@ -288,6 +288,10 @@ information."
   (interactive "P")
   (require 'org-capture)
   (bibtex-set-dialect)
+  (with-current-buffer
+      (find-file-noselect library-org-file 'nowarn)
+    (revert-buffer nil 'noconfirm)
+    (read-only-mode -1))
   (let ((org-capture-templates
 	 `(,(library-generate-capture-template
 	     "b" "book"
