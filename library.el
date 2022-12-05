@@ -309,11 +309,3 @@ information."
 	     "o" "booklet"
 	     "Other" "Other references"))))
     (org-capture goto keys)))
-
-;; Set up global key bindings for the library
-(global-set-key (kbd "C-c l o") 'library-find-org-file)
-(global-set-key (kbd "C-c l s") 'library-search)
-(global-set-key (kbd "C-c l b") 'library-find-bib-file)
-(global-set-key (kbd "C-c l a") 'library-add-entry)
-(global-set-key (kbd "C-c l t") 'library-tangle-file)
-(global-set-key (kbd "C-c l r") 'library-dired-resources-directory)
