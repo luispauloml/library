@@ -183,7 +183,9 @@ authors, title, and year of publication."
 	  year)))
     (eval
      `(concat
-       "* %?"
+       "* "
+       (or entry-id "<entry id>")
+       ": %?"
        (if (string-empty-p title) "Title" title)
        " :keywords:
 :PROPERTIES:

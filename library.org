@@ -16,7 +16,7 @@ The entries should be a level-2 heading placed under the top level heading liste
 
 Each entry should have the following format:
 #+begin_src org :tangle no
-  ,** <title> <keywords>
+  ,** <entry-id>: <title> <keywords>
   :PROPERTIES:
   :ID: <entry id>
   :CATEGORY: <entry category>
@@ -42,6 +42,7 @@ Additional tags not originally contained in the work could be added to improve c
 In the properties drawer of the entry, there should be =ID= field whose value is =entry id=.
 The =entry id= should be of the format =<name><year>[-<N>]=, where =name= is the last name of the first author, and =year= is the four digit year of publication.
 If there is more than one work for the same author in the same year, an additional digit =N= preceded by a dash should be added to the =id=.
+It should also added to the top level heading of the entry because when I Org-roam, it auto-completes only the headings, and sometimes I can remember part of =entry id=, but not the title, so putting it there is also useful for me searching.
 The =CATEGORY= field is redundant given that each entry is already under a top-level heading describing the type of entry and won't be present in an HTML view of this library.
 However, it is useful for searching this file in Emacs, since =org-agenda= which is on what =library-search= is based, uses these properties for grouping and displaying results.
 The value for =entry category= can be anything that helps describe the type of work, like "Book", "Journal" or "Conference".
@@ -81,7 +82,7 @@ This is the end of the Introduction and the actual library follows from here.
 
 * Books and theses
 
-** A wavelet tour of signal processing: the sparse way :wavelet:basic_literature:
+** mallat2009: A wavelet tour of signal processing: the sparse way :wavelet:basic_literature:
 :PROPERTIES:
 :ID: mallat2009
 :CATEGORY: Book
@@ -112,7 +113,7 @@ reader, if they are experienced enough with Fourier Analysis, will
 turn out to have a very good understanding of the of the concept of
 the wavelet transformation.
 
-** Two-dimensional signal and image processing           :signal_processing:
+** jaeslim1990: Two-dimensional signal and image processing           :signal_processing:
 :PROPERTIES:
 :ID: jaeslim1990
 :CATEGORY: Book
@@ -137,7 +138,7 @@ the wavelet transformation.
 *** TODO Summary
 TBD.
 
-** Wave motion in elastic solids         :wave_propagation:basic_literature:
+** graff1975: Wave motion in elastic solids         :wave_propagation:basic_literature:
 :PROPERTIES:
 :ID: graff1975
 :CATEGORY: Book
@@ -170,7 +171,7 @@ understand this topic.  I highly recommend it, and I also
 recommend not to rush through it.  Take your time, it is not easy,
 but it is very rewarding.
 
-** Ten Lectures of Wavelets                      :wavelet:signal_processing:
+** daubechies1992: Ten Lectures of Wavelets                      :wavelet:signal_processing:
 :PROPERTIES:
 :ID: daubechies1992
 :CATEGORY: Book
@@ -195,7 +196,7 @@ but it is very rewarding.
 *** Summary
 TBD.
 
-** Fundamentals of Signal Processing for Sound and Vibration Engineers :signal_processing:
+** shin2008: Fundamentals of Signal Processing for Sound and Vibration Engineers :signal_processing:
 :PROPERTIES:
 :ID: shin2008
 :CATEGORY: Book
@@ -223,7 +224,7 @@ TBD.
 *** Summary
 So far, one of the best books for needs of understanding Signal Processing, specifically because of the second part on Random Processes, which introduces Correlation.
 
-** Piezoelectric-based in-situ damage detection of composite materials for Structural Health Monitoring Systems :lamb_waves:basic_literature:
+** kessler2002: Piezoelectric-based in-situ damage detection of composite materials for Structural Health Monitoring Systems :lamb_waves:basic_literature:
 :PROPERTIES:
 :ID: kessler2002
 :CATEGORY: Thesis
@@ -252,7 +253,7 @@ On the other hand, the results of the thesis themselves do not show anything new
 
 * Conference papers
 
-** Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
+** flynn2014: Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
 :PROPERTIES:
 :CATEGORY: Conference
 :ID: flynn2014
@@ -284,7 +285,7 @@ On the other hand, the results of the thesis themselves do not show anything new
 *** TODO Summary
 TBD.
 
-** Exploring the performance limits of full-field acoustic wavenumber spectroscopy techniques for damage detection through numerical simulation :fem:aws:
+** odowd2016: Exploring the performance limits of full-field acoustic wavenumber spectroscopy techniques for damage detection through numerical simulation :fem:aws:
 :PROPERTIES:
 :ID: odowd2016
 :CATEGORY: Conference
@@ -317,7 +318,7 @@ using FEM.  It is not hard to read this paper, but it presents a great
 amount of results.  It is also a valuable source of ideas to run tests
 on future techniques based or similar to AWS.
 
-** Three-dimensional acoustic wavenumber spectroscopy for structural health monitoring :aws:
+** fickenwirth2019: Three-dimensional acoustic wavenumber spectroscopy for structural health monitoring :aws:
 :PROPERTIES:
 :ID: fickenwirth2019
 :CATEGORY: Conference
@@ -346,7 +347,7 @@ on future techniques based or similar to AWS.
 *** TODO Summary
 TBD.
 
-** High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration :ldv:wavenumber:steady_state:
+** flynn2013: High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration :ldv:wavenumber:steady_state:
 :PROPERTIES:
 :ID: flynn2013
 :CATEGORY: Conference
@@ -385,7 +386,7 @@ fact, should be).
 
 * Journal papers
 
-** Identification of cracks in thin-walled structures by means of wavenumber filtering :lamb_waves:wavenumber:laser:
+** kudela2015: Identification of cracks in thin-walled structures by means of wavenumber filtering :lamb_waves:wavenumber:laser:
 :PROPERTIES:
 :ID: kudela2015
 :CATEGORY: Journal
@@ -420,7 +421,7 @@ fact, should be).
 *** TODO Summary
 TBD.
 
-** Structural imaging through local wavenumber estimation of guided waves :ndt:ldv:image_processing:ultrasonic:wavenumber:
+** flynn2013-2: Structural imaging through local wavenumber estimation of guided waves :ndt:ldv:image_processing:ultrasonic:wavenumber:
 :PROPERTIES:
 :CATEGORY: Journal
 :ID: flynn2013-2
@@ -455,7 +456,7 @@ TBD.
 *** TODO Summary
 TBD.
 
-** Finite element prediction of wave motion in structural waveguides :FEM:basic_literature:waveguide:
+** mace2005: Finite element prediction of wave motion in structural waveguides :FEM:basic_literature:waveguide:
 :PROPERTIES:
 :CATEGORY: Journal
 :ID: mace2005
@@ -495,7 +496,7 @@ the regular stiffness, mass and damping matrices of the matrices used
 in common FEM experiments.  Basic knowledge of FEM theory is the only
 requirement to understand this paper.
 
-** Frequency-wavenumber domain filtering for improved damage visualization :wavefield:wavenumber:filter:basic_literature:
+** ruzzene2007: Frequency-wavenumber domain filtering for improved damage visualization :wavefield:wavenumber:filter:basic_literature:
 :PROPERTIES:
 :CATEGORY: Journal
 :ID: ruzzene2007
@@ -530,7 +531,7 @@ out how to generate and how to apply the windows for filtering,
 this paper should be considered basic literature for the work done
 in ADSL.
 
-** 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
+** junyoung2020: 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
 :PROPERTIES:
 :ID: junyoung2020
 :CATEGORY: Journal
@@ -567,7 +568,7 @@ in ADSL.
 *** TODO Summary
 TBD.
 
-** Experimental Confirmation of Lamb Waves at Megacycle Frequencies :wave_propagation:basic_literature:
+** worlton1961: Experimental Confirmation of Lamb Waves at Megacycle Frequencies :wave_propagation:basic_literature:
 :PROPERTIES:
 :ID: worlton1961
 :CATEGORY: Journal
@@ -596,7 +597,7 @@ It gives a very gentle and simple introduction to the nature of Lamb waves.
 It is not the original paper on Lamb waves (the one written by Lamb), but it one of the first ones to assess Lamb waves theoretically.
 I have seen the original paper, and it has very heavy math, and because of that I was really impressed by the simplicity and depth of this paper.
 
-** Review of Guided-wave Structural Health Monitoring :basic_literature:guided_waves:literature_review:
+** raghavan2007: Review of Guided-wave Structural Health Monitoring :basic_literature:guided_waves:literature_review:
 :PROPERTIES:
 :ID: raghavan2007
 :CATEGORY: Journal
@@ -631,7 +632,7 @@ It is extensive, has plenty of references and goes in depth in various subjects:
 - modeling,
 - SHM system's development, application and integration.
 
-** Coherenceogram for leak detection in water pipes :leak_detection:signal_processing:
+** zeng2022: Coherenceogram for leak detection in water pipes :leak_detection:signal_processing:
 :PROPERTIES:
 :ID: zeng2022
 :CATEGORY: Journal
@@ -665,7 +666,7 @@ It is extensive, has plenty of references and goes in depth in various subjects:
 The one paper I think will be useful for my SPIE presentation.
 I don't have many comments on this one yet, but it looks promissing.
 
-** A simple scheme for self-focusing of an array :beam_forming:active_sensing:
+** beardsley1995: A simple scheme for self-focusing of an array :beam_forming:active_sensing:
 :PROPERTIES:
 :ID: beardsley1995
 :CATEGORY: Journal
@@ -704,7 +705,7 @@ Also, considering that this is from 1995, it is very likely that there are bette
 See also:
 - Shi-Chang, W. and Yijun, S. (1999). Optimum beam steering of linear phased arrays. Wave Motion, 29, 245–265.
 
-** Biologically inspired structural diagnostics through beamforming with phased transducer arrays :basic_literature:beam_forming:
+** sundararaman2005: Biologically inspired structural diagnostics through beamforming with phased transducer arrays :basic_literature:beam_forming:
 :PROPERTIES:
 :ID: sundararaman2005
 :CATEGORY: Journal
@@ -739,7 +740,7 @@ Yet, it deserves the merit of correlating this search with spiders.
 
 * Other references
 
-** The calculus of variations :calculus_of_variations:basic:literature:mechanics:
+** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
 :PROPERTIES:
 :ID: olver2021
 :CATEGORY: Booklet
