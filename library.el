@@ -309,3 +309,5 @@ information."
 	     "o" "booklet"
 	     "Other" "Other references"))))
     (org-capture goto keys)))
+
+;;; library.el ends here
