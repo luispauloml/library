@@ -183,7 +183,9 @@ authors, title, and year of publication."
 	  year)))
     (eval
      `(concat
-       "* %?"
+       "* "
+       (or entry-id "<entry id>")
+       ": %?"
        (if (string-empty-p title) "Title" title)
        " :keywords:
 :PROPERTIES:
@@ -286,6 +288,10 @@ information."
   (interactive "P")
   (require 'org-capture)
   (bibtex-set-dialect)
+  (with-current-buffer
+      (find-file-noselect library-org-file 'nowarn)
+    (revert-buffer nil 'noconfirm)
+    (read-only-mode -1))
   (let ((org-capture-templates
 	 `(,(library-generate-capture-template
 	     "b" "book"
@@ -304,10 +310,4 @@ information."
 	     "Other" "Other references"))))
     (org-capture goto keys)))
 
-;; Set up global key bindings for the library
-(global-set-key (kbd "C-c l o") 'library-find-org-file)
-(global-set-key (kbd "C-c l s") 'library-search)
-(global-set-key (kbd "C-c l b") 'library-find-bib-file)
-(global-set-key (kbd "C-c l a") 'library-add-entry)
-(global-set-key (kbd "C-c l t") 'library-tangle-file)
-(global-set-key (kbd "C-c l r") 'library-dired-resources-directory)
+;;; library.el ends here
