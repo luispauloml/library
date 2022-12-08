@@ -25,6 +25,8 @@ Each entry should have the following format:
   - Year: <year>
   - Author: <author|list of authors>
 
+  [<notes>]
+
   ,*** Resources:
   - <local file|remote resource>
 
@@ -33,8 +35,6 @@ Each entry should have the following format:
     @<type>{<entry id>,
         <bib-entry>}
   ,#+end_src
-
-  [<rest>]
 #+end_src
 
 The =title= should match the actual title of the work, and =keywords= are Org tags corresponding to list of keywords listed in the work.
@@ -53,6 +53,11 @@ Under the top-most heading for the entry there should be a list of the authors, 
 - the year should have the same format as =entry id=, i.e. four digits.
 - if there is a single author, they should be named in a single line.
 - if there are more than one author, they should be named in a list under ``Author''.
+
+After this meta-data, any form of notes can be added in the optional =notes=, which should be in level-3 sub-headings.
+Initially, these notes were added at the end of the entry, but I found that putting them before the next sub-headings facilitates things when I use =grep= or =org-agenda= to search entries in this file.
+Although any notes would do, I ideally will add a summary with my impressions of the work, which is useful to state the reason why I added the work to the library.
+It is also common that I add a =TODO= state the to summary when I think that I should write it but have not done it yet.
 
 The following subheadings should also be contained in the entry:
 
@@ -74,10 +79,6 @@ The following subheadings should also be contained in the entry:
   - =article= for ``Journal papers'',
   - any other appropriate type for ``Other references''.
 
-After the Resources and Citation sub-headings, any type of notes can be added in the optional =rest=, which should be in level-3 sub-headings.
-Ideally I will add a summary my impressions of the work, which is useful to state the reason why I added the work to the library.
-It is also common that I add a =TODO= state the to summary when I think that I should write it but have not done it yet.
-
 This is the end of the Introduction and the actual library follows from here.
 
 * Books and theses
@@ -90,6 +91,13 @@ This is the end of the Introduction and the actual library follows from here.
 - Added: <2022-05-02 Mon>
 - Year: 2009
 - Author: Stéphane Mallat
+
+*** Summary
+The first four chapters of this book are really impressive.  It
+reviews the basic theory of signal processing up to a point where the
+reader, if they are experienced enough with Fourier Analysis, will
+turn out to have a very good understanding of the of the concept of
+the wavelet transformation.
 
 *** Resources:
 - [[file:./resources/mallat2009.pdf][File]]
@@ -106,13 +114,6 @@ This is the end of the Introduction and the actual library follows from here.
   }
 #+end_src
 
-*** Summary
-The first four chapters of this book are really impressive.  It
-reviews the basic theory of signal processing up to a point where the
-reader, if they are experienced enough with Fourier Analysis, will
-turn out to have a very good understanding of the of the concept of
-the wavelet transformation.
-
 ** jaeslim1990: Two-dimensional signal and image processing           :signal_processing:
 :PROPERTIES:
 :ID: jaeslim1990
@@ -121,6 +122,9 @@ the wavelet transformation.
 - Added: <2021-11-05 Fri>
 - Year: 1990
 - Author: Jae S. Lim
+
+*** TODO Summary
+TBD.
 
 *** Resources:
 - [[file:./resources/jaeslim1990.djvu][File]]
@@ -135,9 +139,6 @@ the wavelet transformation.
       address = 	 {New Jersey}}
 #+end_src
 
-*** TODO Summary
-TBD.
-
 ** graff1975: Wave motion in elastic solids         :wave_propagation:basic_literature:
 :PROPERTIES:
 :ID: graff1975
@@ -146,6 +147,17 @@ TBD.
 - Added: <2021-10-27 Wed>
 - Year: 1975
 - Author: Karl F. Graff
+
+*** Summary
+This was my entry point to the theory of wave propagation.  It
+starts from 1D case for a string, then a rod, then beam, and give
+exhaustive examples and explanations from every aspect and
+question in each chapter.  It is an incredible resource for
+learning but, at the same time, the math used here is very heavy.
+However, by overlooking the hard points, it should help anyone
+understand this topic.  I highly recommend it, and I also
+recommend not to rush through it.  Take your time, it is not easy,
+but it is very rewarding.
 
 *** Resources:
 - [[file:./resources/graff1975.pdf][File]]
@@ -160,17 +172,6 @@ TBD.
     address = 	 {New York}}
 #+end_src
 
-*** Summary
-This was my entry point to the theory of wave propagation.  It
-starts from 1D case for a string, then a rod, then beam, and give
-exhaustive examples and explanations from every aspect and
-question in each chapter.  It is an incredible resource for
-learning but, at the same time, the math used here is very heavy.
-However, by overlooking the hard points, it should help anyone
-understand this topic.  I highly recommend it, and I also
-recommend not to rush through it.  Take your time, it is not easy,
-but it is very rewarding.
-
 ** daubechies1992: Ten Lectures of Wavelets                      :wavelet:signal_processing:
 :PROPERTIES:
 :ID: daubechies1992
@@ -179,6 +180,9 @@ but it is very rewarding.
 - Added: <2022-01-29 Sat>
 - Year: 1992
 - Author: Ingrid Daubechies
+
+*** Summary
+TBD.
 
 *** Resources:
 - [[file:./resources/daubechies1992.pdf][File]]
@@ -193,9 +197,6 @@ but it is very rewarding.
   address = 	 {Pennsylvania}}
 #+end_src
 
-*** Summary
-TBD.
-
 ** shin2008: Fundamentals of Signal Processing for Sound and Vibration Engineers :signal_processing:
 :PROPERTIES:
 :ID: shin2008
@@ -206,6 +207,9 @@ TBD.
 - Author:
   - Kihong Shin
   - Joseph Hammond
+
+*** Summary
+So far, one of the best books for needs of understanding Signal Processing, specifically because of the second part on Random Processes, which introduces Correlation.
 
 *** Resources
 - [[file:./resources/shin2008.pdf][File]]
@@ -221,9 +225,6 @@ TBD.
     address =   {Sussex}}
 #+end_src
 
-*** Summary
-So far, one of the best books for needs of understanding Signal Processing, specifically because of the second part on Random Processes, which introduces Correlation.
-
 ** kessler2002: Piezoelectric-based in-situ damage detection of composite materials for Structural Health Monitoring Systems :lamb_waves:basic_literature:
 :PROPERTIES:
 :ID: kessler2002
@@ -233,10 +234,13 @@ So far, one of the best books for needs of understanding Signal Processing, spec
 - Year: 2002
 - Author: Seth Stovack Kessler
 
+*** Summary
+Its chapter on Lamb wave gives a very extensive and deep review on the literature which is very useful for finding old and original papers on the subject.
+On the other hand, the results of the thesis themselves do not show anything new, and are (probably) obsolete.
+
 *** Resources
 - [[http://dspace.mit.edu/handle/1721.1/16836][MIT Online Library]]
 - [[file:./resources/kessler2002.pdf][File]]
-
 
 *** Citation
 #+begin_src bibtex
@@ -246,10 +250,6 @@ So far, one of the best books for needs of understanding Signal Processing, spec
   school =       {Massachusetts Institute of Technology},
   year =         2002}
 #+end_src
-
-*** Summary
-Its chapter on Lamb wave gives a very extensive and deep review on the literature which is very useful for finding old and original papers on the subject.
-On the other hand, the results of the thesis themselves do not show anything new, and are (probably) obsolete.
 
 * Conference papers
 
@@ -261,6 +261,9 @@ On the other hand, the results of the thesis themselves do not show anything new
 - Added: <2022-02-21 Mon>
 - Year: 2014
 - Author: Eric B. Flynn
+
+*** TODO Summary
+TBD.
 
 *** Resources:
 - [[https://hal.inria.fr/hal-01021054/][Conference website]]
@@ -282,9 +285,6 @@ On the other hand, the results of the thesis themselves do not show anything new
   }
 #+end_src
 
-*** TODO Summary
-TBD.
-
 ** odowd2016: Exploring the performance limits of full-field acoustic wavenumber spectroscopy techniques for damage detection through numerical simulation :fem:aws:
 :PROPERTIES:
 :ID: odowd2016
@@ -297,6 +297,12 @@ TBD.
   - Dae-Hyun Han
   - Lae-Hyong Kang
   - Eric B. Flynn
+
+*** Summary
+Presents a comprehensive study on the robustness of AWS technique
+using FEM.  It is not hard to read this paper, but it presents a great
+amount of results.  It is also a valuable source of ideas to run tests
+on future techniques based or similar to AWS.
 
 *** Resources
 - [[https://www.ndt.net/search/docs.php3?id=20089][Conference website]]
@@ -312,12 +318,6 @@ TBD.
     booktitle =    {8th European Workshop on Structural Health Monitoring}}
 #+end_src
 
-*** Summary
-Presents a comprehensive study on the robustness of AWS technique
-using FEM.  It is not hard to read this paper, but it presents a great
-amount of results.  It is also a valuable source of ideas to run tests
-on future techniques based or similar to AWS.
-
 ** fickenwirth2019: Three-dimensional acoustic wavenumber spectroscopy for structural health monitoring :aws:
 :PROPERTIES:
 :ID: fickenwirth2019
@@ -329,6 +329,9 @@ on future techniques based or similar to AWS.
   - Peter H. Fickenwirth
   - Matthew J. Adams
   - Eric B. Flynn
+
+*** TODO Summary
+TBD.
 
 *** Resources
 - [[http://doi.org/10.12783/shm2019/32196][Conference website]]
@@ -344,9 +347,6 @@ on future techniques based or similar to AWS.
     volume = 	 1}
 #+end_src
 
-*** TODO Summary
-TBD.
-
 ** flynn2013: High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration :ldv:wavenumber:steady_state:
 :PROPERTIES:
 :ID: flynn2013
@@ -357,6 +357,14 @@ TBD.
 - Authors:
   - E. B. Flynn
   - G. S. Jarmer
+
+*** Summary
+The most basic text for understanding LDV scanning.  It sets the
+foundation for the techniques used at ASDL in a very simple way.
+It lacks, however, a deeper explanation on how the /wavenumber
+filter bank/ and the /monogenic signal/ work, and assumes that
+this is common knowledge for anyone reading the paper (which, in
+fact, should be).
 
 *** Resources
 - [[https://www.dpi-proceedings.com/index.php/shm2013/article/view/22912][Conference website]]
@@ -376,14 +384,6 @@ TBD.
     volume =	 {1}}
 #+end_src
 
-*** Summary
-The most basic text for understanding LDV scanning.  It sets the
-foundation for the techniques used at ASDL in a very simple way.
-It lacks, however, a deeper explanation on how the /wavenumber
-filter bank/ and the /monogenic signal/ work, and assumes that
-this is common knowledge for anyone reading the paper (which, in
-fact, should be).
-
 * Journal papers
 
 ** kudela2015: Identification of cracks in thin-walled structures by means of wavenumber filtering :lamb_waves:wavenumber:laser:
@@ -397,6 +397,9 @@ fact, should be).
   - Paweł Kudela
   - Maciej Radzieński
   - Wiesław Ostachowicz
+
+*** TODO Summary
+TBD.
 
 *** Resources
 - [[https://doi.org/10.1016/j.ymssp.2014.05.041][Journal]]
@@ -418,9 +421,6 @@ fact, should be).
     }
 #+end_src
 
-*** TODO Summary
-TBD.
-
 ** flynn2013-2: Structural imaging through local wavenumber estimation of guided waves :ndt:ldv:image_processing:ultrasonic:wavenumber:
 :PROPERTIES:
 :CATEGORY: Journal
@@ -433,6 +433,9 @@ TBD.
   - See Yenn Chong
   - Gregory J. Jarmer
   - Jung-Ryul Lee
+
+*** TODO Summary
+TBD.
 
 *** Resources
 - [[https://doi.org/10.1016/j.ndteint.2013.04.003][Journal]]
@@ -453,9 +456,6 @@ TBD.
     keywords = {Nondestructive testing, Ultrasonic guided waves, Laser-generated ultrasound, Image processing}}
 #+end_src
 
-*** TODO Summary
-TBD.
-
 ** mace2005: Finite element prediction of wave motion in structural waveguides :FEM:basic_literature:waveguide:
 :PROPERTIES:
 :CATEGORY: Journal
@@ -468,6 +468,14 @@ TBD.
   - Denis Duhamel
   - Michael J. Brennan
   - Lars Hinke
+
+*** Summary
+One of the most basic works on Finite Elements Method applied to
+waveguides.  In contrast with other works, this one presents a simple
+method that does not involve new types of elements, and depend only on
+the regular stiffness, mass and damping matrices of the matrices used
+in common FEM experiments.  Basic knowledge of FEM theory is the only
+requirement to understand this paper.
 
 *** Resources
 - [[https://doi.org/10.1121/1.1887126][Journal]]
@@ -488,14 +496,6 @@ TBD.
     eprint = {https://doi.org/10.1121/1.1887126}}
 #+end_src
 
-*** Summary
-One of the most basic works on Finite Elements Method applied to
-waveguides.  In contrast with other works, this one presents a simple
-method that does not involve new types of elements, and depend only on
-the regular stiffness, mass and damping matrices of the matrices used
-in common FEM experiments.  Basic knowledge of FEM theory is the only
-requirement to understand this paper.
-
 ** ruzzene2007: Frequency-wavenumber domain filtering for improved damage visualization :wavefield:wavenumber:filter:basic_literature:
 :PROPERTIES:
 :CATEGORY: Journal
@@ -504,6 +504,13 @@ requirement to understand this paper.
 - Added: <2021-10-27 Wed>
 - Year:  2007
 - Author: M Ruzzene
+
+*** Summary
+Very short but very insightful paper presenting the concept of
+filtering in the wavenumber-frequency domain. Although it leaves
+out how to generate and how to apply the windows for filtering,
+this paper should be considered basic literature for the work done
+in ADSL.
 
 *** Resources
 - [[https://doi.org/10.1063/1.2718150][Journal]]
@@ -524,13 +531,6 @@ requirement to understand this paper.
     eprint = {https://aip.scitation.org/doi/pdf/10.1063/1.2718150}}
 #+end_src
 
-*** Summary
-Very short but very insightful paper presenting the concept of
-filtering in the wavenumber-frequency domain. Although it leaves
-out how to generate and how to apply the windows for filtering,
-this paper should be considered basic literature for the work done
-in ADSL.
-
 ** junyoung2020: 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
 :PROPERTIES:
 :ID: junyoung2020
@@ -545,6 +545,9 @@ in ADSL.
   - Eric Flynn
   - To Kang
   - Soonwoo Han
+
+*** TODO Summary
+TBD.
 
 *** Resources
 - [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
@@ -565,9 +568,6 @@ in ADSL.
     keywords = {Steady-state wavefield, Structural health monitoring, Nondestructive evaluation, Damage detection, 2D-wavelet filter, Laser scanning}}
 #+end_src
 
-*** TODO Summary
-TBD.
-
 ** worlton1961: Experimental Confirmation of Lamb Waves at Megacycle Frequencies :wave_propagation:basic_literature:
 :PROPERTIES:
 :ID: worlton1961
@@ -576,6 +576,11 @@ TBD.
 - Added: <2022-09-28 Wed>
 - Year: 1961
 - Author: D. C. Worlton
+
+*** Summary
+It gives a very gentle and simple introduction to the nature of Lamb waves.
+It is not the original paper on Lamb waves (the one written by Lamb), but it one of the first ones to assess Lamb waves theoretically.
+I have seen the original paper, and it has very heavy math, and because of that I was really impressed by the simplicity and depth of this paper.
 
 *** Resources
 - [[http://dx.doi.org/10.1063/1.1736196][DOI]]
@@ -592,11 +597,6 @@ TBD.
   volume =    32}
 #+end_src
 
-*** Summary
-It gives a very gentle and simple introduction to the nature of Lamb waves.
-It is not the original paper on Lamb waves (the one written by Lamb), but it one of the first ones to assess Lamb waves theoretically.
-I have seen the original paper, and it has very heavy math, and because of that I was really impressed by the simplicity and depth of this paper.
-
 ** raghavan2007: Review of Guided-wave Structural Health Monitoring :basic_literature:guided_waves:literature_review:
 :PROPERTIES:
 :ID: raghavan2007
@@ -607,6 +607,16 @@ I have seen the original paper, and it has very heavy math, and because of that 
 - Author:
   - Ajay Raghavan
   - Carlos E. S. Cesnik
+
+*** Summary
+The famous "Cesnik paper in the Shock and Vibration Digest".
+It should have been my first reading since arriving at ASDL.
+It is another fine example of good literature review.
+It is extensive, has plenty of references and goes in depth in various subjects:
+- analytical fundamentals,
+- transducers and signal processing,
+- modeling,
+- SHM system's development, application and integration.
 
 *** Resources
 - [[https://svd.sagepub.com/cgi/content/abstract/39/2/91]] [official but dead link]
@@ -622,16 +632,6 @@ I have seen the original paper, and it has very heavy math, and because of that 
   year =         2007}
 #+end_src
 
-*** Summary
-The famous "Cesnik paper in the Shock and Vibration Digest".
-It should have been my first reading since arriving at ASDL.
-It is another fine example of good literature review.
-It is extensive, has plenty of references and goes in depth in various subjects:
-- analytical fundamentals,
-- transducers and signal processing,
-- modeling,
-- SHM system's development, application and integration.
-
 ** zeng2022: Coherenceogram for leak detection in water pipes :leak_detection:signal_processing:
 :PROPERTIES:
 :ID: zeng2022
@@ -645,6 +645,10 @@ It is extensive, has plenty of references and goes in depth in various subjects:
   - Martin Lambert
   - Mark Stephens
   - Jinzhe Gong
+
+*** Summary
+The one paper I think will be useful for my SPIE presentation.
+I don't have many comments on this one yet, but it looks promissing.
 
 *** Resources
 - [[https://doi.org/10.1016/j.jsv.2022.116979]]
@@ -662,10 +666,6 @@ It is extensive, has plenty of references and goes in depth in various subjects:
 }
 #+end_src
 
-*** Summary
-The one paper I think will be useful for my SPIE presentation.
-I don't have many comments on this one yet, but it looks promissing.
-
 ** beardsley1995: A simple scheme for self-focusing of an array :beam_forming:active_sensing:
 :PROPERTIES:
 :ID: beardsley1995
@@ -678,10 +678,19 @@ I don't have many comments on this one yet, but it looks promissing.
   - M. Peterson
   - J. D. Achenbach
 
+*** Summary
+This paper presents a very interesting algorithm for focusing the beam of an array of transducers.
+By an iterative processes, the system is capable of focusing on a desired source of signal.
+It mainly focus on the signal with highest energy by using cross-correlation.
+However, I believe that this approach could be used in many more ways with proper adaptation.
+Also, considering that this is from 1995, it is very likely that there are better approaches to this, or that this paper faded into oblivion: Google Scholar says it was cited only 60 times.
+
+See also:
+- Shi-Chang, W. and Yijun, S. (1999). Optimum beam steering of linear phased arrays. Wave Motion, 29, 245–265.
+
 *** Resources
 - [[https://doi.org/10.1007/BF00730887]]
 - [[file:./resources/beardsley1995.pdf]]
-
 
 *** Citation
 #+begin_src bibtex
@@ -695,16 +704,6 @@ I don't have many comments on this one yet, but it looks promissing.
   pages =     {169-179}}
 #+end_src
 
-*** Summary
-This paper presents a very interesting algorithm for focusing the beam of an array of transducers.
-By an iterative processes, the system is capable of focusing on a desired source of signal.
-It mainly focus on the signal with highest energy by using cross-correlation.
-However, I believe that this approach could be used in many more ways with proper adaptation.
-Also, considering that this is from 1995, it is very likely that there are better approaches to this, or that this paper faded into oblivion: Google Scholar says it was cited only 60 times.
-
-See also:
-- Shi-Chang, W. and Yijun, S. (1999). Optimum beam steering of linear phased arrays. Wave Motion, 29, 245–265.
-
 ** sundararaman2005: Biologically inspired structural diagnostics through beamforming with phased transducer arrays :basic_literature:beam_forming:
 :PROPERTIES:
 :ID: sundararaman2005
@@ -717,10 +716,14 @@ See also:
   - Douglas E. Adams
   - Elias J. Rigas
 
+*** Summary
+The most important part Section 3: "Beamforming using phased sensor array", which presents the theory that is lacking in many other papers, and that so for I have not found in books.
+Also, although the title sounds very interesting, the approach used is not very new, it is very much similar with many other works that came before it.
+Yet, it deserves the merit of correlating this search with spiders.
+
 *** Resources
 - [[https://doi.org/10.1016/j.ijengsci.2004.12.008]]
 - [[file:./resources/sundararaman2005.pdf]]
-
 
 *** Citation
 #+begin_src bibtex
@@ -733,11 +736,6 @@ See also:
   pages =     {756-778}}
 #+end_src
 
-*** Summary
-The most important part Section 3: "Beamforming using phased sensor array", which presents the theory that is lacking in many other papers, and that so for I have not found in books.
-Also, although the title sounds very interesting, the approach used is not very new, it is very much similar with many other works that came before it.
-Yet, it deserves the merit of correlating this search with spiders.
-
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
@@ -748,6 +746,11 @@ Yet, it deserves the merit of correlating this search with spiders.
 - Added: <2022-05-09 Mon>
 - Year: 2021
 - Author: Peter J. Olver
+
+*** Summary
+A very gentle and basic introduction to Calculus of Variations.
+I found that after reading this, I could understand very well the developments that appear in Lagrangian and Hamiltonian Mechanics.
+It seems like it is actually aimed at engineers, because the Mathematics found in it is not heavy, and the content is presented in a form of tutorial, in a very simple and understandable way.
 
 *** Resources
 - [[https://www-users.cse.umn.edu/~olver/ln_/cv.pdf][Remote file]]
@@ -761,9 +764,4 @@ Yet, it deserves the merit of correlating this search with spiders.
   address =   {Minneapolis, MN},
   year =      2021}
 #+end_src
-
-*** Summary
-A very gentle and basic introduction to Calculus of Variations.
-I found that after reading this, I could understand very well the developments that appear in Lagrangian and Hamiltonian Mechanics.
-It seems like it is actually aimed at engineers, because the Mathematics found in it is not heavy, and the content is presented in a form of tutorial, in a very simple and understandable way.
 

@@ -204,7 +204,10 @@ authors, title, and year of publication."
 		  #'(lambda (author)
 		      (format "\n  - %s" author))
 		  other-authors)))
-       "\n\n** Resources
+       "\n\n** TODO Summary
+TBD.
+
+** Resources
 - [[https://]]
 - [[file:]]
 
@@ -228,10 +231,7 @@ authors, title, and year of publication."
 		     #'(lambda (author)
 			 (format " and %s" author))
 		     other-authors))))))
-       "#+end_src
-
-** TODO Summary
-TBD."))))
+       "#+end_src"))))
 
 (defun library-generate-capture-template (key entry-type description headline)
   "Generate a template for a library entry to be used in `org-capture'.
