@@ -15,6 +15,10 @@
 	  "Library/resources/")
   "Path to the `resources' directory.")
 
+(defvar library-last-entry-resource-file-alist nil
+  "Alist containing file-name and new file-name of a file to be
+copied to the resources directory.")
+
 (defun library-find-org-file ()
   "Find `library-org-file' in Read-Only mode."
   (interactive)
@@ -150,6 +154,56 @@ properly added to the resulting BibTeX entry.  If a FIELD
       0 -2)
      "\n}\n")))
 
+(defun library-get-resource-file ()
+  "Interactively get a resource file.
+If in a buffer visiting a file, uses this file; if a Dired
+buffer, look for selected files.  It always asks for confirmation
+and returns the full file-name of the selected file."
+  (interactive)
+  (cond
+   ((and (buffer-file-name)
+	 (yes-or-no-p
+	  (format
+	   "Use current file as resource [%s]?"
+	   (file-name-nondirectory (buffer-file-name)))))
+    (buffer-file-name))
+   ((eq major-mode 'dired-mode)
+    (let ((file-name
+	   (or (dired-get-marked-files nil nil)
+	       (dired-get-marked-files nil t))))
+      (if (= 1 (length file-name))
+	  (setq file-name (car file-name)))
+      (when (yes-or-no-p
+	     (format
+	      "%s [%s]?"
+	      "Use selected file as resource"
+	      (if (listp file-name)
+		  (format "%i files selected" (length file-name))
+		(file-name-nondirectory file-name))))
+	(if (listp file-name)
+	    (setq file-name
+		  (completing-read
+		   "Choose a file: "
+		   file-name)))
+	file-name)))))
+
+(defun library-new-resource-file (newname)
+  "Check whether NEWNAME can be a new resource file.
+If NEWNAME alreadly exists in `library-resources-directory', then
+iteratively and interactively asks for a new value until an
+acceptable one is found."
+  (let ((file-name (file-name-concat library-resources-directory newname)))
+    (cond
+     ((file-exists-p file-name)
+      (library-new-resource-file
+       (completing-read
+	(format
+	 "\"%s\" already exists. Choose a different name: "
+	 newname)
+	(list newname))))
+     (t
+      newname))))
+
 (defun library-capture-template (entry-type category)
   "Generate a capture template based on ENTRY-TYPE.
 
@@ -159,10 +213,13 @@ in the properties drawer of the entry.  See
 
 This function is interactive and requires input of values for
 authors, title, and year of publication."
-  (let (first-author
+  (let (file-name resource-file online-resource
+	first-author
 	last-read-author other-authors
 	year title entry-id)
     (setq
+     file-name
+     (library-get-resource-file)
      first-author
      (read-from-minibuffer "First author: ")
      other-authors
@@ -180,7 +237,30 @@ authors, title, and year of publication."
 	      (not (string-empty-p year)))
 	 (concat
 	  (downcase (car (last (split-string first-author))))
-	  year)))
+	  year))
+    resource-file
+    (cond
+     ((and file-name entry-id)
+      (library-new-resource-file
+       (format "%s.%s" entry-id (file-name-extension file-name))))
+     ((and file-name (not entry-id))
+      (library-new-resource-file
+       (completing-read "Choose new name of the file: "
+			`(,(file-name-nondirectory file-name))))))
+    online-resource
+    (read-from-minibuffer "URL of online resource: ")
+    ;; Since it is guaranteed that resource-file has no duplicate
+    ;; values, use it to reset entry-id which may be a duplicate.
+    entry-id
+    (if resource-file
+	(file-name-sans-extension resource-file)
+      entry-id))
+    (if (and file-name resource-file)
+	(setq library-last-entry-resource-file-alist
+	      `((file . ,file-name)
+		(newname . ,(file-name-concat
+			     library-resources-directory
+			     resource-file)))))
     (eval
      `(concat
        "* "
@@ -207,11 +287,16 @@ authors, title, and year of publication."
        "\n\n** TODO Summary
 TBD.
 
-** Resources
-- [[https://]]
-- [[file:]]
-
-** Citation
+** Resources\n"
+       (if (string= online-resource "")
+	   "- [[https://]]\n"
+	 (format "- [[%s]]\n" online-resource))
+       (if resource-file
+	   (format
+	    "- [[file:./resources/%s]]\n\n"
+	    resource-file)
+	 "- [[file:]]\n\n")
+       "** Citation
 #+begin_src bibtex\n"
        (library-bibtex-entry
 	entry-type
@@ -270,8 +355,22 @@ as the CATEGORY argument to `library-capture-template'."
 	    (next-line)
 	    (ignore-error nil (bibtex-clean-entry))))))))
 
+(defun library-maybe-copy-resource-file ()
+  "Add resource file to resources directory.
+This function is called as a hook in
+`org-capture-prepare-finalize-hook' to make a copy of a file as
+described in `library-last-entry-resource-file-alist'."
+  (when library-last-entry-resource-file-alist
+    (copy-file
+     (cdr (assoc 'file library-last-entry-resource-file-alist))
+     (cdr (assoc 'newname library-last-entry-resource-file-alist))
+     1))
+  (setq library-last-entry-resource-file-alist nil))
+
 (add-hook 'org-capture-prepare-finalize-hook
 	  'library-bibtex-clean-entry)
+(add-hook 'org-capture-prepare-finalize-hook
+	  'library-maybe-copy-resource-file)
 
 (defun library-tangle-file ()
   "Update `library-bib-file' by running `org-babel-tangle-file' on
