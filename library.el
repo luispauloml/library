@@ -246,7 +246,13 @@ authors, title, and year of publication."
      ((and file-name (not entry-id))
       (library-new-resource-file
        (completing-read "Choose new name of the file: "
-			`(,(file-name-nondirectory file-name)))))))
+			`(,(file-name-nondirectory file-name))))))
+    ;; Since it is guaranteed that resource-file has no duplicate
+    ;; values, use it to reset entry-id which may be a duplicate.
+    entry-id
+    (if resource-file
+	(file-name-sans-extension resource-file)
+      entry-id))
     (if (and file-name resource-file)
 	(setq library-last-entry-resource-file-alist
 	      `((file . ,file-name)
