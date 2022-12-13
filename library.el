@@ -15,6 +15,8 @@
 	  "Library/resources/")
   "Path to the `resources' directory.")
 
+(defvar library-last-entry-resource-file-alist nil)
+
 (defun library-find-org-file ()
   "Find `library-org-file' in Read-Only mode."
   (interactive)
@@ -179,6 +181,19 @@ properly added to the resulting BibTeX entry.  If a FIELD
 		   file-name)))
 	file-name)))))
 
+(defun library-new-resource-file (newname)
+  (let ((file-name (file-name-concat library-resources-directory newname)))
+    (cond
+     ((file-exists-p file-name)
+      (library-new-resource-file
+       (completing-read
+	(format
+	 "\"%s\" already exists. Choose a different name: "
+	 newname)
+	(list newname))))
+     (t
+      newname))))
+
 (defun library-capture-template (entry-type category)
   "Generate a capture template based on ENTRY-TYPE.
 
@@ -188,7 +203,7 @@ in the properties drawer of the entry.  See
 
 This function is interactive and requires input of values for
 authors, title, and year of publication."
-  (let (file-name
+  (let (file-name resource-file
 	first-author
 	last-read-author other-authors
 	year title entry-id)
@@ -212,7 +227,22 @@ authors, title, and year of publication."
 	      (not (string-empty-p year)))
 	 (concat
 	  (downcase (car (last (split-string first-author))))
-	  year)))
+	  year))
+    resource-file
+    (cond
+     ((and file-name entry-id)
+      (library-new-resource-file
+       (format "%s.%s" entry-id (file-name-extension file-name))))
+     ((and file-name (not entry-id))
+      (library-new-resource-file
+       (completing-read "Choose new name of the file: "
+			`(,(file-name-nondirectory file-name)))))))
+    (if (and file-name resource-file)
+	(setq library-last-entry-resource-file-alist
+	      `((file . ,file-name)
+		(newname . ,(file-name-concat
+			     library-resources-directory
+			     resource-file)))))
     (eval
      `(concat
        "* "
@@ -241,9 +271,13 @@ TBD.
 
 ** Resources
 - [[https://]]
-- [[file:]]
-
-** Citation
+- [[file:"
+       (format
+	"%s]]\n\n"
+	(if resource-file
+	    (concat "./resources/" resource-file)
+	  ""))
+       "** Citation
 #+begin_src bibtex\n"
        (library-bibtex-entry
 	entry-type
@@ -302,8 +336,18 @@ as the CATEGORY argument to `library-capture-template'."
 	    (next-line)
 	    (ignore-error nil (bibtex-clean-entry))))))))
 
+(defun library-maybe-copy-resource-file ()
+  (when library-last-entry-resource-file-alist
+    (copy-file
+     (cdr (assoc 'file library-last-entry-resource-file-alist))
+     (cdr (assoc 'newname library-last-entry-resource-file-alist))
+     1))
+  (setq library-last-entry-resource-file-alist nil))
+
 (add-hook 'org-capture-prepare-finalize-hook
 	  'library-bibtex-clean-entry)
+(add-hook 'org-capture-prepare-finalize-hook
+	  'library-maybe-copy-resource-file)
 
 (defun library-tangle-file ()
   "Update `library-bib-file' by running `org-babel-tangle-file' on
