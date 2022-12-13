@@ -213,7 +213,7 @@ in the properties drawer of the entry.  See
 
 This function is interactive and requires input of values for
 authors, title, and year of publication."
-  (let (file-name resource-file
+  (let (file-name resource-file online-resource
 	first-author
 	last-read-author other-authors
 	year title entry-id)
@@ -247,6 +247,8 @@ authors, title, and year of publication."
       (library-new-resource-file
        (completing-read "Choose new name of the file: "
 			`(,(file-name-nondirectory file-name))))))
+    online-resource
+    (read-from-minibuffer "URL of online resource: ")
     ;; Since it is guaranteed that resource-file has no duplicate
     ;; values, use it to reset entry-id which may be a duplicate.
     entry-id
@@ -285,14 +287,15 @@ authors, title, and year of publication."
        "\n\n** TODO Summary
 TBD.
 
-** Resources
-- [[https://]]
-- [[file:"
-       (format
-	"%s]]\n\n"
-	(if resource-file
-	    (concat "./resources/" resource-file)
-	  ""))
+** Resources\n"
+       (if (string= online-resource "")
+	   "- [[https://]]\n"
+	 (format "- [[%s]]\n" online-resource))
+       (if resource-file
+	   (format
+	    "- [[file:./resources/%s]]\n\n"
+	    resource-file)
+	 "- [[file:]]\n\n")
        "** Citation
 #+begin_src bibtex\n"
        (library-bibtex-entry
