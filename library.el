@@ -150,6 +150,35 @@ properly added to the resulting BibTeX entry.  If a FIELD
       0 -2)
      "\n}\n")))
 
+(defun library-get-resource-file ()
+  (interactive)
+  (cond
+   ((and (buffer-file-name)
+	 (yes-or-no-p
+	  (format
+	   "Use current file as resource [%s]?"
+	   (file-name-nondirectory (buffer-file-name)))))
+    (buffer-file-name))
+   ((eq major-mode 'dired-mode)
+    (let ((file-name
+	   (or (dired-get-marked-files nil nil)
+	       (dired-get-marked-files nil t))))
+      (if (= 1 (length file-name))
+	  (setq file-name (car file-name)))
+      (when (yes-or-no-p
+	     (format
+	      "%s [%s]?"
+	      "Use selected file as resource"
+	      (if (listp file-name)
+		  (format "%i files selected" (length file-name))
+		(file-name-nondirectory file-name))))
+	(if (listp file-name)
+	    (setq file-name
+		  (completing-read
+		   "Choose a file: "
+		   file-name)))
+	file-name)))))
+
 (defun library-capture-template (entry-type category)
   "Generate a capture template based on ENTRY-TYPE.
 
@@ -159,10 +188,13 @@ in the properties drawer of the entry.  See
 
 This function is interactive and requires input of values for
 authors, title, and year of publication."
-  (let (first-author
+  (let (file-name
+	first-author
 	last-read-author other-authors
 	year title entry-id)
     (setq
+     file-name
+     (library-get-resource-file)
      first-author
      (read-from-minibuffer "First author: ")
      other-authors
