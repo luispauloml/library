@@ -15,7 +15,9 @@
 	  "Library/resources/")
   "Path to the `resources' directory.")
 
-(defvar library-last-entry-resource-file-alist nil)
+(defvar library-last-entry-resource-file-alist nil
+  "Alist containing file-name and new file-name of a file to be
+copied to the resources directory.")
 
 (defun library-find-org-file ()
   "Find `library-org-file' in Read-Only mode."
@@ -153,6 +155,10 @@ properly added to the resulting BibTeX entry.  If a FIELD
      "\n}\n")))
 
 (defun library-get-resource-file ()
+  "Interactively get a resource file.
+If in a buffer visiting a file, uses this file; if a Dired
+buffer, look for selected files.  It always asks for confirmation
+and returns the full file-name of the selected file."
   (interactive)
   (cond
    ((and (buffer-file-name)
@@ -182,6 +188,10 @@ properly added to the resulting BibTeX entry.  If a FIELD
 	file-name)))))
 
 (defun library-new-resource-file (newname)
+  "Check whether NEWNAME can be a new resource file.
+If NEWNAME alreadly exists in `library-resources-directory', then
+iteratively and interactively asks for a new value until an
+acceptable one is found."
   (let ((file-name (file-name-concat library-resources-directory newname)))
     (cond
      ((file-exists-p file-name)
@@ -337,6 +347,10 @@ as the CATEGORY argument to `library-capture-template'."
 	    (ignore-error nil (bibtex-clean-entry))))))))
 
 (defun library-maybe-copy-resource-file ()
+  "Add resource file to resources directory.
+This function is called as a hook in
+`org-capture-prepare-finalize-hook' to make a copy of a file as
+described in `library-last-entry-resource-file-alist'."
   (when library-last-entry-resource-file-alist
     (copy-file
      (cdr (assoc 'file library-last-entry-resource-file-alist))
