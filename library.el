@@ -156,36 +156,39 @@ properly added to the resulting BibTeX entry.  If a FIELD
 
 (defun library-get-resource-file ()
   "Interactively get a resource file.
-If in a buffer visiting a file, uses this file; if a Dired
-buffer, look for selected files.  It always asks for confirmation
-and returns the full file-name of the selected file."
+First asks the user if they want to add a resource file. Returns
+nil if not, or tries to find a resource otherwise."
   (interactive)
-  (cond
-   ((and (buffer-file-name)
-	 (yes-or-no-p
-	  (format
-	   "Use current file as resource [%s]?"
-	   (file-name-nondirectory (buffer-file-name)))))
-    (buffer-file-name))
-   ((eq major-mode 'dired-mode)
-    (let ((file-name
-	   (or (dired-get-marked-files nil nil)
-	       (dired-get-marked-files nil t))))
-      (if (= 1 (length file-name))
-	  (setq file-name (car file-name)))
-      (when (yes-or-no-p
-	     (format
-	      "%s [%s]?"
-	      "Use selected file as resource"
-	      (if (listp file-name)
-		  (format "%i files selected" (length file-name))
-		(file-name-nondirectory file-name))))
-	(if (listp file-name)
-	    (setq file-name
-		  (completing-read
-		   "Choose a file: "
-		   file-name)))
-	file-name)))))
+  (let (file-name)
+    (when (yes-or-no-p "Add resource file?")
+      (if (and (buffer-file-name)
+	       (yes-or-no-p
+		(format
+		 "Use current file as resource [%s]?"
+		 (file-name-nondirectory (buffer-file-name)))))
+	  (setq file-name (buffer-file-name)))
+      (when (and (not file-name)
+      		 (eq major-mode 'dired-mode))
+	(setq file-name	(or (dired-get-marked-files nil nil)
+			    (dired-get-marked-files nil t)))
+	(if (= 1 (length file-names))
+	    (setq file-name (car file-name)))
+	(when (and file-name
+		   (yes-or-no-p
+		    (format
+		     "%s [%s]?"
+		     "Use selected file as resource"
+		     (if (listp file-name)
+			 (format "%i files selected" (length file-name))
+		       (file-name-nondirectory file-name)))))
+	  (if (listp file-name)
+	      (setq file-name
+		    (completing-read
+		     "Choose a file: "
+		     file-name)))))
+      (unless file-name
+	(setq file-name (read-file-name "Choose a file: " nil default-directory t)))
+      file-name)))
 
 (defun library-new-resource-file (newname)
   "Check whether NEWNAME can be a new resource file.
