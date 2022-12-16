@@ -92,7 +92,7 @@ This is the end of the Introduction and the actual library follows from here.
 - Year: 2009
 - Author: Stéphane Mallat
 
-*** Summary
+*** Notes
 The first four chapters of this book are really impressive.  It
 reviews the basic theory of signal processing up to a point where the
 reader, if they are experienced enough with Fourier Analysis, will
@@ -123,7 +123,7 @@ the wavelet transformation.
 - Year: 1990
 - Author: Jae S. Lim
 
-*** TODO Summary
+*** TODO Notes
 TBD.
 
 *** Resources:
@@ -148,7 +148,7 @@ TBD.
 - Year: 1975
 - Author: Karl F. Graff
 
-*** Summary
+*** Notes
 This was my entry point to the theory of wave propagation.  It
 starts from 1D case for a string, then a rod, then beam, and give
 exhaustive examples and explanations from every aspect and
@@ -181,7 +181,7 @@ but it is very rewarding.
 - Year: 1992
 - Author: Ingrid Daubechies
 
-*** Summary
+*** Notes
 TBD.
 
 *** Resources:
@@ -208,7 +208,7 @@ TBD.
   - Kihong Shin
   - Joseph Hammond
 
-*** Summary
+*** Notes
 So far, one of the best books for needs of understanding Signal Processing, specifically because of the second part on Random Processes, which introduces Correlation.
 
 *** Resources
@@ -234,7 +234,7 @@ So far, one of the best books for needs of understanding Signal Processing, spec
 - Year: 2002
 - Author: Seth Stovack Kessler
 
-*** Summary
+*** Notes
 Its chapter on Lamb wave gives a very extensive and deep review on the literature which is very useful for finding old and original papers on the subject.
 On the other hand, the results of the thesis themselves do not show anything new, and are (probably) obsolete.
 
@@ -262,7 +262,7 @@ On the other hand, the results of the thesis themselves do not show anything new
 - Year: 2014
 - Author: Eric B. Flynn
 
-*** TODO Summary
+*** TODO Notes
 TBD.
 
 *** Resources:
@@ -298,7 +298,7 @@ TBD.
   - Lae-Hyong Kang
   - Eric B. Flynn
 
-*** Summary
+*** Notes
 Presents a comprehensive study on the robustness of AWS technique
 using FEM.  It is not hard to read this paper, but it presents a great
 amount of results.  It is also a valuable source of ideas to run tests
@@ -330,7 +330,7 @@ on future techniques based or similar to AWS.
   - Matthew J. Adams
   - Eric B. Flynn
 
-*** TODO Summary
+*** TODO Notes
 TBD.
 
 *** Resources
@@ -358,7 +358,7 @@ TBD.
   - E. B. Flynn
   - G. S. Jarmer
 
-*** Summary
+*** Notes
 The most basic text for understanding LDV scanning.  It sets the
 foundation for the techniques used at ASDL in a very simple way.
 It lacks, however, a deeper explanation on how the /wavenumber
@@ -398,7 +398,7 @@ fact, should be).
   - Maciej Radzieński
   - Wiesław Ostachowicz
 
-*** TODO Summary
+*** TODO Notes
 TBD.
 
 *** Resources
@@ -434,7 +434,7 @@ TBD.
   - Gregory J. Jarmer
   - Jung-Ryul Lee
 
-*** TODO Summary
+*** TODO Notes
 TBD.
 
 *** Resources
@@ -469,7 +469,7 @@ TBD.
   - Michael J. Brennan
   - Lars Hinke
 
-*** Summary
+*** Notes
 One of the most basic works on Finite Elements Method applied to
 waveguides.  In contrast with other works, this one presents a simple
 method that does not involve new types of elements, and depend only on
@@ -505,7 +505,7 @@ requirement to understand this paper.
 - Year:  2007
 - Author: M Ruzzene
 
-*** Summary
+*** Notes
 Very short but very insightful paper presenting the concept of
 filtering in the wavenumber-frequency domain. Although it leaves
 out how to generate and how to apply the windows for filtering,
@@ -546,7 +546,7 @@ in ADSL.
   - To Kang
   - Soonwoo Han
 
-*** TODO Summary
+*** TODO Notes
 TBD.
 
 *** Resources
@@ -577,7 +577,7 @@ TBD.
 - Year: 1961
 - Author: D. C. Worlton
 
-*** Summary
+*** Notes
 It gives a very gentle and simple introduction to the nature of Lamb waves.
 It is not the original paper on Lamb waves (the one written by Lamb), but it one of the first ones to assess Lamb waves theoretically.
 I have seen the original paper, and it has very heavy math, and because of that I was really impressed by the simplicity and depth of this paper.
@@ -608,7 +608,7 @@ I have seen the original paper, and it has very heavy math, and because of that 
   - Ajay Raghavan
   - Carlos E. S. Cesnik
 
-*** Summary
+*** Notes
 The famous "Cesnik paper in the Shock and Vibration Digest".
 It should have been my first reading since arriving at ASDL.
 It is another fine example of good literature review.
@@ -646,7 +646,7 @@ It is extensive, has plenty of references and goes in depth in various subjects:
   - Mark Stephens
   - Jinzhe Gong
 
-*** Summary
+*** Notes
 The one paper I think will be useful for my SPIE presentation.
 I don't have many comments on this one yet, but it looks promissing.
 
@@ -678,7 +678,7 @@ I don't have many comments on this one yet, but it looks promissing.
   - M. Peterson
   - J. D. Achenbach
 
-*** Summary
+*** Notes
 This paper presents a very interesting algorithm for focusing the beam of an array of transducers.
 By an iterative processes, the system is capable of focusing on a desired source of signal.
 It mainly focus on the signal with highest energy by using cross-correlation.
@@ -716,7 +716,7 @@ See also:
   - Douglas E. Adams
   - Elias J. Rigas
 
-*** Summary
+*** Notes
 The most important part Section 3: "Beamforming using phased sensor array", which presents the theory that is lacking in many other papers, and that so for I have not found in books.
 Also, although the title sounds very interesting, the approach used is not very new, it is very much similar with many other works that came before it.
 Yet, it deserves the merit of correlating this search with spiders.
@@ -747,7 +747,7 @@ Yet, it deserves the merit of correlating this search with spiders.
 - Year: 2021
 - Author: Peter J. Olver
 
-*** Summary
+*** Notes
 A very gentle and basic introduction to Calculus of Variations.
 I found that after reading this, I could understand very well the developments that appear in Lagrangian and Hamiltonian Mechanics.
 It seems like it is actually aimed at engineers, because the Mathematics found in it is not heavy, and the content is presented in a form of tutorial, in a very simple and understandable way.

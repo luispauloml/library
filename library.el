@@ -287,7 +287,7 @@ authors, title, and year of publication."
 		  #'(lambda (author)
 		      (format "\n  - %s" author))
 		  other-authors)))
-       "\n\n** TODO Summary
+       "\n\n** TODO Notes
 TBD.
 
 ** Resources\n"
