@@ -280,6 +280,33 @@ Still, they are useful as reference books, and this seems to have useful content
   address =   {Hoboken, New Jersey}}
 #+end_src
 
+** johnson1993: Array signal processing: concepts and techniques :basic_literature:beamforming:sensor_array:
+:PROPERTIES:
+:ID: johnson1993
+:CATEGORY: Book
+:END:
+- Added: <2022-12-21 Wed>
+- Year: 1993
+- Authors:
+  - Don H. Johnson
+  - Dan E. Dudgeon
+
+*** Notes
+This book introduces the theory of sensor arrays from the very basic to more advanced topics.
+I have not yet read past the first few sections of the first chapter, but I have a feeling that it will be just like [[id:graff1975][graff1975: Wave motion in elastic solids]] but for sensor arrays, which is good.
+
+*** Resources
+- [[file:./resources/johnson1993.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@book{johnson1993,
+  author =    {Don H. Johnson and Dan E. Dudgeon},
+  title =        {Array signal processing: concepts and techniques},
+  publisher =    {Prentice Hall},
+  year =         1993}
+#+end_src
+
 * Conference papers
 
 ** flynn2014: Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
