@@ -251,6 +251,35 @@ On the other hand, the results of the thesis themselves do not show anything new
   year =         2002}
 #+end_src
 
+** haykin2009: Handbook on array processing and sensor networks :handbook:sensor_array:beamforming:
+:PROPERTIES:
+:ID: haykin2009
+:CATEGORY: Book
+:END:
+- Added: <2022-12-21 Wed>
+- Year: 2009
+- Authors:
+  - Simon Haykin
+  - K. J. Ray Liu
+
+*** Note
+I usually do not like "handbooks" because they are very dense and, although I can see that they start from simpler and go to deeper topics, they lack basic theory to even understand the simpler subjects.
+As a result, much of the equations are simply "throw" at me without explaining (or with no explanation at all) on how to obtain them, instead deferring explanation to numerous references.
+Still, they are useful as reference books, and this seems to have useful contents on robustness of sensor arrays (chapter 4).
+
+*** Resources
+- [[file:./resources/haykin2009.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@book{haykin2009,
+  editor =       {Simon Haykin and K. J. Ray Liu},
+  title =        {Handbook on array processing and sensor networks},
+  publisher =    {Wiley},
+  year =         2009,
+  address =   {Hoboken, New Jersey}}
+#+end_src
+
 * Conference papers
 
 ** flynn2014: Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
