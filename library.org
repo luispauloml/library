@@ -695,7 +695,7 @@ I don't have many comments on this one yet, but it looks promissing.
 }
 #+end_src
 
-** beardsley1995: A simple scheme for self-focusing of an array :beam_forming:active_sensing:
+** beardsley1995: A simple scheme for self-focusing of an array :beamforming:active_sensing:
 :PROPERTIES:
 :ID: beardsley1995
 :CATEGORY: Journal
@@ -733,7 +733,7 @@ See also:
   pages =     {169-179}}
 #+end_src
 
-** sundararaman2005: Biologically inspired structural diagnostics through beamforming with phased transducer arrays :basic_literature:beam_forming:
+** sundararaman2005: Biologically inspired structural diagnostics through beamforming with phased transducer arrays :basic_literature:beamforming:
 :PROPERTIES:
 :ID: sundararaman2005
 :CATEGORY: Journal
