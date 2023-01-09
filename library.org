@@ -307,6 +307,30 @@ I have not yet read past the first few sections of the first chapter, but I have
   year =         1993}
 #+end_src
 
+** gao2022: Developing novel sensor arrays for active and passive sensing in structural health monitoring :sensor_array:beamforming:active_sensing:
+:PROPERTIES:
+:ID: gao2022
+:CATEGORY: Thesis
+:END:
+- Added: <2023-01-09 Mon>
+- Year: 2022
+- Author: Qiang Gao
+
+*** Notes
+Qiang's PhD thesis that have been serving for me as a source of literature references and  results from previous studies at ASDL.
+
+*** Resources
+- [[file:./resources/gao2022.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@phdthesis{gao2022,
+  author =       {Qiang Gao},
+  title =        {Developing novel sensor arrays for active and passive sensing in structural health monitoring},
+  school =       {Chonnam National University},
+  year =         2022}
+#+end_src
+
 * Conference papers
 
 ** flynn2014: Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
