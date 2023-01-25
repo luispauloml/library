@@ -464,6 +464,39 @@ fact, should be).
     volume =	 {1}}
 #+end_src
 
+** bihan2000: Blind wave separation using vector-sensors :blind_wave_separation:
+:PROPERTIES:
+:ID: bihan2000
+:CATEGORY: Conference
+:END:
+- Added: <2023-01-25 Wed>
+- Year: 2000
+- Authors:
+  - N. Le Bihan
+  - J. Mars
+
+*** Notes
+A work to take note on "blind wave separation" which might be useful in the future.
+From this work, I can probably find other articles, possibly better than this.
+
+*** Resources
+- [[https://doi.org/10.1109/ICASSP.2000.859303]]
+- [[file:./resources/bihan2000.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@inproceedings{bihan2000,
+  author =       {N. {Le Bihan} and J. Mars},
+  title =        {Blind wave separation using vector-sensors},
+  booktitle = {2000 IEEE International Conference on Acoustics, Speech, and Signal Processing. Proceedings (Cat. No.00CH37100)},
+  year =      2000,
+  volume =    4,
+  pages =     {2314-2317},
+  month =     {June},
+  doi =          {10.1109/ICASSP.2000.859303}}
+}
+#+end_src
+
 * Journal papers
 
 ** kudela2015: Identification of cracks in thin-walled structures by means of wavenumber filtering :lamb_waves:wavenumber:laser:
