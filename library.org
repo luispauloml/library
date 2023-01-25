@@ -882,6 +882,36 @@ It also provides a lengthy summary of techniques of the time it was published.
   pages =        {4-24}}
 #+end_src
 
+** yu2007: In-situ optimized PWAS phased arrays for lamb wave structural health monitoring :beamforming:phased_arrays:
+:PROPERTIES:
+:ID: yu2007
+:CATEGORY: Journal
+:END:
+- Added: <2023-01-25 Wed>
+- Year: 2007
+- Authors:
+  - Lingyu Yu
+  - Victor Giurgiutiu
+
+*** Notes
+A very thorough exposition of the many parameters that can influence beamforming in a linear array.
+
+*** Resources
+- [[http://dx.doi.org/10.2140/jomms.2007.2.459]]
+- [[file:./resources/yu2007.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{yu2007,
+  author =       {Lingyu Yu and Victor Giurgiutiu},
+  title =        {In-situ optimized {PWAS} phased arrays for lamb wave structural health monitoring},
+  journal =      {Journal of Mechanics of Materials and Structures},
+  year =         2007,
+  volume =    2,
+  number =    3,
+  pages =     {459-487}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
