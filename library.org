@@ -816,6 +816,39 @@ Yet, it deserves the merit of correlating this search with spiders.
   pages =     {756-778}}
 #+end_src
 
+** vanveen1988: Beamforming: a versatile approach to spatial filtering :basic_literature:beamforming:
+:PROPERTIES:
+:ID: vanveen1988
+:CATEGORY: Journal
+:END:
+- Added: <2023-01-25 Wed>
+- Year: 1989
+- Authors:
+  - B. D. Vanveen
+  - K. M. Buckley
+
+*** Notes
+This one can serve as an even shorter introduction to beamforming than [[id:johnson1993][johnson1993: Array signal processing: concepts and techniques]].
+I have not read it thoroughly, but the introduction by itself is very good.
+I highlight the fact that it introduces the terminology to the reader, which is something that is very important for me in order to understand basic concepts.
+It also provides a lengthy summary of techniques of the time it was published.
+
+*** Resources
+- [[https://doi.org/10.1109/53.665]]
+- [[file:./resources/vanveen1988.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{vanveen1989,
+  author =       {B. D. {Van Veen} and K. M. Buckley},
+  title =        {Beamforming: a versatile approach to spatial filtering},
+  journal =      {IEEE ASSP Magazine},
+  year =         1988,
+  volume =       5,
+  number =       2,
+  pages =        {4-24}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
