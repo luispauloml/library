@@ -356,7 +356,7 @@ as the CATEGORY argument to `library-capture-template'."
 	  (goto-char (point-min))
 	  (when (search-forward "begin_src bibtex" nil t)
 	    (next-line)
-	    (ignore-error nil (bibtex-clean-entry))))))))
+	    (ignore-error t (bibtex-clean-entry))))))))
 
 (defun library-maybe-copy-resource-file ()
   "Add resource file to resources directory.
