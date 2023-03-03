@@ -912,6 +912,38 @@ A very thorough exposition of the many parameters that can influence beamforming
   pages =     {459-487}}
 #+end_src
 
+** yu2016: Guided wave phased array beamforming and imaging in composite plates :keywords:
+:PROPERTIES:
+:ID: yu2016
+:CATEGORY: Journal
+:END:
+- Added: <2023-03-03 Fri>
+- Year: 2016
+- Authors:
+  - Lingyu Yu
+  - Zhenhua Tian
+
+*** Notes
+Presents a good formulation for beamforming factor for a square grid of sensors.
+It also describes some relationship between the wavenumber of the waves and the spacing between the sensors, something it is still not clear for me.
+It also uses laser for creating the array of sensors.
+
+*** Resources
+- [[http://dx.doi.org/10.1016/j.ultras.2016.02.001]]
+- [[file:./resources/yu2016.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{yu2016,
+  author =       {Lingyu Yu and Zhenhua Tian},
+  title =        {Guided wave phased array beamforming and imaging in composite plates},
+  journal =      {Ultrasonics},
+  year =         2016,
+  volume =    68,
+  pages =     {43--53},
+  month =     {May}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
