@@ -171,7 +171,7 @@ nil if not, or tries to find a resource otherwise."
       		 (eq major-mode 'dired-mode))
 	(setq file-name	(or (dired-get-marked-files nil nil)
 			    (dired-get-marked-files nil t)))
-	(if (= 1 (length file-names))
+	(if (= 1 (length file-name))
 	    (setq file-name (car file-name)))
 	(when (and file-name
 		   (yes-or-no-p
