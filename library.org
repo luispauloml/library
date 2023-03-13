@@ -499,6 +499,37 @@ From this work, I can probably find other articles, possibly better than this.
 
 * Journal papers
 
+** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection :keywords:
+:PROPERTIES:
+:ID: jeon2022
+:CATEGORY: Journal
+:END:
+- Added: <2023-03-13 Mon>
+- Year: 2022
+- Authors:
+  - Jun Young Jeon
+  - Yinan Miao
+  - Gyuhae Park
+  - Eric Flynn
+
+*** TODO Notes
+TBD.
+
+*** Resources
+- [[https://doi.org/10.1016/j.ymssp.2021.108626]]
+- [[file:./resources/jeon2022.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{jeon2022,
+  author =       {Jun Young Jeon and Yinan Miao and Gyuhae Park and Eric Flynn},
+  title =        {Compressive laser scanning with full steady state wavefield for structural damage detection},
+  journal =      {Mechanical Systems and Signal Processing},
+  year =         2022,
+  volume =    169,
+  month =     {April}}
+#+end_src
+
 ** kudela2015: Identification of cracks in thin-walled structures by means of wavenumber filtering :lamb_waves:wavenumber:laser:
 :PROPERTIES:
 :ID: kudela2015
