@@ -975,6 +975,38 @@ It also uses laser for creating the array of sensors.
   month =     {May}}
 #+end_src
 
+** gao2021: A novel T-shaped sensor cluster for acoustic source localization :keywords:
+:PROPERTIES:
+:ID: gao2021
+:CATEGORY: Journal
+:END:
+- Added: <2023-03-13 Mon>
+- Year: 2021
+- Authors:
+  - Qiang Gao
+  - Jun Young Jeon
+  - Gyuhae Park
+  - Yunde Shen
+  - Jiawei Xiang
+
+*** TODO Notes
+TBD.
+
+*** Resources
+- [[https://doi.org/10.1177/14759217211004236]]
+- [[file:./resources/gao2021.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{gao2021,
+  author =       {Qiang Gao and Jun Young Jeon and Gyuhae Park and Yunde Shen and Jiawei Xiang},
+  title =        {A novel T-shaped sensor cluster for acoustic source localization},
+  journal =      {Structural Health Monitoring},
+  year =         2021,
+  volume =    21,
+  number =    2}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
