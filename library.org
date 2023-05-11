@@ -1007,6 +1007,38 @@ TBD.
   number =    2}
 #+end_src
 
+** malinowski2008: A Phased Array-based Method for Damage Detection and Localization in Thin Plates :beamforming:laser:
+:PROPERTIES:
+:ID: malinowski2008
+:CATEGORY: Journal
+:END:
+- Added: <2023-05-11 Thu>
+- Year: 2008
+- Authors:
+  - Pawel Malinowski
+  - Tomasz Wandowski
+  - Irina Trendafilova
+  - Wieslaw Ostachowicz
+
+*** Notes
+That one paper about combining position maps.
+
+*** Resources
+- [[https://doi.org/10.1177/1475921708090569]]
+- [[file:./resources/malinowski2008.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{malinowski2008,
+  author =       {Pawel Malinowski and Tomasz Wandowski and Irina Trendafilova and Wieslaw Ostachowicz},
+  title =        {A Phased Array-based Method for Damage Detection and Localization in Thin Plates},
+  journal =      {Structural Health Monitoring},
+  year =         2008,
+  volume =    8,
+  number =    1,
+  pages =     {5--15}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
