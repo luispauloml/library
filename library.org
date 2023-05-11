@@ -935,7 +935,7 @@ A very thorough exposition of the many parameters that can influence beamforming
 #+begin_src bibtex
 @article{yu2007,
   author =       {Lingyu Yu and Victor Giurgiutiu},
-  title =        {In-situ optimized {PWAS} phased arrays for lamb wave structural health monitoring},
+  title =        {In-situ optimized {PWAS} phased arrays for {Lamb} wave {Structural Health Monitoring}},
   journal =      {Journal of Mechanics of Materials and Structures},
   year =         2007,
   volume =    2,
