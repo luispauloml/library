@@ -497,6 +497,39 @@ From this work, I can probably find other articles, possibly better than this.
 }
 #+end_src
 
+** ruzzene2010: Damage visualization via beamforming of frequency-wavenumber filtered wavefield data :beamforming:laser:
+:PROPERTIES:
+:ID: ruzzene2010
+:CATEGORY: Conference
+:END:
+- Added: <2023-05-11 Thu>
+- Year: 2010
+- Authors:
+  - Massimo Ruzzene
+  - Buli Xu
+  - Sang Jun Lee
+  - Thomas E. Michaels
+  - Jennifer E. Michaels
+
+*** TODO Notes
+TBD.
+
+*** Resources
+- [[https://doi.org/10.1117/12.847851]]
+- [[file:./resources/ruzzene2010.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@inproceedings{ruzzene2010,
+  author =       {Massimo Ruzzene and Buli Xu and Sang Jun Lee and Thomas E. Michaels and Jennifer E. Michaels},
+  title =        {Damage visualization via beamforming of frequency-wavenumber filtered wavefield data},
+  booktitle = {Proceedings of SPIE},
+  year =      2010,
+  editor =    {Tribikram Kundu},
+  volume =    7650,
+  series =    {Health Monitoring of Structural and Biological Systems}}
+#+end_src
+
 * Journal papers
 
 ** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection :keywords:
