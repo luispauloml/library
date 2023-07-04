@@ -1101,6 +1101,37 @@ A paper describing and simple but powerful algorithm for compensating dispersion
   doi = {10.1109/TUFFC.2003.1197965}}
 #+end_src
 
+** zheng2023: A Review of Laser Ultrasonic Lamb Wave Damage Detection Methods for Thin-Walled Structures :literature_review:laser:
+:PROPERTIES:
+:ID: zheng2023
+:CATEGORY: Journal
+:END:
+- Added: <2023-07-04 Tue>
+- Year: 2023
+- Authors:
+  - Shanpu Zheng
+  - Ying Luo
+  - Chenguang Xu
+  - Guidong Xu
+
+*** Notes
+A comprehensive review on laser scanning techniques.
+
+*** Resources
+- [[https://doi.org/10.3390/s23063183]]
+- [[file:./resources/zheng2023.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{zheng2023,
+  author =       {Shanpu Zheng and Ying Luo and Chenguang Xu and Guidong Xu},
+  title =        {A Review of Laser Ultrasonic Lamb Wave Damage Detection Methods for Thin-Walled Structures},
+  journal =      {Sensors},
+  year =         2023,
+  volume =    23,
+  number =    6}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
