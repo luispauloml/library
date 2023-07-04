@@ -1072,6 +1072,35 @@ That one paper about combining position maps.
   pages =     {5--15}}
 #+end_src
 
+** wilcox2003: A Rapid Signal Processing Technique to Remove the Effect of Dispersion from Guided Wave Signals :lamb_waves:dispersion:
+:PROPERTIES:
+:ID: wilcox2003
+:CATEGORY: Journal
+:END:
+- Added: <2023-07-03 Mon>
+- Year: 2003
+- Author: Paul D. Wilcox
+
+*** Notes
+A paper describing and simple but powerful algorithm for compensating dispersion in guided waves.
+
+*** Resources
+- [[http://dx.doi.org/10.1109/TUFFC.2003.1197965]]
+- [[file:./resources/wilcox2003.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{wilcox2003,
+  author =       {Paul D. Wilcox},
+  title =        {A Rapid Signal Processing Technique to Remove the Effect of Dispersion from Guided Wave Signals},
+  journal =      {IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control},
+  year =         2003,
+  volume =    50,
+  number =    4,
+  pages =     {419-427},
+  doi = {10.1109/TUFFC.2003.1197965}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
