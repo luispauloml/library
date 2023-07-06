@@ -1163,6 +1163,38 @@ TBD.
   month =     {August}}
 #+end_src
 
+** segers2021: Nonlinear local wave-direction estimation for in-sight and out-of-sight damage localization in composite plates :keywords:
+:PROPERTIES:
+:ID: segers2021
+:CATEGORY: Journal
+:END:
+- Added: <2023-07-06 Thu>
+- Year: 2021
+- Authors:
+  - Joost Segers
+  - Saeid Hedayatrasa
+  - Ga\'{e}tan Poelman
+  - Wim Van Paepegem
+  - Mathias Kersemans
+
+*** TODO Notes
+TBD.
+
+*** Resources
+- [[https://doi.org/10.1016/j.ndteint.2021.102412]]
+- [[file:./resources/segers2021.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{segers2021,
+  author =       {Joost Segers and Saeid Hedayatrasa and Ga\'{e}tan Poelman and Wim Van Paepegem and Mathias Kersemans},
+  title =        {Nonlinear local wave-direction estimation for in-sight and out-of-sight damage localization in composite plates},
+  journal =      {NDT \& T International},
+  year =         2021,
+  volume =    119,
+  month =     {April}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
