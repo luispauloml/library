@@ -1132,6 +1132,37 @@ A comprehensive review on laser scanning techniques.
   number =    6}
 #+end_src
 
+** anton2009: Reference-Free Damage Detection Using Instantaneous Baseline Measurements :keywords:
+:PROPERTIES:
+:ID: anton2009
+:CATEGORY: Journal
+:END:
+- Added: <2023-07-04 Tue>
+- Year: 2009
+- Authors:
+  - Steven R. Anton
+  - Daniel J. Inman
+  - Gyuhae Park
+
+*** TODO Notes
+TBD.
+
+*** Resources
+- [[http://dx.doi.org/10.2514/1.43252]]
+- [[file:./resources/anton2009.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{anton2009,
+  author =       {Steven R. Anton and Daniel J. Inman and Gyuhae Park},
+  title =        {Reference-Free Damage Detection Using Instantaneous Baseline Measurements},
+  journal =      {AIAA Journal},
+  year =         2009,
+  volume =    47,
+  number =    8,
+  month =     {August}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
