@@ -231,10 +231,10 @@ authors, title, and year of publication."
 		 (read-from-minibuffer "Next author (leave blank to finish): "))
 	   (setq other-authors (cons last-read-author other-authors)))
 	 (reverse (cdr other-authors)))
-     year
-     (read-from-minibuffer "Year of publication: ")
      title
      (read-from-minibuffer "Title: ")
+     year
+     (read-from-minibuffer "Year of publication: ")
      entry-id
      (if (and (not (string-empty-p first-author))
 	      (not (string-empty-p year)))
