@@ -219,7 +219,7 @@ authors, title, and year of publication."
   (let (file-name resource-file online-resource
 	first-author
 	last-read-author other-authors
-	year title entry-id)
+	year title entry-id keywords)
     (setq
      file-name
      (library-get-resource-file)
@@ -235,6 +235,14 @@ authors, title, and year of publication."
      (read-from-minibuffer "Title: ")
      year
      (read-from-minibuffer "Year of publication: ")
+     keywords
+     ;; `crm-separator' copied from `org-set-tags-command'
+     (let ((crm-separator "[ \t]*:[ \t]*"))
+       (with-current-buffer
+	   (find-file-noselect library-org-file 'nowarn)
+	 (completing-read-multiple
+	  "Keywords: "
+	  (mapcar #'car (org-get-buffer-tags)))))
      entry-id
      (if (and (not (string-empty-p first-author))
 	      (not (string-empty-p year)))
@@ -270,7 +278,9 @@ authors, title, and year of publication."
        (or entry-id "<entry id>")
        ": %?"
        (if (string-empty-p title) "Title" title)
-       " :keywords:
+       (when keywords
+	   (concat " :" (mapconcat #'identity keywords ":") ":"))
+       "
 :PROPERTIES:
 :ID: "
        (or entry-id "<entry id>")
