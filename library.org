@@ -1173,7 +1173,7 @@ TBD.
 - Authors:
   - Joost Segers
   - Saeid Hedayatrasa
-  - Ga\'{e}tan Poelman
+  - Gaétan Poelman
   - Wim Van Paepegem
   - Mathias Kersemans
 
