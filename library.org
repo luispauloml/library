@@ -532,7 +532,7 @@ TBD.
 
 * Journal papers
 
-** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection :keywords:
+** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection
 :PROPERTIES:
 :ID: jeon2022
 :CATEGORY: Journal
@@ -976,7 +976,7 @@ A very thorough exposition of the many parameters that can influence beamforming
   pages =     {459-487}}
 #+end_src
 
-** yu2016: Guided wave phased array beamforming and imaging in composite plates :keywords:
+** yu2016: Guided wave phased array beamforming and imaging in composite plates
 :PROPERTIES:
 :ID: yu2016
 :CATEGORY: Journal
@@ -1008,7 +1008,7 @@ It also uses laser for creating the array of sensors.
   month =     {May}}
 #+end_src
 
-** gao2021: A novel T-shaped sensor cluster for acoustic source localization :keywords:
+** gao2021: A novel T-shaped sensor cluster for acoustic source localization
 :PROPERTIES:
 :ID: gao2021
 :CATEGORY: Journal
@@ -1132,7 +1132,7 @@ A comprehensive review on laser scanning techniques.
   number =    6}
 #+end_src
 
-** anton2009: Reference-Free Damage Detection Using Instantaneous Baseline Measurements :keywords:
+** anton2009: Reference-Free Damage Detection Using Instantaneous Baseline Measurements
 :PROPERTIES:
 :ID: anton2009
 :CATEGORY: Journal
@@ -1163,7 +1163,7 @@ TBD.
   month =     {August}}
 #+end_src
 
-** segers2021: Nonlinear local wave-direction estimation for in-sight and out-of-sight damage localization in composite plates :keywords:
+** segers2021: Nonlinear local wave-direction estimation for in-sight and out-of-sight damage localization in composite plates
 :PROPERTIES:
 :ID: segers2021
 :CATEGORY: Journal
