@@ -1195,6 +1195,34 @@ TBD.
   month =     {April}}
 #+end_src
 
+** park2006: Piezoelectric Active Sensor Self-Diagnostics Using Electrical Admittance Measurements :piezoelectric:
+:PROPERTIES:
+:ID: park2006
+:CATEGORY: Journal
+:END:
+- Added: <2023-07-10 Mon>
+- Year: 2006
+- Authors:
+  - Gyuhae Park
+  - Charles R. Farrar
+  - Amanda C. Rutherford
+  - Amy N. Robertson
+
+*** Resources
+- [[https://doi.org/10.1115/1.2202157]]
+- [[file:./resources/park2006.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{park2006,
+  author =       {Gyuhae Park and Charles R. Farrar and Amanda C. Rutherford and Amy N. Robertson},
+  title =        {Piezoelectric Active Sensor Self-Diagnostics Using Electrical Admittance Measurements},
+  journal =      {Journal of Vibration and Acoustics},
+  year =         2006,
+  volume =    128,
+  month =     {August}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
