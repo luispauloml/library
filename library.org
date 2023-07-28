@@ -1365,6 +1365,32 @@ This paper presents a method for group velocity estimation on composite plates.
   pages =     {148--154}}
 #+end_src
 
+** chong2018: Dispersion curve estimation via a spatial covariance method with ultrasonic wavefield imaging :dispersion:
+:PROPERTIES:
+:ID: chong2018
+:CATEGORY: Journal
+:END:
+- Added: <2023-07-28 Fri>
+- Year: 2018
+- Authors:
+  - See Yenn Chong
+  - Michael D. Todd
+
+*** Resources
+- [[https://dx.doi.org/10.1016/j.ultras.2018.04.012]]
+- [[file:./resources/chong2018.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{chong2018,
+  author =       {See Yenn Chong and Michael D. Todd},
+  title =        {Dispersion curve estimation via a spatial covariance method with ultrasonic wavefield imaging},
+  journal =      {Ultrasonics},
+  year =         2018,
+  volume =    89,
+  pages =     {46--63}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
