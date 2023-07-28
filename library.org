@@ -530,6 +530,34 @@ TBD.
   series =    {Health Monitoring of Structural and Biological Systems}}
 #+end_src
 
+** jeon2018: Laser-scanning based damage visualization using phase-arrayed local wave field measurements :beamforming:laser:phased_array:
+:PROPERTIES:
+:ID: jeon2018
+:CATEGORY: Conference
+:END:
+- Added: <2023-07-28 Fri>
+- Year: 2018
+- Authors:
+  - Jun Yeong Jeon
+  - H. K. Jung
+  - Gyuhae Park
+  - To Kang
+  - S. W. Han
+
+*** Resources
+- [[file:./resources/jeon2018.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@inproceedings{jeon2018,
+  author =       {J. Y. Jeon and H. K. Jung and G. Park and T. Kang and S. W. Han},
+  title =        {Laser-scanning based damage visualization using phase-arrayed local wave field measurements},
+  OPTbooktitle = {7th Asia-Pacific Workshop on Strutural Health Monitoring},
+  OPTyear =      {2018},
+  OPTaddress =   {Hong Kong SAR, P. R. China},
+}
+#+end_src
+
 * Journal papers
 
 ** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection
