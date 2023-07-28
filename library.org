@@ -1300,6 +1300,39 @@ Unpublished work.
   pages =     {50--64}}
 #+end_src
 
+** overly2009: Piezoelectric Active-Sensor Diagnostics and Validation Using Instantaneous Baseline Data :active_sensing:baseline_free:piezoelectric:
+:PROPERTIES:
+:ID: overly2009
+:CATEGORY: Journal
+:END:
+- Added: <2023-07-28 Fri>
+- Year: 2009
+- Authors:
+  - Timothy G. Overly
+  - Gyuhae Park
+  - Kevin M. Farinholt
+  - Charles R. Farrar
+
+*** Notes
+The first paper from my advisor on baseline-free damage detection.
+
+*** Resources
+- [[https://dx.doi.org/10.1109/JSEN.2009.2018351]]
+- [[file:./resources/overly2009.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{overly2009,
+  author =       {Timothy G. Overly and Gyuhae Park and Kevin M. Farinholt and Charles R. Farrar},
+  title =        {Piezoelectric Active-Sensor Diagnostics and Validation Using Instantaneous Baseline Data},
+  journal =      {IEEE Sensors Journal},
+  year =         2009,
+  volume =    9,
+  number =    11,
+  pages =     {1414--1421},
+  month =     {November}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
