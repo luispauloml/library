@@ -1333,6 +1333,38 @@ The first paper from my advisor on baseline-free damage detection.
   month =     {November}}
 #+end_src
 
+** glushkov2013: Group velocity of cylindrical guided waves in anisotropic laminate composites :velocity_estimation:guided_waves:composites:
+:PROPERTIES:
+:ID: glushkov2013
+:CATEGORY: Journal
+:END:
+- Added: <2023-07-28 Fri>
+- Year: 2013
+- Authors:
+  - Evgeny Glushkov
+  - Natalia Glushkova
+  - Artem Eremin
+  - Rolf Lammering
+
+*** Notes
+This paper presents a method for group velocity estimation on composite plates.
+
+*** Resources
+- [[http://dx.doi.org/10.1121/1.4829534]]
+- [[file:./resources/glushkov2013.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{glushkov2013,
+  author =       {Evgeny Glushkov and Natalia Glushkova and Artem Eremin and Rolf Lammering},
+  title =        {Group velocity of cylindrical guided waves in anisotropic laminate composites},
+  journal =      {J. Acoust. Soc. Am.},
+  year =         2013,
+  volume =    135,
+  number =    1,
+  pages =     {148--154}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
