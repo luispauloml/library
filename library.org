@@ -1270,6 +1270,35 @@ Unpublished work.
 *** Resources
 - [[file:./resources/nam2023.pdf]]
 
+** shan2016: Multi-damage localization on large complex structures through an extended delay-and-sum based method :beamforming:complex_structure:
+:PROPERTIES:
+:ID: shan2016
+:CATEGORY: Journal
+:END:
+- Added: <2023-07-28 Fri>
+- Year: 2016
+- Authors:
+  - Shengbo Shan
+  - Jinhao Qiu
+  - Chao Zhang
+  - Hongli Ji
+  - Li Cheng
+
+*** Resources
+- [[https://dx.doi.org/10.1177/1475921715623358]]
+- [[file:./resources/shan2016.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{shan2016,
+  author =       {Shengbo Shan and Jinhao Qiu and Chao Zhang and Hongli Ji and Li Cheng},
+  title =        {Multi-damage localization on large complex structures through an extended delay-and-sum based method},
+  journal =      {Structural Health Monitoring},
+  year =         2016,
+  volume =    15,
+  number =    1,
+  pages =     {50--64}}
+#+end_src
 
 * Other references
 
