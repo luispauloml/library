@@ -1391,6 +1391,37 @@ This paper presents a method for group velocity estimation on composite plates.
   pages =     {46--63}}
 #+end_src
 
+** konstantinidis2007: An Investigation Into the Temperature Stability of a Guided Wave Structural Health Monitoring System Using Permanently Attached Sensors :obs:baseline:
+:PROPERTIES:
+:ID: konstantinidis2007
+:CATEGORY: Journal
+:END:
+- Added: <2023-10-04 Wed>
+- Year: 2007
+- Authors:
+  - Georgios Konstantinidis
+  - Paul D. Wilcox
+  - Bruce W. Drinkwater
+
+*** Notes
+The paper that describes Optimal Baseline Subtraction (OBS).
+
+*** Resources
+- [[https://doi.org/10.1109/JSEN.2007.894908]]
+- [[file:./resources/konstantinidis2007.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{konstantinidis2007,
+  author =       {Georgios Konstantinidis and Paul D. Wilcox and Bruce W. Drinkwater},
+  title =        {An Investigation Into the Temperature Stability of a Guided Wave Structural Health Monitoring System Using Permanently Attached Sensors},
+  journal =      {IEEE Sensors},
+  year =         2007,
+  volume =    7,
+  number =    5,
+  month =     {May}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
