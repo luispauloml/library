@@ -1422,6 +1422,38 @@ The paper that describes Optimal Baseline Subtraction (OBS).
   month =     {May}}
 #+end_src
 
+** worden2007: The fundamental axioms of structural health monitoring :basic_literature:shm:
+:PROPERTIES:
+:ID: worden2007
+:CATEGORY: Journal
+:END:
+- Added: <2023-10-11 Wed>
+- Year: 2007
+- Authors:
+  - Keith Worden
+  - Charles R. Farrar
+  - Graeme Manson
+  - Gyuhae Park
+
+*** Notes
+The title says it all.
+Just read it to have a little refreshment on your knowledge of SHM.
+
+*** Resources
+- [[https://dx.doi.org/10.1098/rspa.2007.1834]]
+- [[file:./resources/worden2007.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{worden2007,
+  author =       {Keith Worden and Charles R. Farrar and Graeme Manson and Gyuhae Park},
+  title =        {The fundamental axioms of structural health monitoring},
+  journal =      {Proc. R. Soc. A},
+  year =         2007,
+  volume =    463,
+  pages =     {1639--1664}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
