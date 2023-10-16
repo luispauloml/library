@@ -558,6 +558,38 @@ TBD.
 }
 #+end_src
 
+** lima2023: Active Sensing Using LDV and T-Shaped Arrays in Metallic Plates for Damage Localization :active_sensing:ldv:beamforming:
+:PROPERTIES:
+:ID: lima2023
+:CATEGORY: Conference
+:END:
+- Added: <2023-10-16 Mon>
+- Year: 2023
+- Authors:
+  - Luis Paulo M. Lima
+  - Gyuhae Park
+
+*** Notes
+The work I presented at IWSHM 2023, in September 13, 2023.
+
+*** Resources
+- [[https://iwshm2023.stanford.edu/proceedings]]
+- [[file:./resources/lima2023.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@inproceedings{lima2023,
+  author =       {Luis Paulo M. Lima and Gyuhae Park},
+  title =        {Active Sensing Using {LDV} and {T-Shaped} Arrays in Metallic Plates for Damage Localization},
+  booktitle = {Proceedings of the 14th International Workshop on Structural Health Monitoring},
+  year =      2023,
+  editor =    {Saman Farhangdoust and Alfredo Guemes and Fu-Kuo Chang},
+  pages =     {1952--1959},
+  month =     {September},
+  address =   {Stanford, CA, USA},
+  publisher = {DEStech Publications, Inc.}}
+#+end_src
+
 * Journal papers
 
 ** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection
