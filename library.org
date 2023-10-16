@@ -1483,3 +1483,33 @@ It seems like it is actually aimed at engineers, because the Mathematics found i
   year =      2021}
 #+end_src
 
+** iwshm2023: Proceedings of the 14th International Workshop on Structural Health Monitoring
+:PROPERTIES:
+:ID: iwshm2023
+:CATEGORY: Other
+:END:
+- Added: <2023-10-16 Mon>
+- Year: 2023
+- Authors:
+  - Saman Farhangdoust
+  - Alfredo Guemes
+  - Fu-Kuo Chang
+
+*** Notes
+The full proceedings of IWSHM 2023 in a single document.
+I will separate the works to individual entries as I need them.
+
+*** Resources
+- [[https://iwshm2023.stanford.edu/proceedings]]
+- [[file:./resources/iwshm2023.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@book{iwshm2023,
+  title = {Proceedings of the 14th International Workshop on Structural Health Monitoring},
+  year =      2023,
+  editor =    {Saman Farhangdoust and Alfredo Guemes and Fu-Kuo Chang},
+  month =     {September},
+  address =   {Stanford, CA, USA},
+  publisher = {DEStech Publications, Inc.}}
+#+end_src
