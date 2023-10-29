@@ -590,6 +590,40 @@ The work I presented at IWSHM 2023, in September 13, 2023.
   publisher = {DEStech Publications, Inc.}}
 #+end_src
 
+** luispauloml2020: Using longitudinal metallic stringers to reduce wave attenuation for water leakage detection in plastic pipes :leak_detection:wave_propagation:shells:
+:PROPERTIES:
+:ID: luispauloml2020
+:CATEGORY: Conference
+:END:
+- Added: <2023-10-29 Sun>
+- Year: 2020
+- Authors:
+  - Luis Paulo M. Lima
+  - M. A. Bazani
+  - A. T. Paschoalini
+
+*** Notes
+The paper I presented at ISMA 2020, on September 7th, 2020.
+
+*** Resources
+- [[https://past.isma-isaac.be/isma2020/proceedings/program/#404]]
+- [[http://past.isma-isaac.be/downloads/isma2020/proceedings/Contribution_404_proceeding_3.pdf]]
+- [[file:./resources/luispauloml2020.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@inproceedings{luispauloml2020,
+  author =       {L. P. M. Lima and M. A. Bazani and A. T. Paschoalini},
+  title =        {Using longitudinal metallic stringers to reduce wave attenuation for water leakage detection in plastic pipes},
+  booktitle = {Proceedings of ISMA2020 and USD2020},
+  pages =     {2921--2932},
+  editor =    {W. Desmet and B. Pluymers and D. Moens and S. Vandemaele},
+  month = September,
+  year =      2020,
+  address =   {Heverlee, Leuven, Belgium},
+  organization = {KU Leuven}}}
+#+end_src
+
 * Journal papers
 
 ** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection
