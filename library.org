@@ -1552,6 +1552,36 @@ Just read it to have a little refreshment on your knowledge of SHM.
   pages =     {1639--1664}}
 #+end_src
 
+** zhou2023: A rapid localization technique for detecting multiple damages in plate-like structures with unknown material properties :t_shaped_array:l_shaped_array:
+:PROPERTIES:
+:ID: zhou2023
+:CATEGORY: Journal
+:END:
+- Added: <2023-10-29 Sun>
+- Year: 2023
+- Authors:
+  - Zixian Zhou
+  - Jinxia Liu
+  - Zhiwen Cui
+  - Tribikram Kundu
+
+*** Notes
+This work uses L-shaped arrays to detect multiple damages.
+
+*** Resources
+- [[https://doi.org/10.1016/j.ymssp.2023.110479]]
+- [[file:./resources/zhou2023.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{zhou2023,
+  author =       {Zixian Zhou and Jinxia Liu and Zhiwen Cui and Tribikram Kundu},
+  title =        {A rapid localization technique for detecting multiple damages in plate-like structures with unknown material properties},
+  journal =      {Mechanical Systems and Signal Processing},
+  year =         2023,
+  number =    199}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
