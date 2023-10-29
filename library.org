@@ -624,6 +624,38 @@ The paper I presented at ISMA 2020, on September 7th, 2020.
   organization = {KU Leuven}}}
 #+end_src
 
+** luispauloml2019: A method for obtaining dispersion relationships of waves in longitudinally stiffened cylindrical shells :leak_detection:wave_propagation:shells:
+:PROPERTIES:
+:ID: luispauloml2019
+:CATEGORY: Conference
+:END:
+- Added: <2023-10-29 Sun>
+- Year: 2019
+- Authors:
+  - Luis Paulo M. Lima
+  - Amarildo T. Paschoalini
+  - Márcio A. Bazani
+
+*** Notes
+The work I presented at DINCON 2019, in November 26, 2019.
+
+*** Resources
+- [[http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1530/1100]]
+- [[file:./resources/luispauloml2019.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@inproceedings{luispauloml2019,
+  author =       {Luis Paulo M. Lima luispauloml and Amarildo T. Paschoalini and M\'arcio A. Bazani},
+  title =        {A method for obtaining dispersion relationships of waves in longitudinally stiffened cylindrical shells},
+  booktitle = {Anais da 14. {C}onfer\^encia {B}rasileira de {D}in\^amica, {C}ontrole e {A}plica\cc\~oes},
+  year =      2019,
+  editor =    {Lu\'is Fernando Costa Alberto},
+  month =     {November},
+  address =   {S\~ao Carlos, S\~ao Paulo, Brazil},
+  publisher = {EESC/ICMC-USP}}
+#+end_src
+
 * Journal papers
 
 ** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection
