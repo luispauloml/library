@@ -1148,9 +1148,6 @@ It also uses laser for creating the array of sensors.
   - Yunde Shen
   - Jiawei Xiang
 
-*** TODO Notes
-TBD.
-
 *** Resources
 - [[https://doi.org/10.1177/14759217211004236]]
 - [[file:./resources/gao2021.pdf]]
