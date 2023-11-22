@@ -1579,6 +1579,41 @@ This work uses L-shaped arrays to detect multiple damages.
   number =    199}
 #+end_src
 
+** flynn2011: Maximum-likelihood estimation of damage location in guided-wave structural health monitoring :mle:maximum_likelihoo_estimation:shm:damage_location:
+:PROPERTIES:
+:ID: flynn2011
+:CATEGORY: Journal
+:END:
+- Added: <2023-11-22 Wed>
+- Year: 2011
+- Authors:
+  - Eric B. Flynn
+  - Michael D. Todd
+  - Paul D. Wilcox
+  - Bruce W. Drinkwater
+  - Anthony J. Croxford
+
+*** Notes
+A comprehensive explanation on Rayleigh maximum-likelihood estimate (RMLE).
+It also makes an extensive comparison with several other methods: TOA, W-TOA, TDOA, EA, RAPID, TP, W-TP.
+It introduces an interesting method for evaluating performance of detection methods, called "localizer operating characteristic curve" (LOC curve) which I want to understand more.
+
+*** Resources
+- [[https://dx.doi.org/10.1098/rspa.2011.0095]]
+- [[file:./resources/flynn2011.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{flynn2011,
+  author =       {Eric B. Flynn and Michael D. Todd and Paul D. Wilcox and Bruce W. Drinkwater and Anthony J. Croxford},
+  title =        {Maximum-likelihood estimation of damage location in guided-wave structural health monitoring},
+  journal =      {Proc. R. Soc. A},
+  year =         2011,
+  number =    467,
+  pages =     {2575--2596},
+  month =     {April}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
