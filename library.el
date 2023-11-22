@@ -162,6 +162,7 @@ nil if not, or tries to find a resource otherwise."
   (let (file-name)
     (when (yes-or-no-p "Add resource file?")
       (if (and (buffer-file-name)
+	       (not (string-equal (buffer-file-name) library-org-file))
 	       (yes-or-no-p
 		(format
 		 "Use current file as resource [%s]?"
