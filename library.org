@@ -1614,6 +1614,36 @@ It introduces an interesting method for evaluating performance of detection meth
   month =     {April}}
 #+end_src
 
+** kundu2012: Acoustic source localization in anisotropic plates :t_shaped_array:damage_location:
+:PROPERTIES:
+:ID: kundu2012
+:CATEGORY: Journal
+:END:
+- Added: <2023-11-25 Sat>
+- Year: 2012
+- Authors:
+  - Tribikram Kundu
+  - Hayato Nakatani
+  - Nobuo Takeda
+
+*** Notes
+The paper that introduced T-shaped arrays.
+
+*** Resources
+- [[http://dx.doi.org/10.1016/j.ultras.2012.01.017]]
+- [[file:./resources/kundu2012.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{kundu2012,
+  author =       {Tribikram Kundu and Hayato Nakatani and Nobuo Takeda},
+  title =        {Acoustic source localization in anisotropic plates},
+  journal =      {Ultrasonics},
+  year =         2012,
+  number =    52,
+  pages =     {740--746}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
