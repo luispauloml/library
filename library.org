@@ -511,8 +511,9 @@ From this work, I can probably find other articles, possibly better than this.
   - Thomas E. Michaels
   - Jennifer E. Michaels
 
-*** TODO Notes
-TBD.
+*** Notes
+Reference for ellipse method.
+It also gives a basis on how beamforming can be used to scan areas out of sight.
 
 *** Resources
 - [[https://doi.org/10.1117/12.847851]]
