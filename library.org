@@ -1645,6 +1645,37 @@ The paper that introduced T-shaped arrays.
   pages =     {740--746}}
 #+end_src
 
+** croxford2010: Efficient temperature compensation strategies for guided wave structural health monitoring :baseline:
+:PROPERTIES:
+:ID: croxford2010
+:CATEGORY: Journal
+:END:
+- Added: <2023-11-27 Mon>
+- Year: 2010
+- Authors:
+  - Anthony J. Croxford
+  - Jochen Moll
+  - Paul D. Wilcox
+  - Jennifer E. Micaels
+
+*** Notes
+This paper compares both Optimal Baseline Subtraction (OBS) and Baseline Signal Stretch (BSS).
+
+*** Resources
+- [[http://dx.doi.org/10.1016/j.ultras.2009.11.002]]
+- [[file:./resources/croxford2010.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{croxford2010,
+  author =       {Anthony J. Croxford and Jochen Moll and Paul D. Wilcox and Jennifer E. Micaels},
+  title =        {Efficient temperature compensation strategies for guided wave structural health monitoring},
+  journal =      {Ultrasonics},
+  year =         2010,
+  volume =    50,
+  pages =     {517--528}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
