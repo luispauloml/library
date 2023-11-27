@@ -1676,6 +1676,35 @@ This paper compares both Optimal Baseline Subtraction (OBS) and Baseline Signal 
   pages =     {517--528}}
 #+end_src
 
+** lu2005: A methodology for structural health monitoring with diffuse ultrasonic waves in the presence of temperature variations :baseline:
+:PROPERTIES:
+:ID: lu2005
+:CATEGORY: Journal
+:END:
+- Added: <2023-11-27 Mon>
+- Year: 2005
+- Authors:
+  - Yinghui Lu
+  - Jennifer E. Michaels
+
+*** Notes
+The paper that introduces Baseline Signal Strecth (BSS).
+
+*** Resources
+- [[https://dx.doi.org/10.1016/j.ultras.2005.05.001]]
+- [[file:./resources/lu2005.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{lu2005,
+  author =       {Yinghui Lu and Jennifer E. Michaels},
+  title =        {A methodology for structural health monitoring with diffuse ultrasonic waves in the presence of temperature variations},
+  journal =      {Ultrasonics},
+  year =         2005,
+  volume =    43,
+  pages =     {717--731}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
