@@ -1628,7 +1628,7 @@ It introduces an interesting method for evaluating performance of detection meth
   - Nobuo Takeda
 
 *** Notes
-The paper that introduced T-shaped arrays.
+The paper that introduced L-shaped arrays.
 
 *** Resources
 - [[http://dx.doi.org/10.1016/j.ultras.2012.01.017]]
@@ -1641,7 +1641,7 @@ The paper that introduced T-shaped arrays.
   title =        {Acoustic source localization in anisotropic plates},
   journal =      {Ultrasonics},
   year =         2012,
-  number =    52,
+  volume =    52,
   pages =     {740--746}}
 #+end_src
 
