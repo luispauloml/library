@@ -1577,7 +1577,7 @@ This work uses L-shaped arrays to detect multiple damages.
   title =        {A rapid localization technique for detecting multiple damages in plate-like structures with unknown material properties},
   journal =      {Mechanical Systems and Signal Processing},
   year =         2023,
-  number =    199}
+  volume =    199}
 #+end_src
 
 ** flynn2011: Maximum-likelihood estimation of damage location in guided-wave structural health monitoring :mle:maximum_likelihoo_estimation:shm:damage_location:
