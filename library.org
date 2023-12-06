@@ -1705,6 +1705,38 @@ The paper that introduces Baseline Signal Strecth (BSS).
   pages =     {717--731}}
 #+end_src
 
+** croxford2007: Strategies for guided-wave structural health monitoring :shm:
+:PROPERTIES:
+:ID: croxford2007
+:CATEGORY: Journal
+:END:
+- Added: <2023-12-06 Wed>
+- Year: 2007
+- Authors:
+  - A. J. Croxford
+  - P. D. Wilcox
+  - B. W. Drinkwater
+  - G. Konstantinidis
+
+*** TODO Notes
+TBD.
+
+*** Resources
+- [[https://dx.doi.org/10.1098/rspa.2007.0048]]
+- [[file:./resources/croxford2007.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{croxford2007,
+  author =       {A. J. Croxford and P. D. Wilcox and B. W. Drinkwater and G. Konstantinidis},
+  title =        {Strategies for guided-wave structural health monitoring},
+  journal =      {Proceedings of the Royal Society A},
+  year =         2007,
+  volume =    463,
+  pages =     {2961--2981},
+  month =     {August}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
