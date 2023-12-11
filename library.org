@@ -331,6 +331,35 @@ Qiang's PhD thesis that have been serving for me as a source of literature refer
   year =         2022}
 #+end_src
 
+** klinkov2011: Identification of Unknown Structural Loads from Dynamic Measurements Using Robust Observers :t_shaped_array:toa:aic:
+:PROPERTIES:
+:ID: klinkov2011
+:CATEGORY: Thesis
+:END:
+- Added: <2023-12-11 Mon>
+- Year: 2011
+- Author: Maksim Klinkov
+
+*** Notes
+A PhD thesis that Anna referenced to me.
+In Section 4.2.1 (page 74), it presents a few techniques for estimating time of arrival which I implemented in the programs I wrote:
+- Energy Criterion Picker
+- Akaike Information Criterion Picker
+
+*** Resources
+- [[https://d-nb.info/1019027819]]
+- [[file:./resources/klinkov2011.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@phdthesis{klinkov2011,
+  author =       {Maksim Klinkov},
+  title =        {Identification of Unknown Structural Loads from Dynamic Measurements Using Robust Observers},
+  school =       {University of Siegen},
+  year =         2011,
+  address =   {Siegen, Germany}}
+#+end_src
+
 * Conference papers
 
 ** flynn2014: Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
