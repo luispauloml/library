@@ -1794,6 +1794,33 @@ TBD.
   volume =    132}
 #+end_src
 
+** jung2017: Integrating passive- and active-sensing techniques using an L-shaped sensor array for impact and damage localization :l_shaped_array:
+:PROPERTIES:
+:ID: jung2017
+:CATEGORY: Journal
+:END:
+- Added: <2024-01-03 Wed>
+- Year: 2017
+- Authors:
+  - Hwee Kwon Jung
+  - Gyuhae Park
+
+*** Resources
+- [[https://doi.org/10.1177/1045389X17733059]]
+- [[file:./resources/jung2017.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{jung2017,
+  author =       {Hwee Kwon Jung and Gyuhae Park},
+  title =        {Integrating passive- and active-sensing techniques using an L-shaped sensor array for impact and damage localization},
+  journal =      {Journal of Intelligent Material Systems and Structures},
+  year =         2017,
+  volume =    29,
+  number =    19,
+  pages =     {3436--3443}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
