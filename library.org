@@ -1766,6 +1766,34 @@ TBD.
   month =     {August}}
 #+end_src
 
+** ma2023: Acoustic source localization using L-shaped sensor clusters: A review :l_shaped_array:literature_review:
+:PROPERTIES:
+:ID: ma2023
+:CATEGORY: Journal
+:END:
+- Added: <2024-01-03 Wed>
+- Year: 2023
+- Authors:
+  - Chenning Ma
+  - Zixian Zhou
+  - Jinxia Liu
+  - Zhiwen Cui
+  - Tribikram Kundu
+
+*** Resources
+- [[https://doi.org/10.1016/j.ultras.2023.107020]]
+- [[file:./resources/ma2023.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{ma2023,
+  author =       {Chenning Ma and Zixian Zhou and Jinxia Liu and Zhiwen Cui and Tribikram Kundu},
+  title =        {Acoustic source localization using L-shaped sensor clusters: A review},
+  journal =      {Ultrasonics},
+  year =         2023,
+  volume =    132}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
