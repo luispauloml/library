@@ -1823,7 +1823,7 @@ TBD.
 
 * Other references
 
-** olver2021: The calculus of variations :calculus_of_variations:basic:literature:mechanics:
+** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
 :PROPERTIES:
 :ID: olver2021
 :CATEGORY: Booklet
