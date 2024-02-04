@@ -360,6 +360,34 @@ In Section 4.2.1 (page 74), it presents a few techniques for estimating time of 
   address =   {Siegen, Germany}}
 #+end_src
 
+** rizzo2019: Statistical Computation with R                  :statistics:
+:PROPERTIES:
+:ID: rizzo2019
+:CATEGORY: Book
+:END:
+- Added: <2024-02-04 Sun>
+- Year: 2019
+- Author: Maria L. Rizzo
+
+*** Notes
+A good resource for statistical simulations.
+Everything I learned about Monte Carlo method I learned form this book.
+
+*** Resources
+- [[https://]]
+- [[file:]]
+
+*** Citation
+#+begin_src bibtex
+@book{rizzo2019,
+  author =    {Maria L. Rizzo},
+  title =        {Statistical Computation with {R}},
+  publisher =    {CRC Press},
+  year =         2019,
+  address =   {Boca raton},
+  edition =   2}
+#+end_src
+
 * Conference papers
 
 ** flynn2014: Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
