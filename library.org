@@ -1186,7 +1186,7 @@ It also uses laser for creating the array of sensors.
 #+begin_src bibtex
 @article{gao2021,
   author =       {Qiang Gao and Jun Young Jeon and Gyuhae Park and Yunde Shen and Jiawei Xiang},
-  title =        {A novel T-shaped sensor cluster for acoustic source localization},
+  title =        {A novel {T}-shaped sensor cluster for acoustic source localization},
   journal =      {Structural Health Monitoring},
   year =         2021,
   volume =    21,
@@ -1813,7 +1813,7 @@ TBD.
 #+begin_src bibtex
 @article{jung2017,
   author =       {Hwee Kwon Jung and Gyuhae Park},
-  title =        {Integrating passive- and active-sensing techniques using an L-shaped sensor array for impact and damage localization},
+  title =        {Integrating passive- and active-sensing techniques using an {L}-shaped sensor array for impact and damage localization},
   journal =      {Journal of Intelligent Material Systems and Structures},
   year =         2017,
   volume =    29,
