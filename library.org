@@ -480,7 +480,8 @@ TBD.
     title = 	 {Three-dimensional acoustic wavenumber spectroscopy for structural health monitoring },
     booktitle = {12th International Workshop on Structural Health Monitoring},
     year = 	 2019,
-    volume = 	 1}
+    volume = 	 1,
+    doi = {10.12783/shm2019/32196}}
 #+end_src
 
 ** flynn2013: High-speed, non-contact, baseline-free imaging of hidden defects using scanning laser measurements of steady-state ultrasonic vibration :ldv:wavenumber:steady_state:
@@ -550,7 +551,6 @@ From this work, I can probably find other articles, possibly better than this.
   pages =     {2314-2317},
   month =     {June},
   doi =          {10.1109/ICASSP.2000.859303}}
-}
 #+end_src
 
 ** ruzzene2010: Damage visualization via beamforming of frequency-wavenumber filtered wavefield data :beamforming:laser:
@@ -584,7 +584,8 @@ It also gives a basis on how beamforming can be used to scan areas out of sight.
   year =      2010,
   editor =    {Tribikram Kundu},
   volume =    7650,
-  series =    {Health Monitoring of Structural and Biological Systems}}
+  series =    {Health Monitoring of Structural and Biological Systems},
+  doi = {10.1117/12.847851}}
 #+end_src
 
 ** jeon2018: Laser-scanning based damage visualization using phase-arrayed local wave field measurements :beamforming:laser:phased_array:
@@ -743,7 +744,8 @@ TBD.
   journal =      {Mechanical Systems and Signal Processing},
   year =         2022,
   volume =    169,
-  month =     {April}}
+  month =     {April},
+  doi = {10.1016/j.ymssp.2021.108626}}
 #+end_src
 
 ** kudela2015: Identification of cracks in thin-walled structures by means of wavenumber filtering :lamb_waves:wavenumber:laser:
@@ -777,8 +779,7 @@ TBD.
     doi = {https://doi.org/10.1016/j.ymssp.2014.05.041},
     url = {https://www.sciencedirect.com/science/article/pii/S0888327014002179},
     author = {Paweł Kudela and Maciej Radzieński and Wiesław Ostachowicz},
-    keywords = {Lamb waves, Wavefield, Crack identification, Wavenumber filtering, Laser vibrometry}
-    }
+    keywords = {Lamb waves, Wavefield, Crack identification, Wavenumber filtering, Laser vibrometry}}
 #+end_src
 
 ** flynn2013-2: Structural imaging through local wavenumber estimation of guided waves :ndt:ldv:image_processing:ultrasonic:wavenumber:
@@ -853,7 +854,8 @@ requirement to understand this paper.
     year = {2005},
     doi = {10.1121/1.1887126},
     URL = {https://doi.org/10.1121/1.1887126},
-    eprint = {https://doi.org/10.1121/1.1887126}}
+    eprint = {https://doi.org/10.1121/1.1887126},
+    doi = {10.1121/1.1887126}}
 #+end_src
 
 ** ruzzene2007: Frequency-wavenumber domain filtering for improved damage visualization :wavefield:wavenumber:filter:basic_literature:
@@ -954,7 +956,8 @@ I have seen the original paper, and it has very heavy math, and because of that 
   title =        {Experimental Confirmation of Lamb Waves at Megacycle Frequencies},
   journal =      {J. Appl. Phys},
   year =         1961,
-  volume =    32}
+  volume =    32,
+  doi = {10.1063/1.1736196}}
 #+end_src
 
 ** raghavan2007: Review of Guided-wave Structural Health Monitoring :basic_literature:guided_waves:literature_review:
@@ -1022,8 +1025,8 @@ I don't have many comments on this one yet, but it looks promissing.
   title =        {Coherenceogram for leak detection in water pipes},
   journal =      {Journal of Sound and Vibration},
   year =         2022,
-  volume =       530
-}
+  volume =       530,
+  doi = {10.1016/j.jsv.2022.116979}}
 #+end_src
 
 ** beardsley1995: A simple scheme for self-focusing of an array :beamforming:active_sensing:
@@ -1061,7 +1064,8 @@ See also:
   year =         1995,
   volume =    14,
   number =    4,
-  pages =     {169-179}}
+  pages =     {169-179},
+  doi = {10.1007/BF00730887}}
 #+end_src
 
 ** sundararaman2005: Biologically inspired structural diagnostics through beamforming with phased transducer arrays :basic_literature:beamforming:
@@ -1093,7 +1097,8 @@ Yet, it deserves the merit of correlating this search with spiders.
   journal =      {International Journal of Engineering Science},
   year =         2005,
   volume =    43,
-  pages =     {756-778}}
+  pages =     {756-778},
+  doi = {10.1016/j.ijengsci.2004.12.008}}
 #+end_src
 
 ** vanveen1988: Beamforming: a versatile approach to spatial filtering :basic_literature:beamforming:
@@ -1126,7 +1131,8 @@ It also provides a lengthy summary of techniques of the time it was published.
   year =         1988,
   volume =       5,
   number =       2,
-  pages =        {4-24}}
+  pages =        {4-24},
+  doi = {10.1109/53.665}}
 #+end_src
 
 ** yu2007: In-situ optimized PWAS phased arrays for lamb wave structural health monitoring :beamforming:phased_arrays:
@@ -1156,7 +1162,8 @@ A very thorough exposition of the many parameters that can influence beamforming
   year =         2007,
   volume =    2,
   number =    3,
-  pages =     {459-487}}
+  pages =     {459-487},
+  doi = {10.2140/jomms.2007.2.459}}
 #+end_src
 
 ** yu2016: Guided wave phased array beamforming and imaging in composite plates
@@ -1188,7 +1195,8 @@ It also uses laser for creating the array of sensors.
   year =         2016,
   volume =    68,
   pages =     {43--53},
-  month =     {May}}
+  month =     {May},
+  doi = {10.1016/j.ultras.2016.02.001}}
 #+end_src
 
 ** gao2021: A novel T-shaped sensor cluster for acoustic source localization
@@ -1217,7 +1225,8 @@ It also uses laser for creating the array of sensors.
   journal =      {Structural Health Monitoring},
   year =         2021,
   volume =    21,
-  number =    2}
+  number =    2,
+  doi = {10.1177/14759217211004236}}
 #+end_src
 
 ** malinowski2008: A Phased Array-based Method for Damage Detection and Localization in Thin Plates :beamforming:laser:
@@ -1249,7 +1258,8 @@ That one paper about combining position maps.
   year =         2008,
   volume =    8,
   number =    1,
-  pages =     {5--15}}
+  pages =     {5--15},
+  doi = {10.1177/1475921708090569}}
 #+end_src
 
 ** wilcox2003: A Rapid Signal Processing Technique to Remove the Effect of Dispersion from Guided Wave Signals :lamb_waves:dispersion:
@@ -1309,7 +1319,8 @@ A comprehensive review on laser scanning techniques.
   journal =      {Sensors},
   year =         2023,
   volume =    23,
-  number =    6}
+  number =    6,
+  doi = {10.3390/s23063183}}
 #+end_src
 
 ** anton2009: Reference-Free Damage Detection Using Instantaneous Baseline Measurements
@@ -1340,7 +1351,8 @@ TBD.
   year =         2009,
   volume =    47,
   number =    8,
-  month =     {August}}
+  month =     {August},
+  doi = {10.2514/1.43252}}
 #+end_src
 
 ** segers2021: Nonlinear local wave-direction estimation for in-sight and out-of-sight damage localization in composite plates
@@ -1372,7 +1384,8 @@ TBD.
   journal =      {NDT \& T International},
   year =         2021,
   volume =    119,
-  month =     {April}}
+  month =     {April},
+  doi = {10.1016/j.ndteint.2021.102412}}
 #+end_src
 
 ** park2006: Piezoelectric Active Sensor Self-Diagnostics Using Electrical Admittance Measurements :piezoelectric:
@@ -1400,7 +1413,8 @@ TBD.
   journal =      {Journal of Vibration and Acoustics},
   year =         2006,
   volume =    128,
-  month =     {August}}
+  month =     {August},
+  doi = {10.1115/1.2202157}}
 #+end_src
 
 ** nam2023: Polar Coordinate-Based Guided Wave Beamforming Imaging Using A Scanning LDV :ldv:laser:beamforming:
@@ -1449,7 +1463,8 @@ Unpublished work.
   year =         2016,
   volume =    15,
   number =    1,
-  pages =     {50--64}}
+  pages =     {50--64},
+  doi = {10.1177/1475921715623358}}
 #+end_src
 
 ** overly2009: Piezoelectric Active-Sensor Diagnostics and Validation Using Instantaneous Baseline Data :active_sensing:baseline_free:piezoelectric:
@@ -1482,7 +1497,8 @@ The first paper from my advisor on baseline-free damage detection.
   volume =    9,
   number =    11,
   pages =     {1414--1421},
-  month =     {November}}
+  month =     {November},
+  doi = {10.1109/JSEN.2009.2018351}}
 #+end_src
 
 ** glushkov2013: Group velocity of cylindrical guided waves in anisotropic laminate composites :velocity_estimation:guided_waves:composites:
@@ -1514,7 +1530,8 @@ This paper presents a method for group velocity estimation on composite plates.
   year =         2013,
   volume =    135,
   number =    1,
-  pages =     {148--154}}
+  pages =     {148--154},
+  doi = {10.1121/1.4829534}}
 #+end_src
 
 ** chong2018: Dispersion curve estimation via a spatial covariance method with ultrasonic wavefield imaging :dispersion:
@@ -1540,7 +1557,8 @@ This paper presents a method for group velocity estimation on composite plates.
   journal =      {Ultrasonics},
   year =         2018,
   volume =    89,
-  pages =     {46--63}}
+  pages =     {46--63},
+  doi = {10.1016/j.ultras.2018.04.012}}
 #+end_src
 
 ** konstantinidis2007: An Investigation Into the Temperature Stability of a Guided Wave Structural Health Monitoring System Using Permanently Attached Sensors :obs:baseline:
@@ -1571,7 +1589,8 @@ The paper that describes Optimal Baseline Subtraction (OBS).
   year =         2007,
   volume =    7,
   number =    5,
-  month =     {May}}
+  month =     {May},
+  doi = {10.1109/JSEN.2007.894908}}
 #+end_src
 
 ** worden2007: The fundamental axioms of structural health monitoring :basic_literature:shm:
@@ -1603,7 +1622,8 @@ Just read it to have a little refreshment on your knowledge of SHM.
   journal =      {Proc. R. Soc. A},
   year =         2007,
   volume =    463,
-  pages =     {1639--1664}}
+  pages =     {1639--1664},
+  doi = {10.1098/rspa.2007.1834}}
 #+end_src
 
 ** zhou2023: A rapid localization technique for detecting multiple damages in plate-like structures with unknown material properties :t_shaped_array:l_shaped_array:
@@ -1633,7 +1653,8 @@ This work uses L-shaped arrays to detect multiple damages.
   title =        {A rapid localization technique for detecting multiple damages in plate-like structures with unknown material properties},
   journal =      {Mechanical Systems and Signal Processing},
   year =         2023,
-  volume =    199}
+  volume =    199,
+  doi = {10.1016/j.ymssp.2023.110479}}
 #+end_src
 
 ** flynn2011: Maximum-likelihood estimation of damage location in guided-wave structural health monitoring :mle:maximum_likelihoo_estimation:shm:damage_location:
@@ -1668,7 +1689,8 @@ It introduces an interesting method for evaluating performance of detection meth
   year =         2011,
   number =    467,
   pages =     {2575--2596},
-  month =     {April}}
+  month =     {April},
+  doi = {10.1098/rspa.2011.0095}}
 #+end_src
 
 ** kundu2012: Acoustic source localization in anisotropic plates :t_shaped_array:damage_location:
@@ -1698,7 +1720,8 @@ The paper that introduced L-shaped arrays.
   journal =      {Ultrasonics},
   year =         2012,
   volume =    52,
-  pages =     {740--746}}
+  pages =     {740--746},
+  doi = {10.1016/j.ultras.2012.01.017}}
 #+end_src
 
 ** croxford2010: Efficient temperature compensation strategies for guided wave structural health monitoring :baseline:
@@ -1729,7 +1752,8 @@ This paper compares both Optimal Baseline Subtraction (OBS) and Baseline Signal 
   journal =      {Ultrasonics},
   year =         2010,
   volume =    50,
-  pages =     {517--528}}
+  pages =     {517--528},
+  doi = {10.1016/j.ultras.2009.11.002}}
 #+end_src
 
 ** lu2005: A methodology for structural health monitoring with diffuse ultrasonic waves in the presence of temperature variations :baseline:
@@ -1758,7 +1782,8 @@ The paper that introduces Baseline Signal Strecth (BSS).
   journal =      {Ultrasonics},
   year =         2005,
   volume =    43,
-  pages =     {717--731}}
+  pages =     {717--731},
+  doi = {10.1016/j.ultras.2005.05.001}}
 #+end_src
 
 ** croxford2007: Strategies for guided-wave structural health monitoring :shm:
@@ -1790,7 +1815,8 @@ TBD.
   year =         2007,
   volume =    463,
   pages =     {2961--2981},
-  month =     {August}}
+  month =     {August},
+  doi = {10.1098/rspa.2007.0048}}
 #+end_src
 
 ** ma2023: Acoustic source localization using L-shaped sensor clusters: A review :l_shaped_array:literature_review:
@@ -1818,7 +1844,8 @@ TBD.
   title =        {Acoustic source localization using L-shaped sensor clusters: A review},
   journal =      {Ultrasonics},
   year =         2023,
-  volume =    132}
+  volume =    132,
+  doi = {10.1016/j.ultras.2023.107020}}
 #+end_src
 
 ** jung2017: Integrating passive- and active-sensing techniques using an L-shaped sensor array for impact and damage localization :l_shaped_array:
@@ -1845,7 +1872,8 @@ TBD.
   year =         2017,
   volume =    29,
   number =    19,
-  pages =     {3436--3443}}
+  pages =     {3436--3443},
+  doi = {10.1177/1045389X17733059}}
 #+end_src
 
 ** gao2017: Improving the shape of the cross-correlation function for leak detection in a plastic water distribution pipe using acoustic signals :leak_detection:

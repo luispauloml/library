@@ -150,7 +150,7 @@ properly added to the resulting BibTeX entry.  If a FIELD
 		(car field-list))
 	       (mapcar
 		#'(lambda (field) (funcall make-field field 'optional))
-		(cdr field-list))))
+		(append (cdr field-list) '(("doi"))))))
       0 -2)
      "\n}\n")))
 
@@ -220,7 +220,7 @@ authors, title, and year of publication."
   (let (file-name resource-file online-resource
 	first-author
 	last-read-author other-authors
-	year title entry-id keywords)
+	year title entry-id keywords doi)
     (setq
      file-name
      (library-get-resource-file)
@@ -263,6 +263,15 @@ authors, title, and year of publication."
     (read-from-minibuffer "URL of online resource: ")
     ;; Since it is guaranteed that resource-file has no duplicate
     ;; values, use it to reset entry-id which may be a duplicate.
+    doi
+    ;; first, check wheter online-resource is already doi
+    (let ((parsed-url (url-generic-parse-url online-resource)))
+      (cond
+       ((or (string= "doi.org" (url-host parsed-url))
+	    (string= "dx.doi.org" (url-host parsed-url)))
+	(substring (url-filename parsed-url) 1))
+       (t
+	(read-from-minibuffer "DOI: "))))
     entry-id
     (if resource-file
 	(file-name-sans-extension resource-file)
@@ -302,9 +311,18 @@ authors, title, and year of publication."
 TBD.
 
 ** Resources\n"
-       (if (string= online-resource "")
-	   "- [[https://]]\n"
+       (cond
+	((string-match-p (regexp-quote doi) online-resource)
 	 (format "- [[%s]]\n" online-resource))
+	((and online-resource (string-empty-p doi))
+	 (format "- [[%s]]\n" online-resource))
+	((and (string-empty-p online-resource) doi)
+	 (format "- [[https://dx.doi.org/%s]]\n" doi))
+	((and (string-empty-p online-resource) (string-empty-p doi))
+	 "- [[https://]]\n")
+	(t
+	 (format "- [[%s]]\n- [[https://dx.doi.org/%s]]\n"
+		 online-resource doi)))
        (if resource-file
 	   (format
 	    "- [[file:./resources/%s]]\n\n"
@@ -321,6 +339,8 @@ TBD.
 	     (cons "year" year))
 	 (if (not (string-empty-p title))
 	     (cons "title" title))
+	 (if (not (string-empty-p doi))
+	     (cons "doi" doi))
 	 (cons "author"
 	       (if (not other-authors)
 		   first-author
