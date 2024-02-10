@@ -374,8 +374,7 @@ A good resource for statistical simulations.
 Everything I learned about Monte Carlo method I learned form this book.
 
 *** Resources
-- [[https://]]
-- [[file:]]
+- I only have the a physical copy of it.
 
 *** Citation
 #+begin_src bibtex
