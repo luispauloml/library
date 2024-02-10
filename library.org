@@ -1849,6 +1849,36 @@ TBD.
   pages =     {3436--3443}}
 #+end_src
 
+** gao2017: Improving the shape of the cross-correlation function for leak detection in a plastic water distribution pipe using acoustic signals :leak_detection:
+:PROPERTIES:
+:ID: gao2017
+:CATEGORY: Journal
+:END:
+- Added: <2024-02-09 Fri>
+- Year: 2017
+- Authors:
+  - Yan Gao
+  - Michael J. Brennan
+  - Yuyou Liu
+  - Fabrício C. L. Almeida
+  - Phillip F. Joseph
+
+*** Resources
+- [[https://doi.org/10.1016/j.apacoust.2017.05.033]]
+- [[file:./resources/gao2017.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{gao2017,
+  author =       {Yan Gao and Michael J. Brennan and Yuyou Liu and Fabrício C. L. Almeida and Phillip F. Joseph},
+  title =        {Improving the shape of the cross-correlation function for leak detection in a plastic water distribution pipe using acoustic signals},
+  journal =      {Applied Acoustics},
+  year =         2017,
+  volume =    127,
+  pages =     {24--33},
+  doi = {10.1016/j.apacoust.2017.05.033}}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
