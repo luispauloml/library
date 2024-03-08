@@ -1124,7 +1124,7 @@ It also provides a lengthy summary of techniques of the time it was published.
 
 *** Citation
 #+begin_src bibtex
-@article{vanveen1989,
+@article{vanveen1988,
   author =       {B. D. {Van Veen} and K. M. Buckley},
   title =        {Beamforming: a versatile approach to spatial filtering},
   journal =      {IEEE ASSP Magazine},
