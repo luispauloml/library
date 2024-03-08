@@ -1939,6 +1939,39 @@ TBD.
 }
 #+end_src
 
+** jung2018: Improving the robustness of beamforming using asymmetric sensor arrays :beamforming:
+:PROPERTIES:
+:ID: jung2018
+:CATEGORY: Journal
+:END:
+- Added: <2024-03-08 Fri>
+- Year: 2018
+- Authors:
+  - Hwee Kwon Jung
+  - Sujie Zhou
+  - Gyuhae Park
+
+*** Notes
+This paper explains how to implement beamforming without knowing the speed of propagation, however, I found it too difficult to understand.
+At the time of this writing, I am still trying to implement it, without success.
+
+*** Resources
+- [[https://doi.org/10.1177/1045389X18810804]]
+- [[file:./resources/jung2018.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{jung2018,
+  author =       {Hwee Kwon Jung and Sujie Zhou and Gyuhae Park},
+  title =        {Improving the robustness of beamforming using asymmetric sensor arrays},
+  journal =      {Journal of Intelligent Material Systems and Structures},
+  year =         2018,
+  volume =    30,
+  number =    3,
+  doi =       {10.1177/1045389X18810804}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
