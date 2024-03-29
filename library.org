@@ -1973,6 +1973,35 @@ At the time of this writing, I am still trying to implement it, without success.
 }
 #+end_src
 
+** haynes2015: Enhanced damage localization for complex structures through statistical modeling and sensor fusion :mle:
+:PROPERTIES:
+:ID: haynes2015
+:CATEGORY: Journal
+:END:
+- Added: <2024-03-29 Fri>
+- Year: 2015
+- Authors:
+  - Colin Haynes
+  - Michael Todd
+
+*** Resources
+- [[https://doi.org/10.1016/j.ymssp.2014.08.015]]
+- [[file:./resources/haynes2015.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{haynes2015,
+  author =       {Colin Haynes and Michael Todd},
+  title =        {Enhanced damage localization for complex structures through statistical modeling and sensor fusion},
+  journal =      {Mechanical Systems and Signal Processing},
+  year =         2015,
+  volume =    {54--55},
+  pages =     {195--209},
+  month =     {March},
+  doi =       {10.1016/j.ymssp.2014.08.015}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
