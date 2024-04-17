@@ -714,6 +714,38 @@ The work I presented at DINCON 2019, in November 26, 2019.
   publisher = {EESC/ICMC-USP}}
 #+end_src
 
+** vieira-filho2023: Crosstalk effects in matrix of PZT sensors for SHM applications based on the electromechanical impedance principle :emi:
+:PROPERTIES:
+:ID: vieira-filho2023
+:CATEGORY: Conference
+:END:
+- Added: <2024-04-17 Wed>
+- Year: 2023
+- Authors:
+  - Jozue Vieira Filho
+  - Mario Rolando Rodriguez Cadalso
+  - Nicolás Eusebio Cortez Ledesma
+  - Mario Anderson de Oliveira
+  - Gyuhae Park
+
+*** Resources
+- [[https://iwshm2023.stanford.edu/proceedings]]
+- [[file:./resources/vieira-filho2023.pdf]]
+
+*** Citation
+#+begin_src bibtex
+  @inproceedings{vieira-filho2023,
+    author =       {Jozue {Vieira Filho} and Mario Rolando Rodriguez Cadalso and Nicolás Eusebio Cortez Ledesma and Mario Anderson de Oliveira and Gyuhae Park},
+    title =        {Crosstalk effects in matrix of PZT sensors for SHM applications based on the electromechanical impedance principle},
+    booktitle = {Proceedings of the 14th International Workshop on Structural Health Monitoring},
+    year =      2023,
+    editor =    {Saman Farhangdoust and Alfredo Guemes and Fu-Kuo Chang},
+    pages =     {515--522},
+    month =     {September},
+    address =   {Stanford, CA, USA},
+    publisher = {DEStech Publications, Inc.}}
+#+end_src
+
 * Journal papers
 
 ** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection
