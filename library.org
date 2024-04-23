@@ -2034,6 +2034,39 @@ At the time of this writing, I am still trying to implement it, without success.
 }
 #+end_src
 
+** park2003: Overview of Piezoelectric Impedance-Based Health Monitoring and Path Forward :impedance:literature_review:
+:PROPERTIES:
+:ID: park2003
+:CATEGORY: Journal
+:END:
+- Added: <2024-04-23 Tue>
+- Year: 2003
+- Authors:
+  - Gyuhae Park
+  - Hoon Sohn
+  - Charles R. Farrar
+  - Daniel J. Inman
+
+*** Resources
+- [[https://journals.scholarsportal.info/details/05831024/v35i0006/451_oopihmapf.xml]]
+- [[https://dx.doi.org/https://doi.org/10.1177/05831024030356001]]
+- [[file:./resources/park2003.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{park2003,
+  author =       {Gyuhae Park and Hoon Sohn and Charles R. Farrar and Daniel J. Inman},
+  title =        {Overview of Piezoelectric Impedance-Based Health Monitoring and Path Forward},
+  journal =      {The Shock and Vibration Digest},
+  year =         2003,
+  volume =    35,
+  number =    6,
+  pages =     {451--463},
+  month =     {November},
+  doi =       {https://doi.org/10.1177/05831024030356001}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
