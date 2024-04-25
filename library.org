@@ -2103,6 +2103,40 @@ At the time of this writing, I am still trying to implement it, without success.
 }
 #+end_src
 
+** baptista2009: A New Impedance Measurement System for PZT-Based Structural Health Monitoring :impedance:
+:PROPERTIES:
+:ID: baptista2009
+:CATEGORY: Journal
+:END:
+- Added: <2024-04-25 Thu>
+- Year: 2009
+- Authors:
+  - Fabricio Guimarães Baptista
+  - Jozue Vieira Filho
+
+*** Notes
+A paper that Prof. Jozue sent me to understand better the method he proposed in [[id:vieira-filho2023]].
+
+*** Resources
+- [[https://ieeexplore.ieee.org/document/5196810]]
+- [[https://dx.doi.org/10.1109/TIM.2009.2018693]]
+- [[file:./resources/baptista2009.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{baptista2009,
+  author =       {Fabricio Guimarães Baptista and Jozue Vieira Filho},
+  title =        {A New Impedance Measurement System for PZT-Based Structural Health Monitoring},
+  journal =      {IEEE Transactions on Instrumentation and Measurement},
+  year =         2009,
+  volume =    58,
+  number =    10,
+  pages =     {3602--3608},
+  month =     {August},
+  doi =       {10.1109/TIM.2009.2018693}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
