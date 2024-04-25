@@ -388,6 +388,35 @@ Everything I learned about Monte Carlo method I learned form this book.
   edition =   2}
 #+end_src
 
+** kabeya1998: Structural Health Monitoring Using Multiple Piezoelectric Sensors and Actuators :impedance:basic_literature:
+:PROPERTIES:
+:ID: kabeya1998
+:CATEGORY: Thesis
+:END:
+- Added: <2024-04-25 Thu>
+- Year: 1998
+- Author: Kazuhisa Kabeya
+
+*** Notes
+Chapter 3 has relevant information on transfer electromechanical impedance measurements.
+
+*** Resources
+- [[http://hdl.handle.net/10919/36709]]
+- [[file:./resources/kabeya1998.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@mastersthesis{kabeya1998,
+  author =       {Kazuhisa Kabeya},
+  title =        {Structural Health Monitoring Using Multiple Piezoelectric Sensors and Actuators},
+  school =       {Virgina Polytechnic Institute and State University},
+  year =         1998,
+  address =   {Blacksburg, Virginia, USA},
+  month =     {April},
+  doi =       {10919/36709}
+}
+#+end_src
+
 * Conference papers
 
 ** flynn2014: Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
