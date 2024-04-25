@@ -2167,6 +2167,40 @@ A paper that Prof. Jozue sent me to understand better the method he proposed in 
 }
 #+end_src
 
+** peairs2007: Circuit analysis of impedance-based health monitoring of beams using spectral elements :impedance:basic_literature:
+:PROPERTIES:
+:ID: peairs2007
+:CATEGORY: Journal
+:END:
+- Added: <2024-04-25 Thu>
+- Year: 2007
+- Authors:
+  - Daniel M. Peairs
+  - Daniel J. Inman
+  - Gyuhae Park
+
+*** Resources
+- [[https://dx.doi.org/10.1177/1475921707072621]]
+- [[file:./resources/peairs2007.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{peairs2007,
+  author =       {Daniel M. Peairs and Daniel J. Inman and Gyuhae Park},
+  title =        {Circuit analysis of impedance-based health monitoring of beams using spectral elements},
+  journal =      {},
+  year =         {2007},
+  OPTkey =       {},
+  OPTvolume =    {6},
+  OPTnumber =    {1},
+  OPTpages =     {81--94},
+  OPTmonth =     {March},
+  OPTnote =      {},
+  OPTannote =    {},
+  OPTdoi =       {10.1177/1475921707072621}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
