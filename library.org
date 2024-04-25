@@ -746,6 +746,42 @@ The work I presented at DINCON 2019, in November 26, 2019.
     publisher = {DEStech Publications, Inc.}}
 #+end_src
 
+** chaudhry1995: Monitoring the integrity of composite patch structural repair via piezoelectric actuators/sensors :impedance:basic_literature:
+:PROPERTIES:
+:ID: chaudhry1995
+:CATEGORY: Conference
+:END:
+- Added: <2024-04-23 Tue>
+- Year: 1995
+- Authors:
+  - Zaffir Chaudhry
+  - Frederic Lalande
+  - Anthony Ganino
+  - Craig A. Rogers
+  - Jaycee Chung
+
+*** Notes
+A good introduction to electromechanical impedance method.
+
+*** Resources
+- [[https://doi.org/10.2514/6.1995-1074]]
+- [[file:./resources/chaudhry1995.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@inproceedings{chaudhry1995,
+  author =       {Zaffir Chaudhry and Frederic Lalande and Anthony Ganino and Craig A. Rogers and Jaycee Chung},
+  title =        {Monitoring the integrity of composite patch structural repair via piezoelectric actuators/sensors},
+  booktitle = {36th Structures, Structural Dynamics and Materials Conference},
+  year =      1995,
+  pages =     {2243--2248},
+  month =     {April},
+  address =   {New Orleans, USA},
+  publisher = {AIAA},
+  doi =       {10.2514/6.1995-1074}
+}
+#+end_src
+
 * Journal papers
 
 ** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection
