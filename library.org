@@ -4,6 +4,7 @@
 #+TITLE: My personal library of scientific works
 #+AUTHOR: Luis Paulo M. Lima
 #+PROPERTY: header-args :tangle yes
+#+OPTIONS: toc:2
 
 * Introduction
 This file contains entries for almost all of the papers I have gathered for my research at CNU, and each entry should also be placed under an appropriate top level
