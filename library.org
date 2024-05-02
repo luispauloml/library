@@ -75,7 +75,7 @@ The following subheadings should also be contained in the entry:
 
   The entry's key should be =id=, the same value used in the =ID= field in the properties drawer for Org-Roam, and =bib-entry= are the field-value pairs composing the entry.
   The =type= value is the type of the entry and should correspond to the top level heading in which the entry is placed:
-  - =book=, =phdthesis= or =masterthesis= for ``Books and theses'',
+  - =book=, =phdthesis= or =mastersthesis= for ``Books and theses'',
   - =inproceedings= for ``Conference papers'',
   - =article= for ``Journal papers'',
   - any other appropriate type for ``Other references''.
