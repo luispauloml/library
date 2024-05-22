@@ -991,9 +991,9 @@ in ADSL.
     eprint = {https://aip.scitation.org/doi/pdf/10.1063/1.2718150}}
 #+end_src
 
-** junyoung2020: 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
+** jeon2020: 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
 :PROPERTIES:
-:ID: junyoung2020
+:ID: jeon2020
 :CATEGORY: Journal
 :END:
 - Added: <2021-10-22 Fri>
@@ -1011,11 +1011,11 @@ TBD.
 
 *** Resources
 - [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
-- [[file:./resources/junyoung2020.pdf][File]]
+- [[file:./resources/jeon2020.pdf][File]]
 
 *** Citation
 #+begin_src bibtex
-  @article{junyoung2020,
+  @article{jeon2020,
     title = {2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning},
     journal = {NDT \& E International},
     volume = {116},
