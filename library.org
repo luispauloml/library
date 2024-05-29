@@ -1006,12 +1006,12 @@ in ADSL.
   - To Kang
   - Soonwoo Han
 
-*** TODO Notes
-TBD.
+*** Notes
+The canonic reference for 2D wavelet filter.
 
 *** Resources
-- [[https://doi.org/10.1016/j.ndteint.2020.102343][Journal]]
-- [[file:./resources/jeon2020.pdf][File]]
+- [[https://doi.org/10.1016/j.ndteint.2020.102343]]
+- [[file:./resources/jeon2020.pdf]]
 
 *** Citation
 #+begin_src bibtex
