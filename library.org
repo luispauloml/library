@@ -1016,7 +1016,7 @@ The canonic reference for 2D wavelet filter.
 *** Citation
 #+begin_src bibtex
   @article{jeon2020,
-    title = {2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning},
+    title = {{2D}-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning},
     journal = {NDT \& E International},
     volume = {116},
     pages = {102343},
