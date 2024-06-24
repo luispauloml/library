@@ -2198,6 +2198,34 @@ A paper that Prof. Jozue sent me to understand better the method he proposed in 
 }
 #+end_src
 
+** yu2008: In situ 2-D piezoelectric wafer active sensors arrays for guided wave damage detection :piezoelectric:phased_arrays:
+:PROPERTIES:
+:ID: yu2008
+:CATEGORY: Journal
+:END:
+- Added: <2024-06-24 Mon>
+- Year: 2008
+- Authors:
+  - Lingyu Yu
+  - Victor Giurgiutiu
+
+*** Resources
+- [[https://doi.org/10.1016/j.ultras.2007.10.008]]
+- [[file:./resources/yu2008.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{yu2008,
+  author =       {Lingyu Yu and Victor Giurgiutiu},
+  title =        {In situ 2-{D} piezoelectric wafer active sensors arrays for guided wave damage detection},
+  journal =      {Ultrasonics},
+  year =         2008,
+  volume =    48,
+  pages =     {117--134},
+  doi =       {10.1016/j.ultras.2007.10.008}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
