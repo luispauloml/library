@@ -2257,6 +2257,43 @@ A paper that Prof. Jozue sent me to understand better the method he proposed in 
 }
 #+end_src
 
+** jiang2020: Evaluation of characterization indexes and minor looseness identification of flange bolt under noise influence :emi:
+:PROPERTIES:
+:ID: jiang2020
+:CATEGORY: Journal
+:END:
+- Added: <2024-06-24 Mon>
+- Year: 2020
+- Authors:
+  - Xie Jiang
+  - Yuxiang Zhang
+  - Xin Zhang
+
+*** Notes
+This papers shows many possible ways of assessing damage severity with different metrics.
+
+*** Resources
+- [[http://doi.org/10.1109/ACCESS.2020.3019416]]
+- [[file:./resources/jiang2020.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{jiang2020,
+  author =       {Xie Jiang and Yuxiang Zhang and Xin Zhang},
+  title =        {Evaluation of characterization indexes and minor looseness identification of flange bolt under noise influence},
+  journal =      {},
+  year =         {2020},
+  OPTkey =       {},
+  OPTvolume =    {8},
+  OPTnumber =    {},
+  OPTpages =     {57691--157702},
+  OPTmonth =     {},
+  OPTnote =      {},
+  OPTannote =    {},
+  OPTdoi =       {10.1109/ACCESS.2020.3019416}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
