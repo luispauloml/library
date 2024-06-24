@@ -618,7 +618,7 @@ It also gives a basis on how beamforming can be used to scan areas out of sight.
   doi = {10.1117/12.847851}}
 #+end_src
 
-** jeon2018: Laser-scanning based damage visualization using phase-arrayed local wave field measurements :beamforming:laser:phased_array:
+** jeon2018: Laser-scanning based damage visualization using phase-arrayed local wave field measurements :beamforming:laser:phased_arrays:
 :PROPERTIES:
 :ID: jeon2018
 :CATEGORY: Conference
