@@ -2294,6 +2294,34 @@ This papers shows many possible ways of assessing damage severity with different
 }
 #+end_src
 
+** doebling1998: A summary review of vibration-based damage identification methods :literature_review:
+:PROPERTIES:
+:ID: doebling1998
+:CATEGORY: Journal
+:END:
+- Added: <2024-06-24 Mon>
+- Year: 1998
+- Authors:
+  - Scott W. Doebling
+  - Charles R. Farrar
+  - Michael B. Prime
+
+*** Notes
+An old and good review on vibration-based damage detection methods.
+
+*** Resources
+- [[file:./resources/doebling1998.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{doebling1998,
+  author =       {Scott W. Doebling and Charles R. Farrar and Michael B. Prime},
+  title =        {A summary review of vibration-based damage identification methods},
+  journal =      {The Shock and Vibration Digest},
+  year =         1998,
+  volume =    30}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
