@@ -174,7 +174,7 @@ nil if not, or tries to find a resource otherwise."
 			    (dired-get-marked-files nil t)))
 	(if (= 1 (length file-name))
 	    (setq file-name (car file-name)))
-	(when (and file-name
+	(if (and file-name
 		   (yes-or-no-p
 		    (format
 		     "%s [%s]?"
@@ -182,11 +182,12 @@ nil if not, or tries to find a resource otherwise."
 		     (if (listp file-name)
 			 (format "%i files selected" (length file-name))
 		       (file-name-nondirectory file-name)))))
-	  (if (listp file-name)
-	      (setq file-name
-		    (completing-read
-		     "Choose a file: "
-		     file-name)))))
+	    (if (listp file-name)
+		(setq file-name
+		      (completing-read
+		       "Choose a file: "
+		       file-name)))
+	  (setq file-name nil)))
       (unless file-name
 	(setq file-name (read-file-name "Choose a file: " nil default-directory t)))
       file-name)))
