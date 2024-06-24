@@ -2322,6 +2322,40 @@ An old and good review on vibration-based damage detection methods.
   volume =    30}
 #+end_src
 
+** haynes2012: Statistically-based damage detection in geometrically-complex structures using ultrasonic interrogation :damage_detection:
+:PROPERTIES:
+:ID: haynes2012
+:CATEGORY: Journal
+:END:
+- Added: <2024-06-24 Mon>
+- Year: 2012
+- Authors:
+  - Colin Haynes
+  - Michael D Todd
+  - Eric Flynn
+  - Anthony Croxford
+
+*** Notes
+A complement to [[id:haynes2015][haynes2015: Enhanced damage localization for complex structures through statistical modeling and sensor fusion]].
+
+*** Resources
+- [[http://doi.org/10.1177/1475921712466756]]
+- [[file:./resources/haynes2012.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{haynes2012,
+  author =       {Colin Haynes and Michael D Todd and Eric Flynn and Anthony Croxford},
+  title =        {Statistically-based damage detection in geometrically-complex structures using ultrasonic interrogation},
+  journal =      {Structural Health Monitoring},
+  year =         2012,
+  volume =    12,
+  number =    2,
+  pages =     {141--152},
+  doi =       {10.1177/1475921712466756}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
