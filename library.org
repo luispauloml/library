@@ -812,6 +812,37 @@ A good introduction to electromechanical impedance method.
 }
 #+end_src
 
+** sun1995: Structural frequency response function acquisition via electric impedance measurement of surface-bonded piezoelectric sensor/actuator :piezoelectric:emi:
+:PROPERTIES:
+:ID: sun1995
+:CATEGORY: Conference
+:END:
+- Added: <2024-06-24 Mon>
+- Year: 1995
+- Authors:
+  - Fanping Sun
+  - Craig Rogers
+  - Chen Liang
+
+*** Notes
+One of the first references to the measurement of total impedance,
+also called coupled impedance in this work.
+
+*** Resources
+- [[https://doi.org/10.2514/6.1995-1127]]
+- [[file:./resources/sun1995.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@inproceedings{sun1995,
+  author =       {Fanping Sun and Craig Rogers and Chen Liang},
+  title =        {Structural frequency response function acquisition via electric impedance measurement of surface-bonded piezoelectric sensor/actuator},
+  booktitle = {36th Structures, Structural Dynamics and Materials Conference},
+  year =      1995,
+  doi =       {10.2514/6.1995-1127}
+}
+#+end_src
+
 * Journal papers
 
 ** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection
