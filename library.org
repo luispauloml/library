@@ -2356,6 +2356,42 @@ A complement to [[id:haynes2015][haynes2015: Enhanced damage localization for co
 }
 #+end_src
 
+** tian2016: Rapid guided wave delamination detection and quantification in composites using global-local sensing :ldv:beamforming:
+:PROPERTIES:
+:ID: tian2016
+:CATEGORY: Journal
+:END:
+- Added: <2024-06-25 Tue>
+- Year: 2016
+- Authors:
+  - Zhenhua Tian
+  - Lingyu Yu
+  - Cara Leckey
+
+*** Notes
+One paper about integrating two-step approach for damage localization with LDV:
+1. Rough estimation with beamforming.
+2. Detailed view with local wavenumber mapping.
+   
+
+*** Resources
+- [[http://doi.org/10.1088/0964-1726/25/8/085042]]
+- [[file:./resources/tian2016.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{tian2016,
+  author =       {Zhenhua Tian and Lingyu Yu and Cara Leckey},
+  title =        {Rapid guided wave delamination detection and quantification in composites using global-local sensing},
+  journal =      {Smart Materials and Structures},
+  year =         2016,
+  volume =    25,
+  number =    8,
+  pages =     085042,
+  doi =       {10.1088/0964-1726/25/8/085042}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
