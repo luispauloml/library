@@ -843,6 +843,41 @@ also called coupled impedance in this work.
 }
 #+end_src
 
+** ruzzene2007: Frequency-wavenumber domain filtering for improved damage visualization :wavefield:wavenumber:filter:basic_literature:
+:PROPERTIES:
+:CATEGORY: Conference
+:ID: ruzzene2007
+:END:
+- Added: <2021-10-27 Wed>
+- Year:  2007
+- Author: M Ruzzene
+
+*** Notes
+Very short but very insightful paper presenting the concept of
+filtering in the wavenumber-frequency domain. Although it leaves
+out how to generate and how to apply the windows for filtering,
+this paper should be considered basic literature for the work done
+in ADSL.
+
+*** Resources
+- [[https://doi.org/10.1063/1.2718150][Journal]]
+- [[file:./resources/ruzzene2007.pdf][File]]
+
+*** Citation
+#+begin_src bibtex
+  @inproceedings{ruzzene2007,
+    author = {M. Ruzzene},
+    title = {Frequency‐Wavenumber Domain Filtering for Improved Damage Visualization},
+    booktitle = {AIP Conference Proceedings},
+    volume = {894},
+    number = {1},
+    pages = {1556-1563},
+    year = {2007},
+    doi = {10.1063/1.2718150},
+    URL = {https://aip.scitation.org/doi/abs/10.1063/1.2718150},
+    eprint = {https://aip.scitation.org/doi/pdf/10.1063/1.2718150}}
+#+end_src
+
 * Journal papers
 
 ** jeon2022: Compressive laser scanning with full steady state wavefield for structural damage detection
@@ -985,41 +1020,6 @@ requirement to understand this paper.
     URL = {https://doi.org/10.1121/1.1887126},
     eprint = {https://doi.org/10.1121/1.1887126},
     doi = {10.1121/1.1887126}}
-#+end_src
-
-** ruzzene2007: Frequency-wavenumber domain filtering for improved damage visualization :wavefield:wavenumber:filter:basic_literature:
-:PROPERTIES:
-:CATEGORY: Journal
-:ID: ruzzene2007
-:END:
-- Added: <2021-10-27 Wed>
-- Year:  2007
-- Author: M Ruzzene
-
-*** Notes
-Very short but very insightful paper presenting the concept of
-filtering in the wavenumber-frequency domain. Although it leaves
-out how to generate and how to apply the windows for filtering,
-this paper should be considered basic literature for the work done
-in ADSL.
-
-*** Resources
-- [[https://doi.org/10.1063/1.2718150][Journal]]
-- [[file:./resources/ruzzene2007.pdf][File]]
-
-*** Citation
-#+begin_src bibtex
-  @article{ruzzene2007,
-    author = {M. Ruzzene},
-    title = {Frequency‐Wavenumber Domain Filtering for Improved Damage Visualization},
-    journal = {AIP Conference Proceedings},
-    volume = {894},
-    number = {1},
-    pages = {1556-1563},
-    year = {2007},
-    doi = {10.1063/1.2718150},
-    URL = {https://aip.scitation.org/doi/abs/10.1063/1.2718150},
-    eprint = {https://aip.scitation.org/doi/pdf/10.1063/1.2718150}}
 #+end_src
 
 ** jeon2020: 2D-wavelet wavenumber filtering for structural damage detection using full steady-state wavefield laser scanning :steady_state_wavefield:shm:nondestructive_evaluation:damage_detection:wavelet:laser:ldv:
