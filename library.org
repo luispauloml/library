@@ -2392,6 +2392,41 @@ One paper about integrating two-step approach for damage localization with LDV:
 }
 #+end_src
 
+** lee2011: A time-of-flight mapping method for laser ultrasound guided in a pipe and its application to wall thinning visualization :ldv:damage_visualization:
+:PROPERTIES:
+:ID: lee2011
+:CATEGORY: Journal
+:END:
+- Added: <2024-06-26 Wed>
+- Year: 2011
+- Authors:
+  - Jung-Ryul Lee
+  - See Yenn Chong
+  - Hyomi Jeong
+  - Churl-Won Kong
+
+*** Notes
+That one paper that has the video of the wave propagating in the pipe
+that I used at IWSHM and for my midterm presentation.
+
+*** Resources
+- [[https://doi.org/10.1016/j.ndteint.2011.07.005]]
+- [[file:./resources/lee2011.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{lee2011,
+  author =       {Jung-Ryul Lee and See Yenn Chong and Hyomi Jeong and Churl-Won Kong},
+  title =        {A time-of-flight mapping method for laser ultrasound guided in a pipe and its application to wall thinning visualization},
+  journal =      {{NDT} \& {E} International},
+  year =         2011,
+  volume =    44,
+  number =    8,
+  pages =     {680--691},
+  doi =       {10.1016/j.ndteint.2011.07.005}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
