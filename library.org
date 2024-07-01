@@ -2422,6 +2422,41 @@ that I used at IWSHM and for my midterm presentation.
 }
 #+end_src
 
+** nam2024: Polar coordinate-based guided wave beamforming imaging using scanning {LDV} :ldv:beamforming:
+:PROPERTIES:
+:ID: nam2024
+:CATEGORY: Journal
+:END:
+- Added: <2024-06-26 Wed>
+- Year: 2024
+- Authors:
+  - Hyeonwoo Nam
+  - Jun Young Jeon
+  - Gyuhae Park
+  - Chan-Yik Park
+
+*** Resources
+- [[https://doi.org/10.1177/14759217241248047]]
+- [[file:./resources/nam2024.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{nam2024,
+  author =       {Hyeonwoo Nam and Jun Young Jeon and Gyuhae Park and Chan-Yik Park},
+  title =        {Polar coordinate-based guided wave beamforming imaging using scanning {LDV}},
+  journal =      {},
+  year =         {2024},
+  OPTkey =       {},
+  OPTvolume =    {16},
+  OPTnumber =    {1},
+  OPTpages =     {},
+  OPTmonth =     {},
+  OPTnote =      {},
+  OPTannote =    {},
+  OPTdoi =       {10.1177/14759217241248047}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
