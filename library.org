@@ -2457,6 +2457,44 @@ that I used at IWSHM and for my midterm presentation.
 }
 #+end_src
 
+** hermanto2024: Effect of Laser Distance Measurement for Fatigue Crack Detection on Aluminium Plate Using Laser Doppler Vibro-Meter :ldv:crack_detection:
+:PROPERTIES:
+:ID: hermanto2024
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-01 Mon>
+- Year: 2024
+- Authors:
+  - Tino Hermanto
+  - Arya Rudi Nasution
+  - Habib Satria
+  - Hermansyah Hermasnyah
+  - Yopan Rahmad Aldori
+  - Ruztamreen Bin Jenal
+  - Abd Rahman Bin Dullah
+  - Adly Zulqarnain bin Mohamad
+
+*** Notes
+A paper on the influence of distance in LDV measurments for crack detection.
+
+*** Resources
+- [[https://doi.org/10.37385/jaets.v5i2.3391]]
+- [[file:./resources/hermanto2024.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{hermanto2024,
+  author =       {Tino Hermanto and Arya Rudi Nasution and Habib Satria and Hermansyah Hermasnyah and Yopan Rahmad Aldori and Ruztamreen Bin Jenal and Abd Rahman Bin Dullah and Adly Zulqarnain bin Mohamad},
+  title =        {Effect of Laser Distance Measurement for Fatigue Crack Detection on Aluminium Plate Using Laser Doppler Vibro-Meter},
+  journal =      {Journal of Applied Engineering and Technological Science},
+  year =         2024,
+  volume =    5,
+  number =    2,
+  pages =     {830--841},
+  doi =       {10.37385/jaets.v5i2.3391}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
