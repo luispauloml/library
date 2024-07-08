@@ -2439,16 +2439,11 @@ that I used at IWSHM and for my midterm presentation.
 @article{nam2024,
   author =       {Hyeonwoo Nam and Jun Young Jeon and Gyuhae Park and Chan-Yik Park},
   title =        {Polar coordinate-based guided wave beamforming imaging using scanning {LDV}},
-  journal =      {},
-  year =         {2024},
-  OPTkey =       {},
-  OPTvolume =    {16},
-  OPTnumber =    {1},
-  OPTpages =     {},
-  OPTmonth =     {},
-  OPTnote =      {},
-  OPTannote =    {},
-  OPTdoi =       {10.1177/14759217241248047}
+  journal =      {Structural Health Monitoring},
+  year =         2024,
+  volume =    16,
+  number =    1,
+  doi =       {10.1177/14759217241248047}
 }
 #+end_src
 
