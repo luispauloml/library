@@ -1542,25 +1542,6 @@ TBD.
   doi = {10.1115/1.2202157}}
 #+end_src
 
-** nam2023: Polar Coordinate-Based Guided Wave Beamforming Imaging Using A Scanning LDV :ldv:laser:beamforming:
-:PROPERTIES:
-:ID: nam2023
-:CATEGORY: Journal
-:END:
-- Added: <2023-07-11 Tue>
-- Year: 2023
-- Authors:
-  - Hyeonwoo Nam
-  - Jun Young Jeon
-  - Gyuhae Park
-  - Chan-Yik Park
-
-*** TODO Notes
-Unpublished work.
-
-*** Resources
-- [[file:./resources/nam2023.pdf]]
-
 ** shan2016: Multi-damage localization on large complex structures through an extended delay-and-sum based method :beamforming:complex_structure:
 :PROPERTIES:
 :ID: shan2016
