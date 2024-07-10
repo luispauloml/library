@@ -2534,6 +2534,39 @@ Algorithm for phase unwrapping in 2D images or matrices.
 }
 #+end_src
 
+** providakis2018: 2-D Statistical Damage Detection of Concrete Structures Combining Smart Piezoelectric Materials and Scanning Laser Doppler Vibrometry :ldv:piezoelectric:
+:PROPERTIES:
+:ID: providakis2018
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-10 Wed>
+- Year: 2018
+- Authors:
+  - Costas P. Providakis
+  - Stavros E. Tsistrakis
+  - Evangelos V. Liarakos
+
+*** Notes
+One application of combined PZT and laser techniques in Civil Engineering.
+
+*** Resources
+- [[https://doi.org/10.32604/sdhm.2018.04607]]
+- [[file:./resources/providakis2018.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{providakis2018,
+  author =       {Costas P. Providakis and Stavros E. Tsistrakis and Evangelos V. Liarakos},
+  title =        {2-{D} Statistical Damage Detection of Concrete Structures Combining Smart Piezoelectric Materials and Scanning Laser Doppler Vibrometry},
+  journal =      {Structural Durability \& Health Monitoring},
+  year =         2018,
+  volume =    12,
+  number =    4,
+  pages =     {257--279},
+  doi =       {10.32604/sdhm.2018.04607}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
