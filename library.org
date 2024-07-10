@@ -2567,6 +2567,42 @@ One application of combined PZT and laser techniques in Civil Engineering.
 }
 #+end_src
 
+** lu2016: A multi-delay-and-sum imaging algorithm for damage detection using piezoceramic transducers :piezoelectric:signal_processing:
+:PROPERTIES:
+:ID: lu2016
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-10 Wed>
+- Year: 2016
+- Authors:
+  - Guangtao Lu
+  - Youroung Li
+  - Tao Wang
+  - Han Xiao
+  - Linsheng Huo
+  - Gangbing Song
+
+*** Notes
+This paper contains a description of the hyperbole method.
+
+*** Resources
+- [[https://doi.org/10.1177/1045389X16666184]]
+- [[file:./resources/lu2016.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{lu2016,
+  author =       {Guangtao Lu and Youroung Li and Tao Wang and Han Xiao and Linsheng Huo and Gangbing Song},
+  title =        {A multi-delay-and-sum imaging algorithm for damage detection using piezoceramic transducers},
+  journal =      {Intelligent Material Systems and Structures},
+  year =         2016,
+  volume =    28,
+  number =    9,
+  pages =     {1--10},
+  doi =       {10.1177/1045389X16666184}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
