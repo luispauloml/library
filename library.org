@@ -2500,6 +2500,40 @@ I should try to understand what it is.
 }
 #+end_src
 
+** stetson1997: Noise-immune phase unwrapping by use of calculated wrap regions :signal_processing:
+:PROPERTIES:
+:ID: stetson1997
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-10 Wed>
+- Year: 1997
+- Authors:
+  - Karl A. Stetson
+  - Jawed Wahid
+  - Paul Gauthier
+
+*** Notes
+Algorithm for phase unwrapping in 2D images or matrices.
+
+*** Resources
+- [[https://doi.org/10.1364/AO.36.004830]]
+- [[file:./resources/stetson1997.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{stetson1997,
+  author =       {Karl A. Stetson and Jawed Wahid and Paul Gauthier},
+  title =        {Noise-immune phase unwrapping by use of calculated wrap regions},
+  journal =      {Applied Optics},
+  year =         1997,
+  volume =    36,
+  number =    20,
+  pages =     {4830--4838},
+  month =     {july},
+  doi =       {10.1364/AO.36.004830}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
