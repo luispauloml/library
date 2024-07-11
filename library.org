@@ -2603,6 +2603,38 @@ This paper contains a description of the hyperbole method.
 }
 #+end_src
 
+** rothberg2004: On the application of laser vibrometry to translational and rotational vibration measurements on rotating shafts :basic_literature:mechanics:ldv:
+:PROPERTIES:
+:ID: rothberg2004
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-11 Thu>
+- Year: 2004
+- Authors:
+  - Steve Rothberg
+  - John Bell
+
+*** Notes
+Theoretical development of equations for measuring six DOF motion of rotating shafts with LDV.
+
+*** Resources
+- [[https://doi.org/10.1016/j.measurement.2003.04.001]]
+- [[file:./resources/rothberg2004.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{rothberg2004,
+  author =       {Steve Rothberg and John Bell},
+  title =        {On the application of laser vibrometry to translational and rotational vibration measurements on rotating shafts},
+  journal =      {Measurement},
+  year =         2004,
+  volume =    35,
+  number =    2,
+  pages =     {201--210},
+  doi =       {10.1016/j.measurement.2003.04.001}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
