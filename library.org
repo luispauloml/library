@@ -2635,6 +2635,41 @@ Theoretical development of equations for measuring six DOF motion of rotating sh
 }
 #+end_src
 
+** huyan2020: Three-dimensional pavement crack detection based on primary surface profile innovation optimized dual-phase computing :laser:crack_detection:
+:PROPERTIES:
+:ID: huyan2020
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-11 Thu>
+- Year: 2020
+- Authors:
+  - Ju Huyan
+  - Wei Li
+  - Susan Tighe
+  - Liyang Xiao
+  - Zhaoyun Sun
+  - Nana Shao
+
+*** Notes
+Crack detection using laser to measure depth of asphalt and cameras.
+
+*** Resources
+- [[https://doi.org/10.1016/j.engappai.2019.103376]]
+- [[file:./resources/huyan2020.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{huyan2020,
+  author =       {Ju Huyan and Wei Li and Susan Tighe and Liyang Xiao and Zhaoyun Sun and Nana Shao},
+  title =        {Three-dimensional pavement crack detection based on primary surface profile innovation optimized dual-phase computing},
+  journal =      {Engineering Applications of Artificial Intelligence},
+  year =         2020,
+  volume =    89,
+  month =     {march},
+  doi =       {10.1016/j.engappai.2019.103376}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
