@@ -2670,6 +2670,41 @@ Crack detection using laser to measure depth of asphalt and cameras.
 }
 #+end_src
 
+** sun2023: Corrosion quantification of plate-type structures using Lamb wavefield and monogenic signal processing :crack_detection:ldv:phase_unwrapping:
+:PROPERTIES:
+:ID: sun2023
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-15 Mon>
+- Year: 2023
+- Authors:
+  - Hu Sun
+  - Weihan Shao
+  - Jiannan Song
+  - Xiaofeng Yang
+  - Yishou Wang
+  - Xinlin Qing
+
+*** Notes
+Using phase unwrapping for local wavenumber estimation and use in damage localization.
+
+*** Resources
+- [[https://doi.org/10.1016/j.ultras.2023.106935]]
+- [[file:./resources/sun2023.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{sun2023,
+  author =       {Hu Sun and Weihan Shao and Jiannan Song and Xiaofeng Yang and Yishou Wang and Xinlin Qing},
+  title =        {Corrosion quantification of plate-type structures using Lamb wavefield and monogenic signal processing},
+  journal =      {Ultrasonics},
+  year =         2023,
+  volume =    130,
+  pages =     106935,
+  doi =       {10.1016/j.ultras.2023.106935}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
