@@ -390,22 +390,23 @@ as the CATEGORY argument to `library-capture-template'."
 	    (next-line)
 	    (ignore-error t (bibtex-clean-entry))))))))
 
-(defun library-maybe-copy-resource-file ()
-  "Add resource file to resources directory.
+(defun library-maybe-copy-and-delete-resource-file ()
+  "Add resource file to resources directory and asks to delete original file.
 This function is called as a hook in
 `org-capture-prepare-finalize-hook' to make a copy of a file as
 described in `library-last-entry-resource-file-alist'."
   (when library-last-entry-resource-file-alist
-    (copy-file
-     (cdr (assoc 'file library-last-entry-resource-file-alist))
-     (cdr (assoc 'newname library-last-entry-resource-file-alist))
-     1))
-  (setq library-last-entry-resource-file-alist nil))
+    (let ((file (cdr (assoc 'file library-last-entry-resource-file-alist)))
+	  (newname (cdr (assoc 'newname library-last-entry-resource-file-alist))))
+      (copy-file file newname 1)
+      (if (yes-or-no-p "Delete original file?")
+	  (delete-file file t)))
+    (setq library-last-entry-resource-file-alist nil)))
 
 (add-hook 'org-capture-prepare-finalize-hook
 	  'library-bibtex-clean-entry)
 (add-hook 'org-capture-prepare-finalize-hook
-	  'library-maybe-copy-resource-file)
+	  'library-maybe-copy-and-delete-resource-file)
 
 (defun library-tangle-file ()
   "Update `library-bib-file' by running `org-babel-tangle-file' on
