@@ -2705,6 +2705,36 @@ Using phase unwrapping for local wavenumber estimation and use in damage localiz
 }
 #+end_src
 
+** chiariotti2019: Acoustic beamforming for noise source localization -- Reviews, methodology and applications :beamforming:phased_arrays:literature_review:
+:PROPERTIES:
+:ID: chiariotti2019
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-15 Mon>
+- Year: 2019
+- Authors:
+  - Paolo Chiariotti
+  - Milena Martarelli
+  - Paolo Castellini
+
+*** Resources
+- [[https://doi.org/10.1016/j.ymssp.2018.09.019]]
+- [[file:./resources/chiariotti2019.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{chiariotti2019,
+  author =       {Paolo Chiariotti and Milena Martarelli and Paolo Castellini},
+  title =        {Acoustic beamforming for noise source localization -- Reviews, methodology and applications},
+  journal =      {Mechanical Systems and Signal Processing},
+  year =         2019,
+  volume =    120,
+  pages =     {422-448},
+  month =     {April},
+  doi =       {10.1016/j.ymssp.2018.09.019}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
