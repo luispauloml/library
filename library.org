@@ -2769,6 +2769,39 @@ Beamforming with microphones.
 }
 #+end_src
 
+** knapp1976: The generalized correlation method for estimation of time delay :tdoa:cross_correlation:
+:PROPERTIES:
+:ID: knapp1976
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-16 Tue>
+- Year: 1976
+- Authors:
+  - Charles H. Knapp
+  - G. Clifford Carter
+
+*** Notes
+A method for estimating time difference of arrival (TDOA).
+
+*** Resources
+- [[https://doi.org/10.1109/TASSP.1976.1162830]]
+- [[file:./resources/knapp1976.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{knapp1976,
+  author =       {Charles H. Knapp and G. Clifford Carter},
+  title =        {The generalized correlation method for estimation of time delay},
+  journal =      {IEEE Transactions on Acoustics, Speech, and Signal Processing},
+  year =         1976,
+  volume =    24,
+  number =    4,
+  pages =     {320--327},
+  month =     {august},
+  doi =       {10.1109/TASSP.1976.1162830}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
