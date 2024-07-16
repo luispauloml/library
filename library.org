@@ -2735,6 +2735,40 @@ Using phase unwrapping for local wavenumber estimation and use in damage localiz
 }
 #+end_src
 
+** chen2019: Fault detection of wheel in wheel/rail system using kurtosis beamforming method :beamforming:phased_arrays:
+:PROPERTIES:
+:ID: chen2019
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-16 Tue>
+- Year: 2019
+- Authors:
+  - Long Chen
+  - Yat Sze Choy
+  - Tian Gang Wang
+  - Yan Kei Chiang
+
+*** Notes
+Beamforming with microphones.
+
+*** Resources
+- [[https://doi.org/10.1177/1475921719855444]]
+- [[file:./resources/chen2019.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{chen2019,
+  author =       {Long Chen and Yat Sze Choy and Tian Gang Wang and Yan Kei Chiang},
+  title =        {Fault detection of wheel in wheel/rail system using kurtosis beamforming method},
+  journal =      {Structural Health Monitoring},
+  year =         2019,
+  volume =    19,
+  number =    2,
+  pages =     {1--15},
+  doi =       {10.1177/1475921719855444}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
