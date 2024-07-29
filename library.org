@@ -2835,6 +2835,38 @@ A method for estimating time difference of arrival (TDOA).
 }
 #+end_src
 
+** michaels2005: Detection of Structural Damage from the Local Temporal Coherence of Diffuse Ultrasonic Signals :diffuse_waves:baseline:basic_literature:
+:PROPERTIES:
+:ID: michaels2005
+:CATEGORY: Journal
+:END:
+- Added: <2024-07-29 Mon>
+- Year: 2005
+- Authors:
+  - Jennifer E. Michaels
+  - Thomas E. Michaels
+
+*** Notes
+Basic literature on using diffuse ultrasound waves for damage detection.
+
+*** Resources
+- [[https://doi.org/10.1109/TUFFC.2005.1561631]]
+- [[file:./resources/michaels2005.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{michaels2005,
+  author =       {Jennifer E. Michaels and Thomas E. Michaels},
+  title =        {Detection of Structural Damage from the Local Temporal Coherence of Diffuse Ultrasonic Signals},
+  journal =      {IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control},
+  year =         2005,
+  volume =    52,
+  number =    10,
+  pages =     {1769--1782},
+  doi =       {10.1109/TUFFC.2005.1561631}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
