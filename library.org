@@ -1895,7 +1895,7 @@ This paper compares both Optimal Baseline Subtraction (OBS) and Baseline Signal 
   doi = {10.1016/j.ultras.2009.11.002}}
 #+end_src
 
-** lu2005: A methodology for structural health monitoring with diffuse ultrasonic waves in the presence of temperature variations :baseline:
+** lu2005: A methodology for structural health monitoring with diffuse ultrasonic waves in the presence of temperature variations :baseline:diffuse_waves:
 :PROPERTIES:
 :ID: lu2005
 :CATEGORY: Journal
