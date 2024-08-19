@@ -2867,6 +2867,37 @@ Basic literature on using diffuse ultrasound waves for damage detection.
 }
 #+end_src
 
+** leach1994: Controlled-source analogous circuits and SPICE models for piezoelectric transducers :emi:piezoelectric:mutual_impedance:
+:PROPERTIES:
+:ID: leach1994
+:CATEGORY: Journal
+:END:
+- Added: <2024-08-19 Mon>
+- Year: 1994
+- Author: W. Marshall Leach
+
+*** Notes
+Modeling of PZT as transmission line used for demonstrating the existence of mutual impedance.
+
+*** Resources
+- [[http://doi.org/10.1109/58.265821]]
+- [[file:./resources/leach1994.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{leach1994,
+  author =       {W. Marshall Leach},
+  title =        {Controlled-source analogous circuits and {SPICE} models for piezoelectric transducers},
+  journal =      {IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control},
+  year =         1994,
+  volume =    41,
+  number =    1,
+  pages =     {60--66},
+  month =     {January},
+  doi =       {10.1109/58.265821}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
