@@ -2898,6 +2898,40 @@ Modeling of PZT as transmission line used for demonstrating the existence of mut
 }
 #+end_src
 
+** peairs2004: Improving Accessibility of the Impedance-based Structural Health Monitoring Method :emi:
+:PROPERTIES:
+:ID: peairs2004
+:CATEGORY: Journal
+:END:
+- Added: <2024-09-03 Tue>
+- Year: 2004
+- Authors:
+  - Daniel M. Peairs
+  - Gyuhae Park
+  - Daniel J. Inman
+
+*** Notes
+Article about the low-cost circuit for estimating electromechanical impedance.
+
+*** Resources
+- [[https://doi.org/10.1177/1045389X04039914]]
+- [[file:./resources/peairs2004.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{peairs2004,
+  author =       {Daniel M. Peairs and Gyuhae Park and Daniel J. Inman},
+  title =        {Improving Accessibility of the Impedance-based Structural Health Monitoring Method},
+  journal =      {Journal of Intelligent Material Systems and Structures},
+  year =         2004,
+  volume =    15,
+  number =    2,
+  pages =     {129--139},
+  month =     {February},
+  doi =       {10.1177/1045389X04039914}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
