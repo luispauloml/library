@@ -417,6 +417,31 @@ Chapter 3 has relevant information on transfer electromechanical impedance measu
 }
 #+end_src
 
+** park2022: Development of microcontroller based multipurpose wireless edge node for integrated structural health monitoring
+:PROPERTIES:
+:ID: park2022
+:CATEGORY: Thesis
+:END:
+- Added: <2024-09-19 Thu>
+- Year: 2022
+- Author: Jinwoo Park
+
+*** Notes
+PhD dissertation on WUD.
+
+*** Resources
+- [[file:./resources/park2022.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@phdthesis{park2022,
+  author =       {Jinwoo Park},
+  title =        {Development of microcontroller based multipurpose wireless edge node for integrated structural health monitoring},
+  school =       {Korea Advanced Institute of Science and Technology},
+  year =         2022,
+  address =   {Daejeon, Republic of Korea}}
+#+end_src
+
 * Conference papers
 
 ** flynn2014: Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
