@@ -408,13 +408,6 @@ described in `library-last-entry-resource-file-alist'."
 (add-hook 'org-capture-prepare-finalize-hook
 	  'library-maybe-copy-and-delete-resource-file)
 
-(defun library-tangle-file ()
-  "Update `library-bib-file' by running `org-babel-tangle-file' on
-`library-org-file' and overwriting the existing file."
-  (interactive)
-  (require 'ob-tangle)
-  (org-babel-tangle-file library-org-file library-bib-file))
-
 (defun library-add-entry (&optional goto keys)
   "Add new entry to the library.
 
