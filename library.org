@@ -2957,6 +2957,41 @@ Article about the low-cost circuit for estimating electromechanical impedance.
 }
 #+end_src
 
+** shin2012: Assessing joint integrity of a lug assembly using piezoelectric active sensors :shm:bolt_loosening:
+:PROPERTIES:
+:ID: shin2012
+:CATEGORY: Journal
+:END:
+- Added: <2024-12-04 Wed>
+- Year: 2012
+- Authors:
+  - Hye-Jin Shin
+  - Chang-Yong Yun
+  - Gyuhae Park
+  - Kevin M. Farinholt
+  - Jung-Ryul Lee
+  - Chan-Yik Park
+  - Seung-Moon Jun
+  - Charles R. Farrar
+
+*** Notes
+A paper with showing various techniques used for detection of bolt loosening.
+
+*** Resources
+- [[file:./resources/shin2012.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{shin2012,
+  author =       {Hye-Jin Shin and Chang-Yong Yun and Gyuhae Park and Kevin M. Farinholt and Jung-Ryul Lee and Chan-Yik Park and Seung-Moon Jun and Charles R. Farrar},
+  title =        {Assessing joint integrity of a lug assembly using piezoelectric active sensors},
+  journal =      {Structural Control And Health Monitoring},
+  year =         2012,
+  volume =    {19},
+  pages =     {621--631},
+  doi =       {10.1002/stc.1507}
+}
+#+end_src
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
