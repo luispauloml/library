@@ -2992,6 +2992,44 @@ A paper with showing various techniques used for detection of bolt loosening.
   doi =       {10.1002/stc.1507}
 }
 #+end_src
+
+** park2001: Feasibility of using impedance-based damage assessment for pipeline structures :piezoelectric:emi:
+:PROPERTIES:
+:ID: park2001
+:CATEGORY: Journal
+:END:
+- Added: <2025-02-10 Mon>
+- Year: 2001
+- Authors:
+  - Gyuhae Park
+  - Harley H. Cudney
+  - Daniel J. Inman
+
+*** Notes
+
+This is a paper that basically demonstrates the use of "total impedance" in the detection of damage in complex structures.
+
+It uses PZTs in different parts of a pipe structures and excite and measure the electromechanical impedance of all of them at the same time to detect damages.
+
+The structure itself are metallic pipes connected by bolted flanges, and the PZTs are attached to these flanges.
+
+*** Resources
+- [[https://dx.doi.org/10.1002/eqe.72]]
+- [[file:./resources/park2001.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{park2001,
+  author =       {Gyuhae Park and Harley H. Cudney and Daniel J. Inman},
+  title =        {Feasibility of using impedance-based damage assessment for pipeline structures},
+  journal =      {Earthquate Engineering and Structural Dynamics},
+  year =         2001,
+  volume =    30,
+  pages =     {1463--1474},
+  doi =       {10.1002/eqe.72}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
