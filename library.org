@@ -3030,6 +3030,64 @@ The structure itself are metallic pipes connected by bolted flanges, and the PZT
 }
 #+end_src
 
+** yin2023: Theoretical error formation and evaluation of acoustic source localization for cluster-based techniques :t_shaped_array:tdoa:toa:damage_location:accoustic_source_localization:asl:
+:PROPERTIES:
+:ID: yin2023
+:CATEGORY: Journal
+:END:
+- Added: <2025-02-10 Mon>
+- Year: 2023
+- Authors:
+  - Shenxin Yin
+  - Huapan Xiao
+  - Caibin Xu
+  - Mingxi Deng
+  - Tribikram Kundu
+
+*** Notes
+This paper deals with errors in localization with using two arrays of sensors.
+It, however, does not show results for errors in the estimation of direction of arrival (DOA) in a single cluster, but just the error in the result after crossing the center lines of two clusters to find the damage location.
+
+They compute the error of the DOA estimate in a single array using trigonometry.
+Then they create a function of the position of all sensors of two clusters based on parameters such as distance between clusters, rotation of the clusters, and spacing of sensors.
+Knowing the position of the source, it is possible to compute DOA estimate in each cluster, then compute the intersection of lines crossing the clusters at these directions, and finally write an error function as the distance between the intersection and the actual position of the source, all depending on the geometric parameters of the clusters.
+
+They evaluate the sensitive of the error function to each parameter.
+The error function is modeled as a second order polynomial regression model:
+\[ F(x_i) = a_i*x_i + b_{ij}*x_i*y_j + c_i*x_i^2. \]
+And somehow, the values of a_i, b_ij, and c_i are computed based on the values of the geometric parameters and the results of the error function.
+The amplitude of the coefficients are compared to identify which parameters influence the error more.
+
+I still do not understand how they fit the coefficients.
+It says they use "optimal Latin Hypercube Design (Opt-LHD)" to define a range of values for the geometric parameters.
+They use these to estimate the coefficients.
+
+I also did not go through the results, although it appears to confirm their findings.
+
+
+*** Resources
+- [[https://doi.org/10.1016/j.ultras.2023.106982]]
+- [[file:./resources/yin2023.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{yin2023,
+  title =        {Theoretical error formation and evaluation of
+  acoustic source localization for cluster-based techniques},
+  volume =       132,
+  ISSN =         {0041-624X},
+  url =          {http://dx.doi.org/10.1016/j.ultras.2023.106982},
+  DOI =          {10.1016/j.ultras.2023.106982},
+  journal =      {Ultrasonics},
+  publisher =    {Elsevier BV},
+  author =       {Shenxin Yin and Huapan Xiao and Caibin Xu and
+  Mingxi Deng and Tribikram Kundu},
+  year =         2023,
+  month =        jul,
+  pages =        106982
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
