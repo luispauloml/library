@@ -378,9 +378,10 @@ as the CATEGORY argument to `library-capture-template'."
   "Find a `bibtex' source block and run `bibtex-clean-entry'."
   (interactive)
   (unless org-note-abort
-    (let* ((file-name
-	    (buffer-file-name
-	     (plist-get org-capture-plist :buffer))))
+    (let ((file-name
+	   (buffer-file-name (plist-get org-capture-plist :buffer)))
+	  (bibtex-entry-format
+	   `(realign ,@bibtex-entry-format)))
       (when (string=
 	     (upcase file-name)
 	     (upcase library-org-file))
