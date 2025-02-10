@@ -3088,6 +3088,53 @@ I also did not go through the results, although it appears to confirm their find
 }
 #+end_src
 
+** yan2015: A Bayesian Approach for Localization of Acoustic Emission Source in Plate-Like Structures :monte_carlo:asl:tdoa:mcmc:
+:PROPERTIES:
+:ID: yan2015
+:CATEGORY: Journal
+:END:
+- Added: <2025-02-10 Mon>
+- Year: 2015
+- Authors:
+  - Gang Yan
+  - Jianfei Tang
+
+*** Notes
+This work used Markov Chain Monte Carlo (MCMC) and Bayesian statistics to try to localize acoustic sources.
+That means that it derives some probability density function (PDF) using Bayes' Theorem,
+and them some sampling algorithm to generate samples fro that PDF.
+
+The PDF is a function of the TDOAs $\delta t_{ij}$ and the position of the sensors in the structure.
+The random variables are the position $(x, y)$ of the acoustic source, and the $v_g$ the speed of propagation of the waves.
+
+The algorithm for sampling the PDF is a modified Metropolis-Hasting algorithm, which I have already used before (but I need to review, in case I want to use it).
+
+The final result is simpling taking the mean of the distribution of $x$, and of $y$.
+And the results can be verified by comparing the mean of the distribution of $v_g$ with the expected speed for that material at a particular frequency.
+
+The novelty of the method presented in this paper is that it repeats the same estimate for different frequencies (20, 30 and 40 kHz) and derive three distributions for each unknown.
+Then, these distributions are fused by combining their covariances in a way that I have not understand.
+
+Is the final result the same as the result of convolving the analytical PDFs of the variables?
+I don't know.
+
+*** Resources
+- [[http://dx.doi.org/10.1155/2015/247839]]
+- [[file:./resources/yan2015.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{yan2015,
+  author =       {Gang Yan and Jianfei Tang},
+  title =        {A {Bayesian} Approach for Localization of Acoustic
+  Emission Source in Plate-Like Structures},
+  journal =      {Mathematical Problems in Engineering},
+  year =         2015,
+  volume =       2015,
+  doi =          {10.1155/2015/247839}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
