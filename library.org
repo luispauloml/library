@@ -3133,6 +3133,42 @@ I don't know.
 }
 #+end_src
 
+** vieira-filho2024: Structural Damage Detection Using PZT Transmission Line Circuit Model :emi:piezoelectric:mutual_impedance:
+:PROPERTIES:
+:ID: vieira-filho2024
+:CATEGORY: Journal
+:END:
+- Added: <2025-03-07 Fri>
+- Year: 2024
+- Authors:
+  - Jozue Vieira Filho
+  - Nicolás E. Cortez
+  - Mario de Oliveira
+  - Luis Paulo M. Lima
+  - Gyuhae Park
+
+*** Notes
+Paper that I helped write to introduce the concept of mutual impedance.
+
+*** Resources
+- [[https://doi.org/10.3390/s24227113]]
+- [[file:./resources/filho2024.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{vieira-filho2024,
+  author =       {Jozue {Vieira Filho} and Nicol\'as E. Cortez and Mario
+  de Oliveira and Luis Paulo M. Lima and Gyuhae Park},
+  title =        {Structural Damage Detection Using {PZT} Transmission
+  Line Circuit Model},
+  journal =      {Sensors},
+  year =         2024,
+  volume =       24,
+  number =       22,
+  doi =          {10.3390/s24227113}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
