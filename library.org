@@ -3169,6 +3169,42 @@ Paper that I helped write to introduce the concept of mutual impedance.
 }
 #+end_src
 
+** zuo2025: A three-stage approach based on 1D-CNNs for AE source localisation on historic fibrous plaster ceilings :damage_location:
+:PROPERTIES:
+:ID: zuo2025
+:CATEGORY: Journal
+:END:
+- Added: <2025-03-17 Mon>
+- Year: 2024
+- Authors:
+  - Jiaxu Zuo
+  - Brian Sheil
+  - Sinan Acikgoz
+
+*** Notes
+The newest paper I could find that uses L-shaped clusters.
+It uses Square shaped clusters and artificial intelligence to improve the results over traditional method in anisotropic plates.
+
+*** Resources
+- [[https://doi.org/10.1177/14759217241245309]]
+- [[file:./resources/zuo2025.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{zuo2025,
+  author =       {Jiaxu Zuo and Brian Sheil and Sinan Acikgoz},
+  title =        {A three-stage approach based on {1D-CNN}s for {AE}
+  source localisation on historic fibrous plaster ceilings},
+  journal =      {Structural Health Monitoring},
+  year =         2025,
+  volume =       24,
+  number =       2,
+  pages =        {1224--1240},
+  month =        {march},
+  doi =          {10.1177/14759217241245309}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
