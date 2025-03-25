@@ -3205,6 +3205,48 @@ It uses Square shaped clusters and artificial intelligence to improve the result
 }
 #+end_src
 
+** lang2010: Dictionary-Based Compression for Long Time-Series Similarity :damage_detection:signal_processing:
+:PROPERTIES:
+:ID: lang2010
+:CATEGORY: Journal
+:END:
+- Added: <2025-03-25 Tue>
+- Year: 2010
+- Authors:
+  - Willis Lang
+  - Michael Morse
+  - Jignesh M. Patel
+
+*** Notse
+A very interesting paper that introduces a technique for compressing the time series and then perform similarity tests.
+
+It uses the concept of "cross-compression", i.e. it build a dictionary with the original data, then compress the test data and compare the compressed outputs for similarity between them.
+
+This type of technique could be used with traditional applications, such as gzip, but the authors show that their technique performed better.
+
+Besides, if I was going to use gzip, it would require me to find out how to extract the dictionary form the file and how to reuse.
+In that regard, maybe Python's [[https://docs.python.org/3/library/lzma.html][lzma]] could help.
+
+*** Resources
+- [[https://dx.doi.org/10.1109/TKDE.2009.201]]
+- [[file:./resources/lang2010.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{lang2010,
+  author =       {Willis Lang and Michael Morse and Jignesh M. Patel},
+  title =        {Dictionary-Based Compression for Long Time-Series
+  Similarity},
+  journal =      {IEEE Transactions on Knowledger and Data
+  Engineering},
+  year =         2010,
+  volume =       22,
+  number =       11,
+  pages =        {1609--1622},
+  doi =          {10.1109/TKDE.2009.201}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
