@@ -3280,6 +3280,41 @@ The "independent" paper on L-shape arrays.
 }
 #+end_src
 
+** simone2017: Impact source localisation in aerospace composite structures :asl:
+:PROPERTIES:
+:ID: simone2017
+:CATEGORY: Journal
+:END:
+- Added: <2025-03-27 Thu>
+- Year: 2017
+- Authors:
+  - Mario Emanuele De Simone
+  - Francesco Ciampa
+  - Salvatore Boccardi
+  - Michele Meo
+
+*** TODO Notes
+That paper about L-shape by researchers from University of Bath.
+
+*** Resources
+- [[https://doi.org/10.1088/1361-665X/aa973e]]
+- [[file:./resources/simone2017.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{simone2017,
+  author =       {Mario Emanuele De Simone and Francesco Ciampa and
+  Salvatore Boccardi and Michele Meo},
+  title =        {Impact source localisation in aerospace composite
+  structures},
+  journal =      {Smart Materials and Structures},
+  year =         2017,
+  volume =       26,
+  pages =        125026,
+  doi =          {10.1088/1361-665X/aa973e}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
