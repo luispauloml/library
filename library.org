@@ -3315,6 +3315,37 @@ That paper about L-shape by researchers from University of Bath.
 }
 #+end_src
 
+** ku1966: Notes on the Use of Propagation of Error Formulas :statistics:error_propagation:
+:PROPERTIES:
+:ID: ku1966
+:CATEGORY: Journal
+:END:
+- Added: <2025-04-06 Sun>
+- Year: 1966
+- Author: H. H. Ku
+
+*** TODO Notes
+A paper on error propagation formulas.
+
+*** Resources:
+- [[file:./resources/ku1966.pdf]]
+- [[https://nistdigitalarchives.contentdm.oclc.org/digital/collection/p16009coll6/id/99848/]]
+- [[https://dx.doi.org/10.6028/jres.070C.025]]
+
+*** Citation
+#+begin_src bibtex
+@article>{ku1966,
+  title={Notes on the Use of Propagation of Error Formulas},
+  author={H. H. Ku},
+  journal={Journal of Research of NIST},
+  volume={70C},
+  number=4,
+  year=1966,
+  doi={10.6028/jres.070C.025},
+  month={October--December}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
