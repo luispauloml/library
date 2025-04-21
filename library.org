@@ -3346,6 +3346,38 @@ A paper on error propagation formulas.
 }
 #+end_src
 
+** tyutekin2004: Helical Waves of an Elastic Cylindrical Shell :wave_propagation:
+:PROPERTIES:
+:ID: tyutekin2004
+:CATEGORY: Journal
+:END:
+- Added: <2025-04-14 Mon>
+- Year: 2004
+- Author: V. V. Tyutekin
+
+*** Notes
+How to transform helical waves into plane waves and vice-versa.
+
+*** Resources
+- [[https://doi.org/10.1134/1.1739495]]
+- [[file:./resources/tyutekin2004.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{tyutekin2004,
+  author =       {V. V. Tyutekin},
+  title =        {Helical Waves of an Elastic Cylindrical Shell},
+  journal =      {Acoustical Physics},
+  year =         2004,
+  volume =       50,
+  number =       3,
+  pages =        {273--277},
+  note =         {Translated from Akusticheskii Zhurnal, Vol. 50,
+  No. 3, 2004, pp. 331--336},
+  doi =          {10.1134/1.1739495}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
