@@ -3378,6 +3378,43 @@ How to transform helical waves into plane waves and vice-versa.
 }
 #+end_src
 
+** nakatani2013: Locating Point of Impact on an Anisotropic Cylindrical Surface using Acoustic Beamforming Technique :accoustic_source_localization:damage_location:
+:PROPERTIES:
+:ID: nakatani2013
+:CATEGORY: Journal
+:END:
+- Added: <2025-04-21 Mon>
+- Year: 2013
+- Authors:
+  - Hayato Nakatani
+  - Talieh Hajzargarbashi
+  - Kaita Ito
+  - Tribikram Kundu
+  - Nobuo Takeda
+
+*** Notes
+A work on Lamb waves propagating in a cylinder.
+
+*** Resources
+- [[https://dx.doi.org/10.4028/www.scientific.net/KEM.558.331]]
+- [[file:./resources/nakatani2013.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{nakatani2013,
+  author =       {Hayato Nakatani and Talieh Hajzargarbashi and Kaita
+  Ito and Tribikram Kundu and Nobuo Takeda},
+  title =        {Locating Point of Impact on an Anisotropic
+  Cylindrical Surface using Acoustic Beamforming Technique},
+  journal =      {Key Engineering Materials},
+  year =         2013,
+  volume =       558,
+  pages =        {331--340},
+  month =        {June},
+  doi =          {10.4028/www.scientific.net/KEM.558.331}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
