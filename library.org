@@ -3415,6 +3415,41 @@ A work on Lamb waves propagating in a cylinder.
 }
 #+end_src
 
+** li2016: Source-localization algorithms and applications using time of arrival and time difference of arrival measurements :asl:
+:PROPERTIES:
+:ID: li2016
+:CATEGORY: Journal
+:END:
+- Added: <2025-05-01 Thu>
+- Year: 2016
+- Authors:
+  - Xinya Li
+  - Zhiqun Daniel Deng
+  - Lynn T. Rauchenstein
+  - Thomas J. Carlson
+
+*** Notes
+This review is not actually for Lamb waves, more for electromagnetic waves, but it still gives a good background on various methods.
+
+*** Resources
+- [[http://dx.doi.org/10.1063/1.4947001]]
+- [[file:./resources/li2016.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{li2016,
+  author =       {Xinya Li and Zhiqun Daniel Deng and Lynn
+  T. Rauchenstein and Thomas J. Carlson},
+  title =        {Source-localization algorithms and applications
+  using time of arrival and time difference of arrival measurements},
+  journal =      {Review of Scientific Instruments},
+  year =         2016,
+  volume =       87,
+  pages =        041502,
+  doi =          {10.1063/1.4947001}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
