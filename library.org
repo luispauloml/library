@@ -442,6 +442,34 @@ PhD dissertation on WUD.
   address =   {Daejeon, Republic of Korea}}
 #+end_src
 
+** luispauloml2020-1: Estudo da atenuação de sinal de vazamento de água em tubos de pvc com longarinas metálicas longitudinais :damage_location:
+:PROPERTIES:
+:ID: lima2020
+:CATEGORY: Thesis
+:END:
+- Added: <2025-05-02 Fri>
+- Year: 2020
+- Author: Luis Paulo Morais Lima
+
+*** Notes
+My Master's degree thesis.
+
+*** Resources
+- [[http://hdl.handle.net/11449/193015]]
+- [[file:./resources/luispauloml2020-1.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@masterthesis{luispauloml2020-1,
+  author =       {Luis Paulo Morais Lima},
+  title =        {Estudo da atenuação de sinal de vazamento de água em tubos de pvc com longarinas metálicas longitudinais},
+  school =       {São Paulo State University},
+  year =         {2020},
+  note =      {In Portuguese},
+  address = {Ilha Solteira, São Paulo, Brazil}
+}
+#+end_src
+
 * Conference papers
 
 ** flynn2014: Embedded multi-tone ultrasonic excitation and continuous-scanning laser Doppler vibrometry for rapid and remote imaging of structural defects :laser:guided_wave:
