@@ -3478,6 +3478,42 @@ This review is not actually for Lamb waves, more for electromagnetic waves, but 
 }
 #+end_src
 
+** ciampa2012: Impact localization in composite structures of arbitrary cross section :damage_location:asl:wavelet:
+:PROPERTIES:
+:ID: ciampa2012
+:CATEGORY: Journal
+:END:
+- Added: <2025-05-07 Wed>
+- Year: 2012
+- Authors:
+  - Francesco Ciampa
+  - Michele Meo
+  - Ettore Barbieri
+
+*** Notes
+The paper that uses wavelet decomposition to find the best filtering frequency of impact signals.
+
+*** Resources
+- [[https://doi.org/10.1177/1475921712451951]]
+- [[file:./resources/ciampa2012.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{ciampa2012,
+  author =       {Francesco Ciampa and Michele Meo and Ettore
+  Barbieri},
+  title =        {Impact localization in composite structures of
+  arbitrary cross section},
+  journal =      {Structural Health Monitoring},
+  year =         2012,
+  volume =       11,
+  number =       6,
+  pages =        {643--655},
+  month =        {November},
+  doi =          {10.1177/1475921712451951}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
