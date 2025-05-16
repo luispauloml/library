@@ -3514,6 +3514,40 @@ The paper that uses wavelet decomposition to find the best filtering frequency o
 }
 #+end_src
 
+** goutaudier2020: Long-range impact localization with a frequency domain triangulation technique: Application to a large aircraft composite panel :modal_analysis:asl:
+:PROPERTIES:
+:ID: goutaudier2020
+:CATEGORY: Journal
+:END:
+- Added: <2025-05-07 Wed>
+- Year: 2020
+- Authors:
+  - Dimitri Goutaudier
+  - Didier Gendre
+  - Véronique Kehr-Candille
+  - Roger Ohayon
+
+*** TODO Notes
+TBD.
+
+*** Resources
+- [[https://doi.org/10.1016/j.compstruct.2020.111973]]
+- [[file:./resources/goutaudier2020.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{goutaudier2020,
+  author =       {Dimitri Goutaudier and Didier Gendre and Véronique Kehr-Candille and Roger Ohayon},
+  title =        {Long-range impact localization with a frequency domain triangulation technique: Application to a large aircraft composite panel},
+  journal =      {Composite Structures},
+  year =         2020,
+  volume =       238,
+  pages =        111973,
+  month =        {April},
+  doi =          {10.1016/j.compstruct.2020.111973}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
