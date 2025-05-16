@@ -3579,6 +3579,38 @@ One of the oldest papers on using triangulation to localize impact location.
 }
 #+end_src
 
+** ciampa2010: Acoustic emission source localization and velocity determination of the fundamental mode A0 using wavelet analysis and a Newton-based optimization technique :asl:wavelet:
+:PROPERTIES:
+:ID: ciampa2010
+:CATEGORY: Journal
+:END:
+- Added: <2025-05-07 Wed>
+- Year: 2010
+- Authors:
+  - F Ciampa
+  - M Meo
+
+*** Notes
+Another example that uses wavelet decomposition to find the best frequency of an impact signal.
+
+*** Resources
+- [[http://dx.doi.org/10.1088/0964-1726/19/4/045027]]
+- [[file:./resources/ciampa2010.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{ciampa2010,
+  author =       {F Ciampa and M Meo},
+  title =        {Acoustic emission source localization and velocity determination of the fundamental mode A0 using wavelet analysis and a Newton-based optimization technique},
+  journal =      {Smart Materials and Structures},
+  year =         2010,
+  volume =       19,
+  number =       4,
+  pages =        045027,
+  doi =          {10.1088/0964-1726/19/4/045027}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
