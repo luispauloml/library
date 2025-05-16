@@ -3548,6 +3548,37 @@ TBD.
 }
 #+end_src
 
+** tobias1976: Acoustic-emission source location in two dimensions by an array of three sensors :asl:
+:PROPERTIES:
+:ID: tobias1976
+:CATEGORY: Journal
+:END:
+- Added: <2025-05-07 Wed>
+- Year: 1976
+- Author: A. Tobias
+
+*** Notes
+One of the oldest papers on using triangulation to localize impact location.
+
+*** Resources
+- [[https://doi.org/10.1016/0029-1021(76)90027-X]]
+- [[file:./resources/tobias1976.pdf]]
+
+*** Citation
+#+begin_src bibtex
+@article{tobias1976,
+  author =       {A. Tobias},
+  title =        {Acoustic-emission source location in two dimensions  by an array of three sensors},
+  journal =      {Non-Destructive Testing},
+  year =         1976,
+  volume =       9,
+  number =       1,
+  pages =        {9--12},
+  month =        {February},
+  doi =          {10.1016/0029-1021(76)90027-X}
+}
+#+end_src
+
 * Other references
 
 ** olver2021: The calculus of variations :calculus_of_variations:basic_literature:mechanics:
