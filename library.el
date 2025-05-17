@@ -1,18 +1,21 @@
 ;;; library.el
 
 (defvar library-org-file
-  (concat current-user-directory
-	  "Library/library.org")
+  (concat
+   (file-name-directory library-el-file)
+   "library.org")
   "Path to `library.org' file.")
 
 (defvar library-bib-file
-  (concat current-user-directory
-	  "Library/library.bib")
+  (concat
+   (file-name-directory library-el-file)
+   "library.bib")
   "Path to `library.bib' file.")
 
 (defvar library-resources-directory
-  (concat current-user-directory
-	  "Library/resources/")
+  (concat
+   (file-name-directory library-el-file)
+   "resources/")
   "Path to the `resources' directory.")
 
 (defvar library-last-entry-resource-file-alist nil
